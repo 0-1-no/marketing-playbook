@@ -38,9 +38,18 @@ Marketing Playbook er bygget rundt tre kjernepilarer:
 | `/marketing-playbook:check` | Verifiser innhold mot BRAND.md |
 | `/marketing-playbook:audit` | Full prosjekt-audit |
 
+## Filer som opprettes
+
+Når du kjører `/marketing-playbook:init`, opprettes to filer:
+
+| Fil | Innhold |
+|-----|---------|
+| `BRAND.md` | ABC-rammeverket (Audience, Brand, Communication) |
+| `JOURNEY.md` | Kundereise-kart (ToFU → Loyalty) |
+
 ## BRAND.md-struktur
 
-Når du kjører `/marketing-playbook:init`, opprettes en `BRAND.md`-fil med denne strukturen:
+BRAND.md definerer hvem dere er:
 
 ```markdown
 # [Prosjektnavn] Brand
