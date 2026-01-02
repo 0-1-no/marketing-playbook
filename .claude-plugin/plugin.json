@@ -1,11 +1,11 @@
 {
   "name": "marketing-playbook",
-  "description": "ABC framework for consistent brand communication. Creates and maintains BRAND.md files.",
+  "description": "ABC-rammeverk for konsistent merkevare-kommunikasjon. Oppretter og vedlikeholder BRAND.md-filer.",
   "version": "0.1.0",
   "author": {
     "name": "0-1.no",
     "url": "https://0-1.no"
   },
   "repository": "https://github.com/0-1-no/marketing-playbook",
-  "keywords": ["marketing", "branding", "copywriting", "content"]
+  "keywords": ["marketing", "merkevare", "copywriting", "innhold", "norsk"]
 }

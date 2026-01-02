@@ -1,108 +1,108 @@
 # Marketing Playbook
 
-> ABC framework for consistent brand communication in Claude Code.
+> ABC-rammeverk for konsistent merkevare-kommunikasjon i Claude Code.
 
-Marketing Playbook helps you maintain consistent brand voice across all your marketing content by creating and enforcing `BRAND.md` files in your projects.
+Marketing Playbook hjelper deg med å opprettholde konsistent merkevarestemme i alt markedsinnhold ved å opprette og håndheve `BRAND.md`-filer i prosjektene dine.
 
-## Installation
+## Installasjon
 
 ```bash
 claude plugin install 0-1-no/marketing-playbook
 ```
 
-## The ABC Framework
+## ABC-rammeverket
 
-Marketing Playbook is built around three core pillars:
+Marketing Playbook er bygget rundt tre kjernepilarer:
 
-### A - Audience
-- **Who** are you talking to?
-- What are their **pain points**?
-- What are their **goals**?
+### A - Audience (Målgruppe)
+- **Hvem** snakker du til?
+- Hva er deres **pain points**?
+- Hva er deres **mål**?
 
-### B - Brand
-- What's your **positioning**?
-- What are your **values**?
-- What makes you **different**?
+### B - Brand (Merkevare)
+- Hva er din **posisjonering**?
+- Hva er dine **verdier**?
+- Hva gjør deg **unik**?
 
-### C - Communication
-- What's your **tone of voice**?
-- Which **words do you use**?
-- Which **words do you avoid**?
+### C - Communication (Kommunikasjon)
+- Hva er din **tone of voice**?
+- Hvilke **ord bruker du**?
+- Hvilke **ord unngår du**?
 
-## Commands
+## Kommandoer
 
-| Command | Description |
-|---------|-------------|
-| `/marketing-playbook` | Show status and version |
-| `/marketing-playbook:init` | Create BRAND.md interactively |
-| `/marketing-playbook:check` | Verify content against BRAND.md |
-| `/marketing-playbook:audit` | Full project audit |
+| Kommando | Beskrivelse |
+|----------|-------------|
+| `/marketing-playbook` | Vis status og versjon |
+| `/marketing-playbook:init` | Opprett BRAND.md interaktivt |
+| `/marketing-playbook:check` | Verifiser innhold mot BRAND.md |
+| `/marketing-playbook:audit` | Full prosjekt-audit |
 
-## BRAND.md Structure
+## BRAND.md-struktur
 
-When you run `/marketing-playbook:init`, a `BRAND.md` file is created with this structure:
+Når du kjører `/marketing-playbook:init`, opprettes en `BRAND.md`-fil med denne strukturen:
 
 ```markdown
-# [Project Name] Brand
+# [Prosjektnavn] Brand
 
 ## Audience
-**Primary:** [Who is your main target audience?]
-**Secondary:** [Other audiences]
+**Primary:** [Hvem er hovedmålgruppen?]
+**Secondary:** [Andre målgrupper]
 
 ### Pain Points
-- [Problems you solve]
+- [Problemer du løser]
 
 ### Goals
-- [What they want to achieve]
+- [Hva de vil oppnå]
 
 ## Brand
-**Positioning:** [One sentence description]
-**Values:** [Core values]
-**Differentiators:** [What makes you unique]
+**Positioning:** [Én setning som beskriver posisjonen]
+**Values:** [Kjerneverdier]
+**Differentiators:** [Hva gjør deg unik]
 
 ## Communication
-**Tone of Voice:** [Adjectives describing your voice]
-**Words We Use:** [Preferred terminology]
-**Words We Avoid:** [Words to skip]
+**Tone of Voice:** [Adjektiver som beskriver stemmen]
+**Words We Use:** [Foretrukket terminologi]
+**Words We Avoid:** [Ord å unngå]
 ```
 
-## Usage Examples
+## Brukseksempler
 
-### Check content before publishing
+### Sjekk innhold før publisering
 ```
 /marketing-playbook:check
 
-# Paste your landing page copy, email, or ad text
-# Get ABC score and specific improvements
+# Lim inn landing page-tekst, e-post eller annonsetekst
+# Få ABC-score og konkrete forbedringer
 ```
 
-### Audit your entire project
+### Auditer hele prosjektet
 ```
 /marketing-playbook:audit
 
-# Scans landing pages, translations, meta tags
-# Returns comprehensive brand alignment report
+# Skanner landing pages, oversettelser, meta-tagger
+# Returnerer omfattende merkevare-rapport
 ```
 
 ## Auto-trigger Skill
 
-The plugin includes a skill that automatically activates when you're working on marketing content. It reminds you to:
-- Read BRAND.md before writing
-- Follow ABC checklist
-- Use correct words and tone
+Pluginen inkluderer en skill som automatisk aktiveres når du jobber med markedsinnhold. Den minner deg på å:
+- Lese BRAND.md før du skriver
+- Følge ABC-sjekklisten
+- Bruke riktige ord og tone
 
-## Premium Version
+## Premium-versjon
 
-For advanced marketing capabilities, visit [marketing.no](https://marketing.no):
-- Extended copywriting frameworks (AIDA, PAS, etc.)
-- SEO content optimization
-- Competitor analysis tools
-- Campaign planning agents
+For avanserte marketing-funksjoner, besøk [marketing.no](https://marketing.no):
+- Utvidede copywriting-rammeverk (AIDA, PAS, etc.)
+- SEO-innholdsoptimalisering
+- Konkurrentanalyse-verktøy
+- Kampanjeplanleggings-agenter
 
-## License
+## Lisens
 
 MIT
 
-## Author
+## Utvikler
 
-[0-1.no](https://0-1.no) - AI consultancy for Norwegian businesses
+[0-1.no](https://0-1.no) - AI-konsulenter for norske bedrifter

@@ -1,124 +1,124 @@
-# Acme SaaS Brand
+# Eksempel SaaS Brand
 
-> Marketing Playbook for Acme SaaS. This file is used by Claude to ensure consistent communication.
+> Marketing Playbook for Eksempel SaaS. Denne filen brukes av Claude for å sikre konsistent kommunikasjon.
 
 ---
 
 ## Audience
 
-**Primary:** Small business owners looking to automate their workflows
-**Secondary:** Operations managers, startup founders
+**Primary:** Småbedriftseiere som vil automatisere arbeidsflyten
+**Secondary:** Driftsledere, gründere, prosjektledere
 
 ### Use Cases
-- "I need to automate repetitive tasks"
-- "I want to connect my tools without coding"
-- "I need to save time on manual processes"
+- "Jeg trenger å automatisere repetitive oppgaver"
+- "Jeg vil koble sammen verktøyene mine uten å kode"
+- "Jeg vil spare tid på manuelle prosesser"
 
 ### Pain Points
-- Manual data entry between systems
-- No technical skills to build integrations
-- Expensive enterprise solutions
-- Time wasted on repetitive tasks
+- Manuell dataregistrering mellom systemer
+- Ingen tekniske ferdigheter til å bygge integrasjoner
+- Dyre enterprise-løsninger
+- Tid kastet bort på repetitivt arbeid
 
 ### Goals
-- Save 10+ hours per week on manual work
-- Connect all their tools seamlessly
-- Focus on growing their business, not admin
+- Spare 10+ timer per uke på manuelt arbeid
+- Koble sammen alle verktøy sømløst
+- Fokusere på å vokse bedriften, ikke administrasjon
 
 ---
 
 ## Brand
 
-**Positioning:** The automation platform that grows with your business.
+**Positioning:** Automatiseringsplattformen som vokser med bedriften din.
 
-**Mission:** Make automation accessible to every small business.
+**Mission:** Gjøre automatisering tilgjengelig for alle små bedrifter.
 
 **Values:**
-1. **Simplicity** - Complex automations, simple interface
-2. **Reliability** - Works every time, no surprises
-3. **Transparency** - Clear pricing, no hidden fees
-4. **Support** - Real humans when you need help
+1. **Enkelhet** - Komplekse automatiseringer, enkel grensesnitt
+2. **Pålitelighet** - Fungerer hver gang, ingen overraskelser
+3. **Åpenhet** - Tydelig prising, ingen skjulte kostnader
+4. **Support** - Ekte mennesker når du trenger hjelp
 
 **Personality:**
-- Helpful but not pushy
-- Technical but accessible
-- Professional but friendly
-- Confident but humble
+- Hjelpsom men ikke påtrengende
+- Teknisk men tilgjengelig
+- Profesjonell men vennlig
+- Selvsikker men ydmyk
 
 **Differentiators:**
-- **No-code builder** - Visual workflow editor anyone can use
-- **Pay-as-you-grow** - Pricing that scales with usage
-- **100+ integrations** - Connect the tools you already use
-- **5-minute setup** - Start automating in minutes, not days
+- **No-code bygger** - Visuell arbeidsflyt-editor alle kan bruke
+- **Betal-etter-bruk** - Prising som skalerer med forbruk
+- **100+ integrasjoner** - Koble til verktøyene du allerede bruker
+- **5 minutters oppsett** - Start automatisering på minutter, ikke dager
 
 ---
 
 ## Communication
 
 ### Tone of Voice
-- **Clear** - Simple words, short sentences
-- **Helpful** - Focus on solving problems
-- **Confident** - We know our stuff
-- **Warm** - We're people, not a corporation
+- **Klar** - Enkle ord, korte setninger
+- **Hjelpsom** - Fokus på å løse problemer
+- **Trygg** - Vi kan sakene våre
+- **Varm** - Vi er mennesker, ikke en stor bedrift
 
 ### Key Messages
-1. "Automate your work, not your budget"
-2. "Connect everything. Code nothing."
-3. "From setup to savings in 5 minutes"
+1. "Automatiser arbeidet, ikke budsjettet"
+2. "Koble alt. Kod ingenting."
+3. "Fra oppsett til besparelse på 5 minutter"
 
 ### Words We Use
-- Automate, connect, integrate
-- Simple, easy, intuitive
-- Save time, work smarter
-- Reliable, secure, trusted
+- Automatisere, koble, integrere
+- Enkelt, intuitivt, brukervennlig
+- Spare tid, jobbe smartere
+- Pålitelig, sikker, trygg
 
 ### Words We Avoid
-- Revolutionary, game-changing (overpromising)
-- Cheap, budget (we're value, not discount)
-- Simple (can imply limited features)
-- AI-powered (unless specifically relevant)
-- Disrupt, cutting-edge (buzzwords)
+- Revolusjonerende, banebrytende (overløfter)
+- Billig, budsjett (vi er verdi, ikke rabatt)
+- Enkel (kan tolkes som begrenset)
+- AI-drevet (med mindre det er spesifikt relevant)
+- Disruptiv, cutting-edge (buzzwords)
 
 ### Content Principles
-- Lead with the benefit, not the feature
-- Use real examples and numbers
-- Respect the reader's time
-- Show, don't tell
+- Led med fordelen, ikke funksjonen
+- Bruk ekte eksempler og tall
+- Respekter leserens tid
+- Vis, ikke fortell
 
 ---
 
 ## Design
 
-### Colors
-| Role | Color | Hex |
-|------|-------|-----|
-| Primary | Blue | `#2563eb` |
-| Background | White | `#ffffff` |
-| Text | Dark gray | `#1f2937` |
-| Accent | Green | `#10b981` |
+### Farger
+| Rolle | Farge | Hex |
+|-------|-------|-----|
+| Primær | Blå | `#2563eb` |
+| Bakgrunn | Hvit | `#ffffff` |
+| Tekst | Mørk grå | `#1f2937` |
+| Aksent | Grønn | `#10b981` |
 
-### Typography
-- **Headings:** Inter, Semibold
-- **Body:** Inter, Regular
-- **Code:** JetBrains Mono
+### Typografi
+- **Overskrifter:** Inter, Semibold
+- **Brødtekst:** Inter, Regular
+- **Kode:** JetBrains Mono
 
-### Visual Style
-- Clean and minimal
-- Plenty of whitespace
-- Subtle shadows
-- Rounded corners
-- Light/dark mode support
-
----
-
-## Competitors
-
-| Competitor | Their Strength | Our Advantage |
-|------------|----------------|---------------|
-| Zapier | Market leader, huge library | Simpler pricing, better support |
-| Make | Powerful features | Easier learning curve |
-| n8n | Open source, self-hosted | No technical setup required |
+### Visuell stil
+- Rent og minimalt
+- Mye whitespace
+- Subtile skygger
+- Avrundede hjørner
+- Lys/mørk modus
 
 ---
 
-*Last updated: 2025-01-02*
+## Konkurrenter
+
+| Konkurrent | Deres styrke | Vår fordel |
+|------------|--------------|------------|
+| Zapier | Markedsleder, stort bibliotek | Enklere prising, bedre support |
+| Make | Kraftige funksjoner | Lettere læringskurve |
+| n8n | Open source, self-hosted | Ingen teknisk oppsett nødvendig |
+
+---
+
+*Sist oppdatert: 2025-01-02*
