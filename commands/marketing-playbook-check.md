@@ -1,19 +1,20 @@
 ---
-description: Check if content aligns with BRAND.md and JOURNEY.md. Use before publishing landing pages, copy, or marketing materials.
+description: Check if content aligns with BRAND.md, JOURNEY.md, and DISTRIBUTION.md. Use before publishing landing pages, copy, or marketing materials.
 allowed-tools: Read, Glob, AskUserQuestion
 ---
 
 # Marketing Playbook - Sjekk Innhold
 
-Verifiser at innhold samsvarer med prosjektets `BRAND.md` og `JOURNEY.md`.
+Verifiser at innhold samsvarer med prosjektets marketing/-filer.
 
-## Steg 1: Les BRAND.md og JOURNEY.md
+## Steg 1: Les marketing/-filene
 
 Finn og les filene fra `marketing/`-mappen:
 
 ```
 marketing/BRAND.md
 marketing/JOURNEY.md
+marketing/DISTRIBUTION.md
 ```
 
 Akseptable plasseringer (i prioritert rekkefølge):
@@ -27,6 +28,7 @@ Hvis filene ikke finnes:
 Mangler:
 - marketing/BRAND.md: [Ja/Nei]
 - marketing/JOURNEY.md: [Ja/Nei]
+- marketing/DISTRIBUTION.md: [Ja/Nei]
 
 Kjør `/marketing-playbook:init` for å sette opp.
 ```
@@ -78,6 +80,20 @@ Evaluer innholdet mot hver seksjon:
 | Bruker riktige ord? | ✅/⚠️/❌ | [detaljer] |
 | Unngår forbudte ord? | ✅/⚠️/❌ | [detaljer] |
 | Budskap klart? | ✅/⚠️/❌ | [detaljer] |
+
+### D - DISTRIBUTION (hvis relevant)
+
+| Sjekk | Status | Kommentar |
+|-------|--------|-----------|
+| Tilpasset primærkanal? | ✅/⚠️/❌ | [detaljer] |
+| Matcher stack-muligheter? | ✅/⚠️/❌ | [detaljer] |
+| Content-Channel Fit? | ✅/⚠️/❌ | [detaljer] |
+
+**Kanalspesifikke sjekker:**
+- **Email:** Er subject line optimalisert? Personalisering?
+- **Social:** Tilpasset plattformens format og lengde?
+- **SEO:** Inkluderer relevante keywords fra strategi?
+- **Ads:** Matcher budsjett-prioritering (60:40)?
 
 ## Steg 4: Journey Stage Sjekk
 
@@ -158,6 +174,7 @@ SCORE
 ───────────────────────────────────────────
 
 ABC Score: [X/10]
+Distribution Score: [X/10] (hvis relevant)
 Journey Score: [X/10]
 Total: [X/10]
 

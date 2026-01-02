@@ -1,11 +1,11 @@
 ---
-description: Full audit of project against BRAND.md, JOURNEY.md, and LEARNINGS.md. Includes ABC check, journey coverage, brand health (7 principles), and Brand Audience Fit validation.
+description: Full audit of project against BRAND.md, JOURNEY.md, DISTRIBUTION.md, and LEARNINGS.md. Includes ABC check, journey coverage, distribution analysis, brand health (7 principles), and Brand Audience Fit validation.
 allowed-tools: Read, Glob, Grep
 ---
 
 # Marketing Playbook - Full Audit
 
-Utfør en komplett gjennomgang av prosjektets marketing-innhold mot `BRAND.md`, `JOURNEY.md` og `LEARNINGS.md`.
+Utfør en komplett gjennomgang av prosjektets marketing-innhold mot alle 4 marketing/-filer.
 
 ## Steg 1: Les Marketing Playbook-filer
 
@@ -16,12 +16,13 @@ Laster Marketing Playbook...
 
 ✅ BRAND.md funnet
 ✅ JOURNEY.md funnet
+✅ DISTRIBUTION.md funnet
 ✅ LEARNINGS.md funnet
 
 Starter full audit...
 ```
 
-Merk: LEARNINGS.md kan være tom for nye merkevarer. Dette er OK - audit vil anbefale å starte BAF-validering.
+Merk: LEARNINGS.md og DISTRIBUTION.md kan være delvis tomme for nye merkevarer. Dette er OK - audit vil anbefale konkrete neste steg.
 
 ## Steg 2: Skann prosjektet
 
@@ -197,7 +198,69 @@ Sjekk om innhold utnytter anbefalte prinsipper fra JOURNEY.md:
 | Consideration | Social Proof, Authority | ✅/❌ |
 | ... | ... | ... |
 
-## Steg 6: Brand Health Evaluering
+## Steg 6: Distribution Analyse
+
+Evaluer marketing stack og kanalstrategi fra DISTRIBUTION.md.
+
+### Marketing Stack Status
+
+| Verktøy | Status | Kommentar |
+|---------|--------|-----------|
+| Email | ✅/⚠️/❌ | [provider, liste-størrelse] |
+| CMS | ✅/⚠️/❌ | [platform] |
+| Analytics | ✅/⚠️/❌ | [verktøy] |
+| Social | ✅/⚠️/❌ | [aktive kanaler] |
+| Ads | ✅/⚠️/❌ | [plattformer, budsjett] |
+| CRM | ✅/⚠️/❌ | [system] |
+
+### Kanalstrategi Evaluering
+
+| Sjekk | Status | Kommentar |
+|-------|--------|-----------|
+| Primærkanaler definert? | ✅/⚠️/❌ | [detaljer] |
+| Budget split dokumentert? | ✅/⚠️/❌ | [60:40?] |
+| Owned vs Rented ratio? | ✅/⚠️/❌ | [ratio] |
+| Gaps identifisert? | ✅/⚠️/❌ | [kanaler] |
+
+### Distribution Output
+
+```
+───────────────────────────────────────────
+DISTRIBUTION ANALYSE
+───────────────────────────────────────────
+
+Stack Status: [X/6 verktøy satt opp]
+
+📧 Email:     [✅ Mailchimp, 2500 subs / ❌ Ikke satt opp]
+🌐 CMS:       [✅ Next.js / ❌ Ikke dokumentert]
+📊 Analytics: [✅ GA4 / ⚠️ Mangler GSC]
+📱 Social:    [✅ 3 kanaler aktive / ❌ Ingen]
+💰 Ads:       [✅ Meta + Google / ❌ Ikke startet]
+👥 CRM:       [✅ HubSpot / ❌ Regneark]
+
+Kanalstrategi:
+- Primary:     [kanaler]
+- Secondary:   [kanaler]
+- Gaps:        [manglende kanaler]
+
+Budget Split: [X% brand / Y% activation]
+              (Benchmark: 60/40)
+
+Owned/Rented: [X% / Y%]
+              (Anbefalt: Øk owned assets)
+
+[Hvis from scratch:]
+💡 Quick Start: Følg SEO-guiden i DISTRIBUTION.md
+   1. Keyword research
+   2. 5-10 cornerstone artikler
+   3. Technical SEO basics
+   4. Google Business Profile
+   5. Answer "People Also Ask"
+
+───────────────────────────────────────────
+```
+
+## Steg 7: Brand Health Evaluering
 
 Evaluer merkevaren mot de 7 brand-prinsippene. Se `skills/brand-principles.md` for detaljer.
 
@@ -302,7 +365,7 @@ Prioriterte forbedringer:
 3. Etabler feedback-loops
 ```
 
-## Steg 7: Brand Audience Fit (BAF)
+## Steg 8: Brand Audience Fit (BAF)
 
 Evaluer om merkevaren resonerer med målgruppen i praksis.
 
@@ -369,7 +432,7 @@ Bevis:
 ───────────────────────────────────────────
 ```
 
-## Steg 8: Sammendrag
+## Steg 9: Sammendrag
 
 ```
 ═══════════════════════════════════════════
@@ -379,6 +442,8 @@ Bevis:
 Prosjekt: [navn]
 BRAND.md: [dato sist oppdatert]
 JOURNEY.md: [dato sist oppdatert]
+DISTRIBUTION.md: [dato sist oppdatert]
+LEARNINGS.md: [dato sist oppdatert]
 Skannet: [antall] filer
 
 ═══════════════════════════════════════════
@@ -387,6 +452,7 @@ TOTAL SCORE
 
 ABC Score:          [X/10]  (Innhold vs BRAND.md)
 Journey Score:      [X/10]  (Funnel-dekning)
+Distribution Score: [X/10]  (Stack & kanaler)
 Brand Health:       [X/70]  (7 prinsipper)
 Brand Audience Fit: [✅/⚠️/❌] (Validering)
 
@@ -459,6 +525,12 @@ Innhold:
 Journey:
 - [ ] Fyll journey gaps (post-purchase, loyalty)
 - [ ] Oppdater JOURNEY.md med nye learnings
+
+Distribution:
+- [ ] Sett opp manglende stack-verktøy
+- [ ] Dokumenter kanalstrategi
+- [ ] Bygg owned assets (email-liste, community)
+- [ ] [Hvis ny:] Start med Quick Start SEO
 
 Brand Health:
 - [ ] [Laveste prinsipp]: [Konkret tiltak]

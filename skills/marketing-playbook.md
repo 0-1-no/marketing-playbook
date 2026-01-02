@@ -21,6 +21,11 @@ Les filene fra `marketing/`-mappen:
 - **Psykologi**: Hvilke prinsipper er relevante for denne stagen?
 - **Touchpoints**: Hvilke kanaler/formater brukes i denne stagen?
 
+**marketing/DISTRIBUTION.md** for:
+- **Stack**: Hvilke verktøy brukes (email, CMS, analytics)?
+- **Kanaler**: Hvor er merkevaren til stede?
+- **Budget**: Hvordan fordeles ressursene (60:40)?
+
 **marketing/LEARNINGS.md** for:
 - **BAF-status**: Er merkevaren validert?
 - **Hva fungerer**: Dokumenterte innsikter
@@ -198,6 +203,15 @@ Foreslå oppdatering av JOURNEY.md når:
 ## Relaterte Kommandoer
 
 - `/marketing-playbook` - Vis status og versjon
-- `/marketing-playbook:init` - Opprett BRAND.md og JOURNEY.md (interaktiv)
-- `/marketing-playbook:check` - Sjekk innhold mot BRAND.md og JOURNEY.md
+- `/marketing-playbook:init` - Opprett alle 4 filer (BRAND, JOURNEY, DISTRIBUTION, LEARNINGS)
+- `/marketing-playbook:check` - Sjekk innhold mot marketing/-filene
 - `/marketing-playbook:audit` - Full prosjekt-audit
+
+## Relaterte Skills
+
+- `distribution-principles` - Tidløse distribusjonsprinsipper (SOV→SOM, 60:40, Reach>Frequency)
+- `customer-principles` - Lojalitet, retention, community building
+- `storytelling-copywriting` - Rammeverk for copy og innhold (AIDA, PAS, headlines)
+- `marketing-psychology` - 35+ psykologiske prinsipper per funnel-stage
+- `marketing-mindset` - 20 strategiske prinsipper
+- `brand-principles` - 7 prinsipper for merkevarebygging
