@@ -84,12 +84,25 @@ Når du kjører `/marketing-playbook:init`, opprettes en `BRAND.md`-fil med denn
 # Returnerer omfattende merkevare-rapport
 ```
 
-## Auto-trigger Skill
+## Skills
 
-Pluginen inkluderer en skill som automatisk aktiveres når du jobber med markedsinnhold. Den minner deg på å:
-- Lese BRAND.md før du skriver
-- Følge ABC-sjekklisten
-- Bruke riktige ord og tone
+Pluginen inkluderer to skills som automatisk aktiveres når du jobber med markedsinnhold:
+
+### marketing-playbook
+- Leser BRAND.md før du skriver
+- Følger ABC-sjekklisten
+- Bruker riktige ord og tone
+
+### marketing-psychology
+Psykologiske prinsipper for effektiv markedsføring, organisert etter funnel-steg:
+
+| Fase | Prinsipper |
+|------|------------|
+| **TOFU** (Awareness) | Mere Exposure, Information Gap, Propinquity, Verbatim Effect |
+| **MOFU/BOFU** (Conversion) | Scarcity, Social Proof, Authority, Loss Aversion, Decoy Effect, m.fl. |
+| **CX** (Retention) | Peak-End Rule, Reciprocity, Endowment Effect, Ben Franklin Effect |
+
+Bruk denne som referanse når du lager landingssider, e-poster eller annonser.
 
 ## Premium-versjon
 
