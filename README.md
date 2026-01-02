@@ -10,6 +10,7 @@ ditt-prosjekt/
 └── marketing/           ← Alt marketing-innhold samlet
     ├── BRAND.md         - Hvem dere er (ABC-rammeverket)
     ├── JOURNEY.md       - Hvordan kunder opplever dere (funnel)
+    ├── DISTRIBUTION.md  - Hvor dere viser dere (kanaler & stack)
     └── LEARNINGS.md     - Bevis på at det fungerer (BAF)
 ```
 
@@ -66,12 +67,13 @@ Marketing Playbook er bygget rundt tre kjernepilarer:
 
 ## Filer som opprettes
 
-Når du kjører `/marketing-playbook:init`, opprettes `marketing/`-mappen med tre filer:
+Når du kjører `/marketing-playbook:init`, opprettes `marketing/`-mappen med fire filer:
 
 | Fil | Innhold |
 |-----|---------|
-| `marketing/BRAND.md` | ABC-rammeverket (Audience, Brand, Communication) + Validering |
+| `marketing/BRAND.md` | ABC-rammeverket (Audience, Brand, Communication) |
 | `marketing/JOURNEY.md` | Kundereise-kart (ToFU → Loyalty) |
+| `marketing/DISTRIBUTION.md` | Marketing stack, kanaler, og Quick Start SEO |
 | `marketing/LEARNINGS.md` | Brand Audience Fit validering og dokumenterte innsikter |
 
 ## marketing/BRAND.md-struktur
@@ -100,6 +102,35 @@ BRAND.md definerer hvem dere er:
 **Tone of Voice:** [Adjektiver som beskriver stemmen]
 **Words We Use:** [Foretrukket terminologi]
 **Words We Avoid:** [Ord å unngå]
+```
+
+## marketing/DISTRIBUTION.md-struktur
+
+DISTRIBUTION.md kartlegger hvor dere er til stede:
+
+```markdown
+# [Prosjektnavn] Distribution
+
+## Marketing Stack
+- **Email:** [Provider, liste-størrelse]
+- **CMS:** [Platform, hosting]
+- **Analytics:** [Verktøy]
+- **Social:** [Aktive kanaler]
+- **Ads:** [Plattformer, budsjett]
+- **CRM:** [System]
+
+## Current Channels
+**Primary:** [Kanaler med mest ressurser]
+**Secondary:** [Vedlikeholdes]
+**Experimental:** [Testes]
+
+## Quick Start: Organic SEO
+*For nye prosjekter uten etablert stack*
+1. Keyword research
+2. Cornerstone content (5-10 artikler)
+3. Technical basics
+4. Google Business Profile
+5. Answer "People Also Ask"
 ```
 
 ## Brukseksempler

@@ -1,15 +1,15 @@
 ---
-description: Initialize Marketing Playbook for this project. Creates BRAND.md, JOURNEY.md, and LEARNINGS.md through interactive deep-dive setup.
+description: Initialize Marketing Playbook for this project. Creates BRAND.md, JOURNEY.md, DISTRIBUTION.md, and LEARNINGS.md through interactive deep-dive setup.
 allowed-tools: Read, Write, Glob, AskUserQuestion
 ---
 
 # Marketing Playbook - Init
 
-Opprett `BRAND.md`, `JOURNEY.md` og `LEARNINGS.md` for dette prosjektet gjennom interaktivt intervju (39 spørsmål).
+Opprett `BRAND.md`, `JOURNEY.md`, `DISTRIBUTION.md` og `LEARNINGS.md` for dette prosjektet gjennom interaktivt intervju (47 spørsmål).
 
 ## Steg 1: Sjekk eksisterende
 
-Sjekk om `marketing/`-mappen finnes med `BRAND.md`, `JOURNEY.md` eller `LEARNINGS.md`.
+Sjekk om `marketing/`-mappen finnes med `BRAND.md`, `JOURNEY.md`, `DISTRIBUTION.md` eller `LEARNINGS.md`.
 
 Akseptable plasseringer (i prioritert rekkefølge):
 1. `marketing/` (anbefalt)
@@ -20,14 +20,16 @@ Hvis filer finnes, spør:
 Eksisterende filer funnet:
 - marketing/BRAND.md: [Ja/Nei]
 - marketing/JOURNEY.md: [Ja/Nei]
+- marketing/DISTRIBUTION.md: [Ja/Nei]
 - marketing/LEARNINGS.md: [Ja/Nei]
 
 Vil du:
 1. Overskrive alt (starter på nytt)
 2. Kun oppdatere BRAND.md
 3. Kun oppdatere JOURNEY.md
-4. Kun oppdatere LEARNINGS.md
-5. Avbryt
+4. Kun oppdatere DISTRIBUTION.md
+5. Kun oppdatere LEARNINGS.md
+6. Avbryt
 ```
 
 Hvis filer finnes i rot (legacy), tilby migrering:
@@ -48,7 +50,7 @@ Vil du migrere til marketing/-mappen? (anbefalt)
 
 Velkommen! Jeg skal hjelpe deg med å sette opp Marketing Playbook.
 
-Vi går gjennom tre deler:
+Vi går gjennom fire deler:
 
 📋 DEL 1: BRAND.md (ABC-rammeverket)
    • Audience - Hvem snakker vi til?
@@ -60,12 +62,17 @@ Vi går gjennom tre deler:
    • Hva vurderer de før kjøp?
    • Hvordan ser opplevelsen ut etterpå?
 
-🧪 DEL 3: LEARNINGS.md (Validering)
+📡 DEL 3: DISTRIBUTION.md (Kanaler & Stack)
+   • Hvilke verktøy bruker dere?
+   • Hvor er dere til stede?
+   • Hva fungerer best?
+
+🧪 DEL 4: LEARNINGS.md (Validering)
    • Brand Audience Fit - Resonerer det?
    • Tester og resultater
    • Hva fungerer og hva fungerer ikke?
 
-Dette tar ca. 10-15 minutter. Du kan svare "vet ikke" eller
+Dette tar ca. 15-20 minutter. Du kan svare "vet ikke" eller
 "ikke relevant ennå" på spørsmål du er usikker på.
 
 ═══════════════════════════════════════════════════════════════
@@ -227,7 +234,58 @@ Svar så godt du kan. "Vet ikke ennå" er helt OK for nye merkevarer.
 
 ---
 
-## DEL 3: LEARNINGS.md
+## DEL 3: DISTRIBUTION.md
+
+```
+───────────────────────────────────────────────────────────────
+                      📡 KANALER & STACK
+───────────────────────────────────────────────────────────────
+
+Nå kartlegger vi hvilke verktøy dere bruker og hvor dere er
+til stede.
+
+Nyoppstartede merkevarer: "Ikke satt opp ennå" er helt OK.
+Vi inkluderer Quick Start-tips for organic SEO.
+───────────────────────────────────────────────────────────────
+```
+
+### Marketing Stack
+
+**Spørsmål 40:** Hvilken e-postleverandør bruker dere?
+- Eksempler: "Mailchimp", "Klaviyo", "Loops", "ConvertKit", "Ingen ennå"
+- Hvis aktiv: hvor stor er listen?
+
+**Spørsmål 41:** Hvilken CMS/website platform bruker dere?
+- Eksempler: "WordPress", "Webflow", "Next.js", "Framer", "Shopify"
+
+**Spørsmål 42:** Hvilke analytics-verktøy har dere?
+- Eksempler: "GA4", "Plausible", "Fathom", "Ingen"
+- Har dere Google Search Console satt opp?
+
+**Spørsmål 43:** Hvilke sosiale medier er aktive?
+- Eksempler: "LinkedIn", "Instagram", "TikTok", "X", "Facebook"
+- Ca. hvor mange følgere per kanal?
+
+**Spørsmål 44:** Bruker dere betalt annonsering?
+- Eksempler: "Google Ads", "Meta Ads", "LinkedIn Ads", "Ingen"
+- Hvis ja: ca. månedlig budsjett?
+
+**Spørsmål 45:** Har dere CRM eller salgssystem?
+- Eksempler: "HubSpot", "Pipedrive", "Salesforce", "Notion", "Regneark", "Ingen"
+
+### Kanalstrategi
+
+**Spørsmål 46:** Hvilke kanaler gir best resultater i dag?
+- Eksempel: "Organic search", "LinkedIn", "Referrals"
+- Hvis ny: "Ikke nok data ennå"
+
+**Spørsmål 47:** Hvor vil dere satse mer fremover?
+- Prioriter gjerne
+- Hva er hypotesen for hvorfor denne kanalen?
+
+---
+
+## DEL 4: LEARNINGS.md
 
 ```
 ───────────────────────────────────────────────────────────────
@@ -244,34 +302,34 @@ Vi setter opp strukturen så du kan dokumentere underveis.
 
 ### Brand Audience Fit
 
-**Spørsmål 33:** Har dere testet om målgruppen responderer på merkevaren?
+**Spørsmål 48:** Har dere testet om målgruppen responderer på merkevaren?
 - Alternativer: "Ja, validert", "Under testing", "Ikke testet ennå"
 - Dette er Brand Audience Fit (BAF) - bevis på at det fungerer
 
-**Spørsmål 34:** Hvis testet - hvilke metoder har dere brukt?
+**Spørsmål 49:** Hvis testet - hvilke metoder har dere brukt?
 - Eksempler: "Venteliste", "Forhåndssalg", "Annonse-test", "Landing page"
 - Svar "ikke relevant" hvis ikke testet
 
-**Spørsmål 35:** Hva er konverteringsraten deres? (hvis kjent)
+**Spørsmål 50:** Hva er konverteringsraten deres? (hvis kjent)
 - Eksempel: "2.5% på landing page"
 - Benchmark: ≥2% indikerer sunn e-commerce
 - Svar "vet ikke" hvis ukjent
 
-**Spørsmål 36:** Hvilke segmenter responderer best?
+**Spørsmål 51:** Hvilke segmenter responderer best?
 - Eksempel: "Konsulenter 35-50 år"
 - Hvem konverterer faktisk, ikke bare hvem dere tror er målgruppen
 
 ### Learnings
 
-**Spørsmål 37:** Hva har dere lært som fungerer?
+**Spørsmål 52:** Hva har dere lært som fungerer?
 - Eksempel: "Video konverterer bedre enn tekst"
 - List gjerne flere innsikter
 
-**Spørsmål 38:** Hva har dere lært som IKKE fungerer?
+**Spørsmål 53:** Hva har dere lært som IKKE fungerer?
 - Eksempel: "Lange produktbeskrivelser gir høy bounce rate"
 - Like viktig som det som fungerer
 
-**Spørsmål 39:** Hvilke spørsmål vil dere teste fremover?
+**Spørsmål 54:** Hvilke spørsmål vil dere teste fremover?
 - Eksempel: "Fungerer budskapet for enterprise-kunder?"
 - Åpne hypoteser å validere
 
@@ -285,6 +343,7 @@ Opprett `marketing/`-mappen hvis den ikke finnes, og generer filene der:
 marketing/
 ├── BRAND.md
 ├── JOURNEY.md
+├── DISTRIBUTION.md
 └── LEARNINGS.md
 ```
 
@@ -293,7 +352,7 @@ Se examples/BRAND.md for struktur. Inkluder:
 - Audience med pain points, goals, use cases
 - Brand med positioning, values, differentiators, competitors
 - Communication med tone, Signature Story, Communication Principles, words we use/avoid
-- Validation med BAF status (fra DEL 3)
+- Validation med BAF status (fra DEL 4)
 
 ### marketing/JOURNEY.md
 Se examples/JOURNEY.md for struktur. Inkluder:
@@ -301,6 +360,20 @@ Se examples/JOURNEY.md for struktur. Inkluder:
 - Per stage: Kundens perspektiv, bekymringer, touchpoints, våre mål
 - Kobling til relevante psykologi-prinsipper
 - Marker seksjoner som "Under utvikling" hvis bruker svarte "vet ikke"
+
+### marketing/DISTRIBUTION.md
+Se examples/DISTRIBUTION.md for struktur. Inkluder:
+- Marketing Stack (email, CMS, analytics, social, ads, CRM)
+- Current Channels med primary/secondary/experimental
+- Budget Split med 60:40 visualisering
+- Channel Performance med metrics
+- Owned vs Rented assets
+- Gaps & Opportunities
+
+**Hvis from scratch (ingen stack/kanaler ennå):**
+- Inkluder Quick Start: Organic SEO seksjon
+- Marker stack-felter som "[Ikke satt opp ennå]"
+- Fokuser på de 5 første SEO-stegene
 
 ### marketing/LEARNINGS.md
 Se examples/LEARNINGS.md for struktur. Inkluder:
@@ -322,9 +395,10 @@ Se examples/LEARNINGS.md for struktur. Inkluder:
 Marketing Playbook er satt opp:
 
 📁 marketing/
-   📋 BRAND.md      - Merkevare-retningslinjer (ABC + Validering)
-   🗺️ JOURNEY.md    - Kundereise-kart
-   🧪 LEARNINGS.md  - Tester og innsikter
+   📋 BRAND.md        - Merkevare-retningslinjer (ABC)
+   🗺️ JOURNEY.md      - Kundereise-kart
+   📡 DISTRIBUTION.md - Kanaler og marketing stack
+   🧪 LEARNINGS.md    - Tester og innsikter
 
 ───────────────────────────────────────────────────────────────
 BRAND AUDIENCE FIT STATUS
@@ -336,6 +410,10 @@ BRAND AUDIENCE FIT STATUS
 💡 Anbefaling: Test BAF før du skalerer markedsføringen.
    Kjør små tester, dokumenter i LEARNINGS.md.
 
+[Hvis from scratch:]
+🚀 Quick Start: Se DISTRIBUTION.md for organic SEO-guide.
+   Start med keyword research og 5 cornerstone-artikler.
+
 ───────────────────────────────────────────────────────────────
 NESTE STEG
 ───────────────────────────────────────────────────────────────
@@ -344,6 +422,7 @@ NESTE STEG
 2. Bruk /marketing-playbook:check før du publiserer innhold
 3. Kjør /marketing-playbook:audit for full gjennomgang
 4. Dokumenter learnings i LEARNINGS.md underveis
+5. Oppdater DISTRIBUTION.md når stack/kanaler endres
 
 TIP: LEARNINGS.md er beviset på at merkevaren fungerer.
      Jo mer du dokumenterer, jo tryggere beslutninger.
