@@ -61,9 +61,9 @@ Marketing Playbook er bygget rundt tre kjernepilarer:
 | Kommando | Beskrivelse |
 |----------|-------------|
 | `/marketing-playbook` | Vis status og versjon |
-| `/marketing-playbook:init` | Opprett BRAND.md interaktivt |
-| `/marketing-playbook:check` | Verifiser innhold mot BRAND.md |
-| `/marketing-playbook:audit` | Full prosjekt-audit |
+| `/marketing-playbook:init` | Opprett alle 4 filer interaktivt (54 spørsmål) |
+| `/marketing-playbook:check` | Verifiser innhold mot marketing/-filene |
+| `/marketing-playbook:audit` | Full prosjekt-audit med Brand Health og BAF |
 
 ## Filer som opprettes
 
@@ -104,6 +104,31 @@ BRAND.md definerer hvem dere er:
 **Words We Avoid:** [Ord å unngå]
 ```
 
+## marketing/JOURNEY.md-struktur
+
+JOURNEY.md kartlegger kundereisen:
+
+```markdown
+# [Prosjektnavn] Journey
+
+## Oversikt
+| Stage | Mål | Bekymringer | Touchpoints |
+|-------|-----|-------------|-------------|
+| Awareness | Fange oppmerksomhet | "Trenger jeg dette?" | Ads, Social |
+| Consideration | Bygge tillit | "Er dette troverdig?" | Landing, Blog |
+| Evaluation | Hjelpe valget | "Er det verdt prisen?" | Pricing, Demo |
+| Purchase | Friksjonsfritt kjøp | "Gjør jeg rett?" | Checkout |
+| Post-purchase | Bekrefte valget | "Hva nå?" | Onboarding |
+| Loyalty | Skape ambassadører | "Vil jeg fortsette?" | Email, Community |
+
+## [Stage]
+**Kundens mål:** [Hva de prøver å oppnå]
+**Bekymringer:** [Hva de lurer på]
+**Psykologi:** [Relevante prinsipper]
+**Touchpoints:** [Kanaler og formater]
+**Våre mål:** [Hva vi vil oppnå]
+```
+
 ## marketing/DISTRIBUTION.md-struktur
 
 DISTRIBUTION.md kartlegger hvor dere er til stede:
@@ -140,20 +165,20 @@ DISTRIBUTION.md kartlegger hvor dere er til stede:
 /marketing-playbook:check
 
 # Lim inn landing page-tekst, e-post eller annonsetekst
-# Sjekker mot marketing/BRAND.md og marketing/JOURNEY.md
-# Gir ABC-score og konkrete forbedringer
+# Sjekker mot alle 4 marketing/-filer
+# Gir ABC-score, Distribution-score og konkrete forbedringer
 ```
 
 ### Auditer hele prosjektet
 ```
 /marketing-playbook:audit
 
-# Leser marketing/BRAND.md, JOURNEY.md og LEARNINGS.md
+# Leser alle 4 marketing/-filer
 # Skanner landing pages, oversettelser, meta-tagger
-# Analyserer journey coverage (hvilke funnel-steg er dekket?)
+# Analyserer journey coverage og distribution stack
 # Evaluerer Brand Health (7 prinsipper)
 # Sjekker Brand Audience Fit validering
-# Returnerer omfattende merkevare-rapport med prioriterte tiltak
+# Returnerer omfattende rapport med prioriterte tiltak
 ```
 
 ## Skills
@@ -161,8 +186,8 @@ DISTRIBUTION.md kartlegger hvor dere er til stede:
 Pluginen inkluderer syv skills som automatisk aktiveres når du jobber med markedsinnhold:
 
 ### marketing-playbook
-- Leser marketing/BRAND.md, JOURNEY.md og LEARNINGS.md før du skriver
-- Følger ABC-sjekklisten
+- Leser alle 4 marketing/-filer før du skriver
+- Følger ABC-sjekklisten + Distribution-sjekk
 - Identifiserer riktig journey stage
 - Bruker riktige ord og tone
 - Sjekker BAF-status før skalering
