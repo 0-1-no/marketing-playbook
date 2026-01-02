@@ -35,6 +35,8 @@ Marketing Playbook er bygget rundt tre kjernepilarer:
 
 ### C - Communication (Kommunikasjon)
 - Hva er din **tone of voice**?
+- Hva er din **Signature Story**?
+- Hvilke **kommunikasjonsprinsipper** følger dere?
 - Hvilke **ord bruker du**?
 - Hvilke **ord unngår du**?
 
@@ -110,7 +112,7 @@ BRAND.md definerer hvem dere er:
 
 ## Skills
 
-Pluginen inkluderer fire skills som automatisk aktiveres når du jobber med markedsinnhold:
+Pluginen inkluderer fem skills som automatisk aktiveres når du jobber med markedsinnhold:
 
 ### marketing-playbook
 - Leser marketing/BRAND.md, JOURNEY.md og LEARNINGS.md før du skriver
@@ -118,6 +120,19 @@ Pluginen inkluderer fire skills som automatisk aktiveres når du jobber med mark
 - Identifiserer riktig journey stage
 - Bruker riktige ord og tone
 - Sjekker BAF-status før skalering
+
+### storytelling-copywriting
+Guide for storytelling og copywriting med progressiv loading. Hovedfilen gir oversikt, sub-filer lastes ved behov:
+
+| Fil | Innhold |
+|-----|---------|
+| `SKILL.md` | Beslutningstre og quick reference |
+| `STORYTELLING.md` | Signature Story, narrativ, StoryBrand |
+| `FRAMEWORKS.md` | AIDA, PAS, BAB, FAB med anti-patterns |
+| `HEADLINES.md` | Curiosity gap, numbers, "How to" |
+| `MICROCOPY.md` | Buttons, errors, CTAs, empty states |
+| `PERSUASION.md` | Conversational copy, rhythm, etikk |
+| `CONTENT.md` | Evergreen, library vs publication |
 
 ### marketing-mindset
 20 tidløse strategiske prinsipper for markedstenkning. Brukes som sparrepartner ved strategiske beslutninger:
@@ -179,10 +194,10 @@ Dokumenter tester, resultater og innsikter i `marketing/LEARNINGS.md`:
 ## Premium-versjon
 
 For avanserte marketing-funksjoner, besøk [marketing.no](https://marketing.no):
-- Utvidede copywriting-rammeverk (AIDA, PAS, etc.)
 - SEO-innholdsoptimalisering
 - Konkurrentanalyse-verktøy
 - Kampanjeplanleggings-agenter
+- Avanserte analytics og rapportering
 
 ## Lisens
 

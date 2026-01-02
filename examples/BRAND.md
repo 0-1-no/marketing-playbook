@@ -61,6 +61,25 @@
 - **Trygg** - Vi kan sakene våre
 - **Varm** - Vi er mennesker, ikke en stor bedrift
 
+### Signature Story
+
+> **Hvorfor vi startet:** Vi så småbedriftseiere bruke timer hver dag på å kopiere data mellom systemer. En kunde fortalte oss at hun brukte søndagene på å oppdatere regneark fordi ukene var for korte. Det var da vi bestemte oss for å bygge noe enklere.
+>
+> **Transformasjonen:** Fra "jeg rekker ikke alt" til "systemene mine snakker sammen av seg selv."
+>
+> **Hvem vi er for:** Småbedriftseiere som vil fokusere på å vokse bedriften, ikke på å administrere den.
+
+### Communication Principles
+
+Disse prinsippene styrer all kommunikasjon:
+
+- [x] **Audience First** - Fokus på leser, ikke avsender
+- [x] **Less is More** - Kort og tydelig, respekter leserens tid
+- [x] **Use Stories** - Fortell, ikke forklar. Ekte eksempler.
+- [ ] ~~Have Opinions~~ - Vi tar tydelige standpunkt (lav prioritet for oss)
+
+*Andre prinsipper: Clear Goal, Adjust to Medium*
+
 ### Key Messages
 1. "Automatiser arbeidet, ikke budsjettet"
 2. "Koble alt. Kod ingenting."

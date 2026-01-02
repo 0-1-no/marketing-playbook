@@ -5,7 +5,7 @@ allowed-tools: Read, Write, Glob, AskUserQuestion
 
 # Marketing Playbook - Init
 
-Opprett `BRAND.md`, `JOURNEY.md` og `LEARNINGS.md` for dette prosjektet gjennom interaktivt intervju.
+Opprett `BRAND.md`, `JOURNEY.md` og `LEARNINGS.md` for dette prosjektet gjennom interaktivt intervju (39 spørsmål).
 
 ## Steg 1: Sjekk eksisterende
 
@@ -120,10 +120,28 @@ Dette tar ca. 10-15 minutter. Du kan svare "vet ikke" eller
 **Spørsmål 10:** Beskriv tone of voice med 3-4 adjektiver
 - Eksempel: "Profesjonell, pedagogisk, direkte, norsk"
 
-**Spørsmål 11:** Hvilke ord/fraser bruker dere ofte?
+**Spørsmål 11:** Hva er Signature Story? (Hvorfor startet dere?)
+- Eksempel: "Vi så småbedriftseiere bruke søndagene på regneark..."
+- Tips: Det konkrete problemet som fikk dere til å starte
+- Svar "ikke definert ennå" hvis ukjent
+
+**Spørsmål 12:** Hvilken transformasjon tilbyr dere kunden?
+- Eksempel: "Fra 'jeg rekker ikke alt' til 'systemene snakker sammen av seg selv'"
+- Tips: Før → Etter i kundens liv
+
+**Spørsmål 13:** Hvilke kommunikasjonsprinsipper er viktigst for dere?
+Velg 3-4 som beskriver hvordan dere kommuniserer:
+- **Audience First** - Fokus på leser, ikke avsender
+- **Less is More** - Kort og tydelig
+- **Use Stories** - Fortell, ikke forklar
+- **Have Opinions** - Tør å ta tydelige standpunkt
+- **Adjust to Medium** - Tilpass til kanal
+- **Clear Goal** - Alltid vite hva kommunikasjonen skal oppnå
+
+**Spørsmål 14:** Hvilke ord/fraser bruker dere ofte?
 - Eksempel: "Innsikt, tech stack, leads, crawlet"
 
-**Spørsmål 12:** Hvilke ord/fraser unngår dere?
+**Spørsmål 15:** Hvilke ord/fraser unngår dere?
 - Eksempel: "Beste, revolusjonerende, gratis, billig"
 - Og hvorfor?
 
@@ -145,66 +163,66 @@ Svar så godt du kan. "Vet ikke ennå" er helt OK for nye merkevarer.
 
 ### Awareness (Oppdagelse)
 
-**Spørsmål 13:** Hvordan oppdager folk dere typisk?
+**Spørsmål 16:** Hvordan oppdager folk dere typisk?
 - Eksempler: "Google-søk, sosiale medier, word-of-mouth, annonser"
 - Hvilke kanaler er viktigst?
 
-**Spørsmål 14:** Hva er det første inntrykket du vil gi?
+**Spørsmål 17:** Hva er det første inntrykket du vil gi?
 - Hva skal de tenke/føle når de først ser dere?
 
-**Spørsmål 15:** Hva er den største barrieren for å få oppmerksomhet?
+**Spørsmål 18:** Hva er den største barrieren for å få oppmerksomhet?
 - Eksempel: "Mange konkurrenter", "Ukjent kategori", "Lav awareness"
 
 ### Consideration (Vurdering)
 
-**Spørsmål 16:** Hva vurderer kundene før de bestemmer seg?
+**Spørsmål 19:** Hva vurderer kundene før de bestemmer seg?
 - Eksempel: "Pris, funksjoner, reviews, tillit"
 
-**Spørsmål 17:** Hvilke spørsmål stiller de seg?
+**Spørsmål 20:** Hvilke spørsmål stiller de seg?
 - Eksempel: "Er dette verdt prisen?", "Passer det for meg?"
 
-**Spørsmål 18:** Hvilke bekymringer har de?
+**Spørsmål 21:** Hvilke bekymringer har de?
 - Eksempel: "For dyrt", "Komplisert å bruke", "Usikker på kvalitet"
 
-**Spørsmål 19:** Hvordan bygger dere tillit?
+**Spørsmål 22:** Hvordan bygger dere tillit?
 - Eksempel: "Reviews, case studies, gratis prøve, garantier"
 
 ### Purchase (Kjøp)
 
-**Spørsmål 20:** Hvordan kjøper kundene? (kjøpsprosessen)
+**Spørsmål 23:** Hvordan kjøper kundene? (kjøpsprosessen)
 - Eksempel: "Online checkout", "Kontakt salg", "Freemium → betalt"
 
-**Spørsmål 21:** Hva er de største friksjonspunktene i kjøpet?
+**Spørsmål 24:** Hva er de største friksjonspunktene i kjøpet?
 - Eksempel: "Komplisert checkout", "Manglende betalingsalternativer"
 
 ### Post-purchase (Etter kjøp)
 
-**Spørsmål 22:** Hva skjer rett etter kjøp?
+**Spørsmål 25:** Hva skjer rett etter kjøp?
 - Eksempel: "Velkomst-e-post, onboarding, levering"
 
-**Spørsmål 23:** Hva kan skape kjøpsanger?
+**Spørsmål 26:** Hva kan skape kjøpsanger?
 - Eksempel: "Lang leveringstid", "Vanskelig å komme i gang"
 
-**Spørsmål 24:** Hvordan sikrer dere en god opplevelse?
+**Spørsmål 27:** Hvordan sikrer dere en god opplevelse?
 - Eksempel: "Rask support, god dokumentasjon, overraskelser"
 
 ### Loyalty (Lojalitet)
 
-**Spørsmål 25:** Hva får kunder til å komme tilbake?
+**Spørsmål 28:** Hva får kunder til å komme tilbake?
 - Eksempel: "Nytt innhold, nye features, lojalitetsprogram"
 
-**Spørsmål 26:** Har dere eller planlegger dere lojalitetsprogram/referrals?
+**Spørsmål 29:** Har dere eller planlegger dere lojalitetsprogram/referrals?
 - Beskriv kort hvis ja
 
-**Spørsmål 27:** Hvordan holder dere kontakten med eksisterende kunder?
+**Spørsmål 30:** Hvordan holder dere kontakten med eksisterende kunder?
 - Eksempel: "Nyhetsbrev, sosiale medier, community"
 
 ### Touchpoints (Kontaktpunkter)
 
-**Spørsmål 28:** Hvilke markedsføringskanaler bruker dere aktivt?
+**Spørsmål 31:** Hvilke markedsføringskanaler bruker dere aktivt?
 - Eksempler: "Facebook Ads, Google Ads, Instagram, LinkedIn, E-post, SEO"
 
-**Spørsmål 29:** Hvilke kanaler vil dere satse mer på fremover?
+**Spørsmål 32:** Hvilke kanaler vil dere satse mer på fremover?
 - Prioriter gjerne
 
 ---
@@ -226,34 +244,34 @@ Vi setter opp strukturen så du kan dokumentere underveis.
 
 ### Brand Audience Fit
 
-**Spørsmål 30:** Har dere testet om målgruppen responderer på merkevaren?
+**Spørsmål 33:** Har dere testet om målgruppen responderer på merkevaren?
 - Alternativer: "Ja, validert", "Under testing", "Ikke testet ennå"
 - Dette er Brand Audience Fit (BAF) - bevis på at det fungerer
 
-**Spørsmål 31:** Hvis testet - hvilke metoder har dere brukt?
+**Spørsmål 34:** Hvis testet - hvilke metoder har dere brukt?
 - Eksempler: "Venteliste", "Forhåndssalg", "Annonse-test", "Landing page"
 - Svar "ikke relevant" hvis ikke testet
 
-**Spørsmål 32:** Hva er konverteringsraten deres? (hvis kjent)
+**Spørsmål 35:** Hva er konverteringsraten deres? (hvis kjent)
 - Eksempel: "2.5% på landing page"
 - Benchmark: ≥2% indikerer sunn e-commerce
 - Svar "vet ikke" hvis ukjent
 
-**Spørsmål 33:** Hvilke segmenter responderer best?
+**Spørsmål 36:** Hvilke segmenter responderer best?
 - Eksempel: "Konsulenter 35-50 år"
 - Hvem konverterer faktisk, ikke bare hvem dere tror er målgruppen
 
 ### Learnings
 
-**Spørsmål 34:** Hva har dere lært som fungerer?
+**Spørsmål 37:** Hva har dere lært som fungerer?
 - Eksempel: "Video konverterer bedre enn tekst"
 - List gjerne flere innsikter
 
-**Spørsmål 35:** Hva har dere lært som IKKE fungerer?
+**Spørsmål 38:** Hva har dere lært som IKKE fungerer?
 - Eksempel: "Lange produktbeskrivelser gir høy bounce rate"
 - Like viktig som det som fungerer
 
-**Spørsmål 36:** Hvilke spørsmål vil dere teste fremover?
+**Spørsmål 39:** Hvilke spørsmål vil dere teste fremover?
 - Eksempel: "Fungerer budskapet for enterprise-kunder?"
 - Åpne hypoteser å validere
 
@@ -274,7 +292,7 @@ marketing/
 Se examples/BRAND.md for struktur. Inkluder:
 - Audience med pain points, goals, use cases
 - Brand med positioning, values, differentiators, competitors
-- Communication med tone, words we use/avoid
+- Communication med tone, Signature Story, Communication Principles, words we use/avoid
 - Validation med BAF status (fra DEL 3)
 
 ### marketing/JOURNEY.md
