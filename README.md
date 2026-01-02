@@ -94,13 +94,13 @@ Pluginen inkluderer to skills som automatisk aktiveres når du jobber med marked
 - Bruker riktige ord og tone
 
 ### marketing-psychology
-Psykologiske prinsipper for effektiv markedsføring, organisert etter funnel-steg:
+35+ psykologiske prinsipper for effektiv markedsføring, organisert etter funnel-steg:
 
 | Fase | Prinsipper |
 |------|------------|
-| **TOFU** (Awareness) | Mere Exposure, Information Gap, Propinquity, Verbatim Effect |
-| **MOFU/BOFU** (Conversion) | Scarcity, Social Proof, Authority, Loss Aversion, Decoy Effect, m.fl. |
-| **CX** (Retention) | Peak-End Rule, Reciprocity, Endowment Effect, Ben Franklin Effect |
+| **TOFU** (Awareness) | Mere Exposure, Information Gap, Von Restorff, Picture Superiority, Confirmation Bias, m.fl. |
+| **MOFU/BOFU** (Conversion) | Anchoring, Halo Effect, Scarcity, Social Proof, Loss Aversion, Decoy Effect, m.fl. |
+| **CX** (Retention) | Peak-End Rule, Sunk Cost, IKEA Effect, Nostalgia, Self-Reference, m.fl. |
 
 Bruk denne som referanse når du lager landingssider, e-poster eller annonser.
 

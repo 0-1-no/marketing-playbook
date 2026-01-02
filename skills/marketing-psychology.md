@@ -63,9 +63,129 @@ Prinsipper for å fange oppmerksomhet og bli husket.
 
 ---
 
+### Von Restorff Effect (Isolasjonseffekten)
+
+**Kort forklart:** Det som skiller seg ut fra omgivelsene huskes bedre.
+
+**Marketing takeaway:**
+- Bruk kontrast for å fremheve viktig innhold
+- Én CTA-knapp i annen farge enn resten
+- Overraskende elementer fanger oppmerksomhet
+- "Mest populær"-merkelapp på prisplaner
+- Bryt mønsteret for å bli husket
+
+---
+
+### Picture Superiority Effect (Bildeoverlegenhet)
+
+**Kort forklart:** Bilder huskes 6x bedre enn tekst alene.
+
+**Marketing takeaway:**
+- Bruk bilder for å formidle hovedbudskap
+- Infografikk > lange tekstblokker
+- Produktbilder i bruk > produktbilder alene
+- Visualiser data og statistikk
+- Ansikter skaper tilkobling
+
+---
+
+### Confirmation Bias (Bekreftelsesbias)
+
+**Kort forklart:** Vi søker og husker informasjon som bekrefter det vi allerede tror.
+
+**Marketing takeaway:**
+- Snakk til eksisterende overbevisninger
+- "Du vet allerede at..."
+- Segmenter etter holdninger, ikke bare demografi
+- Ikke prøv å overbevise skeptikere - finn de som allerede er enige
+- Bruk testimonials fra folk som ligner målgruppen
+
+---
+
+### Baader-Meinhof Phenomenon (Frekvensillusion)
+
+**Kort forklart:** Når du først legger merke til noe, ser du det plutselig overalt.
+
+**Marketing takeaway:**
+- Retargeting fungerer pga. dette
+- Første eksponering er viktigst
+- Multi-channel tilstedeværelse forsterker effekten
+- "Har du lagt merke til hvor mange som bruker X?"
+- Skap awareness først, så ser de deg overalt
+
+---
+
 ## MOFU/BOFU - Conversion & Decision
 
 Prinsipper for å påvirke kjøpsbeslutninger.
+
+### Anchoring Effect (Ankereffekten)
+
+**Kort forklart:** Det første tallet vi ser setter referansepunktet for alle vurderinger etterpå.
+
+**Marketing takeaway:**
+- Vis "vanlig pris" før tilbudspris
+- Start forhandlinger høyt
+- Vis dyreste alternativ først
+- "Verdi 5000 kr - din pris 1999 kr"
+- Første pris kunden ser = ankeret
+
+**Eksempel:**
+- ~~2999 kr~~ **1499 kr** virker bedre enn bare "1499 kr"
+- "Kunder bruker i snitt 500 kr" øker gjennomsnittlig ordre
+
+---
+
+### Halo Effect (Glorieeffekten)
+
+**Kort forklart:** Én positiv egenskap farger oppfatningen av alt annet.
+
+**Marketing takeaway:**
+- Premium design = oppfattet høyere kvalitet
+- Attraktive modeller = mer attraktive produkter
+- Kjent merkevare på én ting = tillit på andre ting
+- God kundeservice = bedre opplevd produktkvalitet
+- Apple-effekten: Design → Innovation → Alt
+
+**OBS:** Fungerer også negativt - én dårlig opplevelse ødelegger alt.
+
+---
+
+### Primacy & Recency Effect (Første og siste)
+
+**Kort forklart:** Vi husker det første og det siste best. Midten glemmes.
+
+**Marketing takeaway:**
+- Plasser viktigste fordel FØRST
+- Plasser CTA eller hovedbudskap SIST
+- I presentasjoner: Start og avslutt sterkt
+- I e-post: Viktigst i subject line og PS
+- I lister: Beste argument først, nest beste sist
+
+**Struktur:**
+1. Sterkeste argument (Primacy)
+2. Støtteargumenter (glemmes lettere)
+3. Call-to-action (Recency)
+
+---
+
+### Rhyme-as-Reason Effect (Rimeffekten)
+
+**Kort forklart:** Utsagn som rimer oppfattes som mer sanne og troverdige.
+
+**Marketing takeaway:**
+- "Redd deg selv, redd verden"
+- "Billig og bra får du ikke da"
+- "An apple a day keeps the doctor away"
+- Slagord med rim huskes bedre
+- Bruk rim i overskrifter og hooks
+
+**Eksempler:**
+- "Betal lite, få mye"
+- "Spar tid, tjen penger"
+- "Små steg, store mål"
+
+---
 
 ### Choice Overload (Beslutningslammelse)
 
@@ -247,6 +367,37 @@ Også kalt: Foot-in-the-Door-metoden.
 
 ---
 
+### Fundamental Attribution Error (Kontekstblindhet)
+
+**Kort forklart:** Vi overvurderer personlighet og undervurderer situasjonen personen er i.
+
+Vi antar at en person som virker snill og gavmild, sannsynligvis vil gi penger til en hjemløs. Men vi vet ingenting om deres økonomiske situasjon eller om de har det travelt.
+
+**Marketing takeaway:**
+
+1. **Unngå folk som har det travelt**
+   - Et klikk betyr ikke at du har oppmerksomheten deres
+   - Jo mer travelt de har, jo kaldere er de
+   - Vurder å skille remarketing (bounce vs aktiv bruker)
+
+2. **Target kontekst, ikke bare personas**
+   - Stol ikke blindt på velforskede personas
+   - Folk kjøper ikke regnjakker på solskinnsdager
+   - Kontekst påvirker kjøpsbeslutninger like mye som personlighet
+
+3. **Skap innhold for lengre konsum**
+   - Gi folk tid til å lære om tilbudet ditt
+   - Unngå for korte kundereiser med mange barrierer
+   - Hvis noen klikker på et influencer-bilde og lander rett på en produktside, bouncer de lett:
+     - "Jeg likte egentlig toppen, ikke buksen"
+     - "Jeg likte bare modellen"
+     - "For dyrt"
+     - "Vil se hvordan det ser ut med andre stiler"
+
+**OBS:** Ikke kast penger på folk som åpenbart er i feil kontekst.
+
+---
+
 ## Customer Experience - Retention & Loyalty
 
 Prinsipper for å skape gode kundeopplevelser og lojalitet.
@@ -335,6 +486,92 @@ Prinsipper for å skape gode kundeopplevelser og lojalitet.
 - Ufullstendige handlevogner
 - Seriell innhold (del 1 av 3)
 - Cliffhangers i e-postserier
+
+---
+
+### Sunk Cost Fallacy (Allerede investert)
+
+**Kort forklart:** Vi fortsetter med noe fordi vi allerede har investert tid, penger eller innsats - selv når det ikke lønner seg.
+
+**Marketing takeaway:**
+- "Du har allerede kommet så langt..."
+- Vis fremgang og investert tid
+- "3 av 5 steg fullført"
+- Oppgraderinger: "Behold alt du har bygget"
+- Lojalitetsprogram med opptjente poeng
+
+**Eksempel:**
+- "Du har brukt 2 timer på å sette opp kontoen - fullfør de siste 5 minuttene"
+- Freemium → Premium: "Ta med alle dine data"
+
+---
+
+### IKEA Effect (Skapereffekten)
+
+**Kort forklart:** Vi verdsetter ting vi selv har vært med på å lage, mye høyere.
+
+**Marketing takeaway:**
+- La kunder tilpasse produktet
+- Konfiguratorer og "bygg din egen"
+- Involver kunden i prosessen
+- DIY-elementer øker opplevd verdi
+- Co-creation med kunder
+
+**Eksempel:**
+- Nike By You (custom sko)
+- Subway "bygg din egen sandwich"
+- Nettsidebyggere med drag-and-drop
+
+---
+
+### Nostalgia Effect (Nostalgisk effekt)
+
+**Kort forklart:** Positive følelser om fortiden skaper varme følelser for merkevaren.
+
+**Marketing takeaway:**
+- Referanser til "de gode gamle dager"
+- Retro-design og vintage-estetikk
+- "Husker du da...?"
+- Throwback-kampanjer
+- Gjenoppliv klassikere
+
+**Eksempel:**
+- Coca-Cola sin klassiske design
+- Spotify Wrapped (dine minner)
+- "Slik så X ut for 10 år siden"
+
+---
+
+### Humor Effect (Humoreffekten)
+
+**Kort forklart:** Morsomme ting huskes bedre og skaper positive assosiasjoner.
+
+**Marketing takeaway:**
+- Humor senker forsvaret
+- Morsomme annonser deles mer
+- Selvironisk humor skaper sympati
+- Humor må matche merkevaren
+- Ikke tving det - dårlig humor er verre enn ingen
+
+**OBS:** Humor er kulturelt betinget og risikabelt. Test først.
+
+---
+
+### Self-Reference Effect (Selvrelevans)
+
+**Kort forklart:** Vi husker informasjon bedre når den relaterer til oss selv.
+
+**Marketing takeaway:**
+- "For deg som..."
+- Personalisering med navn
+- Segmentert innhold basert på interesser
+- "Basert på din historikk"
+- Quiz: "Hvilken type X er du?"
+
+**Eksempel:**
+- "Kenneth, vi fant disse for deg"
+- "Kunder som deg kjøpte også..."
+- Spotify: "Made for Kenneth"
 
 ---
 
