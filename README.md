@@ -1,8 +1,8 @@
 # Marketing Playbook
 
-> ABC-rammeverk for konsistent merkevare-kommunikasjon i Claude Code.
+> Komplett marketing-rammeverk for Claude Code - fra merkevare til distribusjon til kundelojalitet.
 
-Marketing Playbook hjelper deg med å opprettholde konsistent merkevarestemme i alt markedsinnhold ved å opprette og håndheve marketing-filer i prosjektene dine.
+Marketing Playbook hjelper deg med å bygge og opprettholde en konsistent merkevare gjennom hele kundereisen - fra første kontakt til lojal ambassadør.
 
 **Mappestruktur:**
 ```
@@ -18,6 +18,21 @@ ditt-prosjekt/
 ```bash
 claude plugin install 0-1-no/marketing-playbook
 ```
+
+## De 6 Kategoriene
+
+Marketing Playbook dekker seks fundamentale kategorier:
+
+| # | Kategori | Spørsmål | Dekker |
+|---|----------|----------|--------|
+| 1 | **Audience** | Hvem snakker vi til? | Målgruppe, psykologi, kundereise |
+| 2 | **Brand** | Hva tilbyr vi? | Posisjonering, verdier, differensiering |
+| 3 | **Communication** | Hva forteller vi? | Storytelling, copywriting, innhold |
+| 4 | **Distribution** | Hvordan når vi ut? | Kanaler, reach, budsjett |
+| 5 | **Customer** | Hvordan bygger vi superfans? | Lojalitet, referrals, community |
+| 6 | **Management** | Hvordan blir vi bedre? | Prinsipper, analyse, kampanjer |
+
+---
 
 ## ABC-rammeverket
 
@@ -112,7 +127,7 @@ BRAND.md definerer hvem dere er:
 
 ## Skills
 
-Pluginen inkluderer fem skills som automatisk aktiveres når du jobber med markedsinnhold:
+Pluginen inkluderer syv skills som automatisk aktiveres når du jobber med markedsinnhold:
 
 ### marketing-playbook
 - Leser marketing/BRAND.md, JOURNEY.md og LEARNINGS.md før du skriver
@@ -168,7 +183,21 @@ Guide for storytelling og copywriting med progressiv loading. Hovedfilen gir ove
 | **Inspirational** | Vær inspirerende - folk rallyer rundt dere |
 | **Defensibility** | Vær forsvarbar - vanskelig å kopiere |
 
-Bruk disse som referanse når du bygger og evaluerer merkevarer.
+### distribution-principles
+14 tidløse prinsipper for å få budskapet ut:
+
+| Kategori | Prinsipper |
+|----------|------------|
+| **Brand Building** | Cultural Imprinting, SOV→SOM, 60:40 Split, How Advertising Works |
+| **Reach & Frequency** | Reach>Frequency, Rule of 7, 95/5 Rule (B2B) |
+| **Channel Strategy** | Distribution follows attention, Owned>Rented, Compounding Touchpoints, Content-Channel Fit |
+| **Consistency** | Consistency Compounds, Earn Attention, Dark Social |
+
+### customer-principles *(kommer snart)*
+Prinsipper for å bygge superfans og lojalitet:
+- The Loyalty Loop
+- Referral dynamics
+- Community building
 
 ## Brand Audience Fit (BAF)
 
@@ -190,14 +219,6 @@ Dokumenter tester, resultater og innsikter i `marketing/LEARNINGS.md`:
 - Hypoteser å teste videre
 
 **Tips:** Ikke skaler markedsføringen før BAF er validert. Test først, dokumenter, iterer.
-
-## Premium-versjon
-
-For avanserte marketing-funksjoner, besøk [marketing.no](https://marketing.no):
-- SEO-innholdsoptimalisering
-- Konkurrentanalyse-verktøy
-- Kampanjeplanleggings-agenter
-- Avanserte analytics og rapportering
 
 ## Lisens
 
