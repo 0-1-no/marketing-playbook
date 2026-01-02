@@ -111,6 +111,18 @@ Pluginen inkluderer tre skills som automatisk aktiveres når du jobber med marke
 - Identifiserer riktig journey stage
 - Bruker riktige ord og tone
 
+### marketing-mindset
+20 tidløse strategiske prinsipper for markedstenkning. Brukes som sparrepartner ved strategiske beslutninger:
+
+| Kategori | Prinsipper |
+|----------|------------|
+| **Konkurransefordel** | Hvis det er lett å måle er det for sent, Alle taktikker har livssyklus, Vinn ved å ikke konkurrere, First mover overvurdert |
+| **Verdi & Posisjonering** | Folk kjøper problemløsning, Pris er signal, Strategi er fravalg |
+| **Merkevarebygging** | 60/40 regelen, Brand compounds, SOV→SOM, Mental+Physical availability, Distinctiveness>Differentiation |
+| **Distribusjon** | Rule of Seven, Reach>Frequency, 95/5 (B2B) |
+| **Kreativitet** | Emotion beats rational, Gjentatt eksponering, Kompleks≠Komplisert |
+| **Måling** | Correlation≠causation, Det du måler er det du får |
+
 ### marketing-psychology
 35+ psykologiske prinsipper for effektiv markedsføring, organisert etter funnel-steg:
 
