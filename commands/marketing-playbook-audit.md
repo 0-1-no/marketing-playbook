@@ -1,15 +1,24 @@
 ---
-description: Full audit of project against BRAND.md. Scans landing pages, copy, meta tags, and marketing content.
+description: Full audit of project against BRAND.md and JOURNEY.md. Scans landing pages, copy, meta tags, and marketing content.
 allowed-tools: Read, Glob, Grep
 ---
 
 # Marketing Playbook - Full Audit
 
-Utfør en komplett gjennomgang av prosjektets marketing-innhold mot `BRAND.md`.
+Utfør en komplett gjennomgang av prosjektets marketing-innhold mot `BRAND.md` og `JOURNEY.md`.
 
-## Steg 1: Les BRAND.md
+## Steg 1: Les BRAND.md og JOURNEY.md
 
-Finn og les `BRAND.md`. Hvis den ikke finnes, anbefal å kjøre `/marketing-playbook` først.
+Finn og les begge filer. Hvis de ikke finnes, anbefal å kjøre `/marketing-playbook:init` først.
+
+```
+Laster Marketing Playbook...
+
+✅ BRAND.md funnet
+✅ JOURNEY.md funnet
+
+Starter full audit...
+```
 
 ## Steg 2: Skann prosjektet
 
@@ -128,7 +137,64 @@ Søker etter forbudte ord...
   ...
 ```
 
-## Steg 5: Sammendrag
+## Steg 5: Journey Coverage Analyse
+
+Kartlegg innhold per journey stage:
+
+### Innholdskartlegging
+
+Kategoriser alle marketing-filer etter journey stage:
+
+| Stage | Filer funnet | Dekning |
+|-------|--------------|---------|
+| Awareness | [antall] | ✅/⚠️/❌ |
+| Consideration | [antall] | ✅/⚠️/❌ |
+| Evaluation | [antall] | ✅/⚠️/❌ |
+| Purchase | [antall] | ✅/⚠️/❌ |
+| Post-purchase | [antall] | ✅/⚠️/❌ |
+| Loyalty | [antall] | ✅/⚠️/❌ |
+
+### Typisk kategorisering
+
+| Filtype/Innhold | Stage |
+|-----------------|-------|
+| Annonse-copy, hero-tekst | Awareness |
+| Produktsider, features | Consideration |
+| Prising, sammenligning | Evaluation |
+| Checkout, handlekurv | Purchase |
+| Velkomst-e-post, onboarding | Post-purchase |
+| Nyhetsbrev, VIP-innhold | Loyalty |
+
+### Journey Gaps
+
+Identifiser mangler:
+
+```
+📊 Journey Coverage
+
+Awareness:     ████████░░ 80%  (4 filer)
+Consideration: ██████████ 100% (6 filer)
+Evaluation:    ██████░░░░ 60%  (3 filer)
+Purchase:      ████░░░░░░ 40%  (2 filer)
+Post-purchase: ░░░░░░░░░░ 0%   (0 filer) ⚠️
+Loyalty:       ░░░░░░░░░░ 0%   (0 filer) ⚠️
+
+Anbefalinger:
+- ⚠️ Mangler post-purchase innhold (velkomst, onboarding)
+- ⚠️ Mangler loyalty innhold (nyhetsbrev, lojalitetsprogram)
+```
+
+### Psykologi-bruk
+
+Sjekk om innhold utnytter anbefalte prinsipper fra JOURNEY.md:
+
+| Stage | Anbefalte prinsipper | Brukt? |
+|-------|---------------------|--------|
+| Awareness | Mere Exposure, Von Restorff | ✅/❌ |
+| Consideration | Social Proof, Authority | ✅/❌ |
+| ... | ... | ... |
+
+## Steg 6: Sammendrag
 
 ```
 ═══════════════════════════════════════════
@@ -137,29 +203,48 @@ Søker etter forbudte ord...
 
 Prosjekt: [navn]
 BRAND.md: [dato sist oppdatert]
+JOURNEY.md: [dato sist oppdatert]
 Skannet: [antall] filer
 
 ═══════════════════════════════════════════
+TOTAL SCORE
+═══════════════════════════════════════════
 
-TOTAL SCORE: [X/10]
+ABC Score: [X/10]
+Journey Score: [X/10]
+TOTAL: [X/10]
 
-Per kategori:
+───────────────────────────────────────────
+PER KATEGORI
+───────────────────────────────────────────
+
 - Landing pages: 8/10 (3 filer)
 - Translations: 7/10 (2 filer)
 - Meta/SEO: 9/10 (1 fil)
 - Docs: N/A (ingen funnet)
 
-═══════════════════════════════════════════
+───────────────────────────────────────────
+JOURNEY COVERAGE
+───────────────────────────────────────────
 
-TOP 5 FORBEDRINGER:
+Awareness:     ████████░░ 80%
+Consideration: ██████████ 100%
+Evaluation:    ██████░░░░ 60%
+Purchase:      ████░░░░░░ 40%
+Post-purchase: ░░░░░░░░░░ 0%  ⚠️
+Loyalty:       ░░░░░░░░░░ 0%  ⚠️
+
+═══════════════════════════════════════════
+TOP 5 FORBEDRINGER
+═══════════════════════════════════════════
 
 1. [Mest kritisk]
 2. [Nest mest kritisk]
 3. ...
 
 ═══════════════════════════════════════════
-
-FORBUDTE ORD FUNNET:
+FORBUDTE ORD FUNNET
+═══════════════════════════════════════════
 
 | Ord | Antall | Filer |
 |-----|--------|-------|
@@ -167,14 +252,30 @@ FORBUDTE ORD FUNNET:
 | ... | ... | ... |
 
 ═══════════════════════════════════════════
+JOURNEY GAPS
+═══════════════════════════════════════════
 
-NESTE STEG:
+⚠️ Manglende stages:
+- Post-purchase: Ingen velkomst-e-post eller onboarding
+- Loyalty: Ingen nyhetsbrev eller lojalitetsprogram
+
+💡 Anbefalt prioritering:
+1. [Stage med størst gap]
+2. [Neste prioritet]
+
+═══════════════════════════════════════════
+NESTE STEG
+═══════════════════════════════════════════
 
 - [ ] Fiks "Words We Avoid" funn
 - [ ] Oppdater meta descriptions
 - [ ] Legg til manglende key messages
+- [ ] Fyll journey gaps (post-purchase, loyalty)
+- [ ] Oppdater JOURNEY.md med nye learnings
 
 Kjør `/marketing-playbook:check [fil]` for detaljer om spesifikke filer.
+
+═══════════════════════════════════════════
 ```
 
 ## Begrensninger

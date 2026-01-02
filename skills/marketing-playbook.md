@@ -1,6 +1,6 @@
 ---
 name: marketing-playbook
-description: Apply Marketing Playbook principles when creating marketing content, landing pages, copy, or brand materials. Reads BRAND.md from project root.
+description: Apply Marketing Playbook principles when creating marketing content, landing pages, copy, or brand materials. Reads BRAND.md and JOURNEY.md from project root.
 ---
 
 # Marketing Playbook Skill
@@ -14,7 +14,34 @@ Denne skillen aktiveres automatisk når du jobber med marketing-relatert innhold
 - **Brand**: Hva tilbyr vi og hvorfor?
 - **Communication**: Hvordan sier vi det?
 
-Hvis `BRAND.md` ikke finnes, foreslå å kjøre `/marketing-playbook:init` for å sette opp.
+**Les JOURNEY.md** i prosjektet for:
+- **Kundereisen**: Hvilken stage er dette innholdet for?
+- **Psykologi**: Hvilke prinsipper er relevante for denne stagen?
+- **Touchpoints**: Hvilke kanaler/formater brukes i denne stagen?
+
+Hvis filene ikke finnes, foreslå å kjøre `/marketing-playbook:init` for å sette opp.
+
+---
+
+## Identifiser Journey Stage
+
+Når du lager innhold, identifiser hvilken stage det tilhører:
+
+| Innholdstype | Typisk Stage |
+|--------------|--------------|
+| Annonser (Facebook, Google) | Awareness |
+| Blogginnlegg, SEO | Awareness / Consideration |
+| Landing pages | Consideration / Evaluation |
+| Produktsider | Evaluation |
+| Checkout, betalingsflow | Purchase |
+| Velkomst-e-post, onboarding | Post-purchase |
+| Nyhetsbrev, lojalitetsprogram | Loyalty |
+
+**Når du har identifisert stage:**
+1. Les relevant seksjon i JOURNEY.md
+2. Bruk psykologi-prinsippene listet for den stagen
+3. Adresser kundens bekymringer for den stagen
+4. Match touchpoints og kanaler
 
 ---
 
@@ -99,9 +126,71 @@ Når du skriver email:
 
 ---
 
+## Journey-basert innholdsskaping
+
+### Awareness-innhold
+**Mål:** Fange oppmerksomhet, skape gjenkjennelse
+**Psykologi:** Mere Exposure, Von Restorff, Picture Superiority, Information Gap
+**Tips:**
+- Led med problem/pain point
+- Skill deg ut visuelt
+- Skap nysgjerrighet, ikke selg ennå
+
+### Consideration-innhold
+**Mål:** Bygge tillit, vise verdi
+**Psykologi:** Social Proof, Authority, Halo Effect, Confirmation Bias
+**Tips:**
+- Vis testimonials og case studies
+- Demonstrer ekspertise
+- Adresser innvendinger proaktivt
+
+### Evaluation-innhold
+**Mål:** Hjelpe valget, redusere risiko
+**Psykologi:** Anchoring, Decoy Effect, Loss Aversion, Scarcity
+**Tips:**
+- Sammenlign alternativer tydelig
+- Vis hva de går glipp av
+- Tilby garantier/trygghet
+
+### Purchase-innhold
+**Mål:** Friksjonsfri gjennomføring
+**Psykologi:** Goal Gradient, Default Options, Commitment
+**Tips:**
+- Minimer steg
+- Vis progresjon
+- Bekreft at de tar riktig valg
+
+### Post-purchase-innhold
+**Mål:** Bekrefte valget, starte relasjonen
+**Psykologi:** Peak-End Rule, Cognitive Dissonance, Reciprocity
+**Tips:**
+- Overrask positivt
+- Hjelp dem i gang
+- Reduser kjøpsanger
+
+### Loyalty-innhold
+**Mål:** Bygge tilhørighet, skape ambassadører
+**Psykologi:** Sunk Cost, Social Identity, IKEA Effect, Nostalgia
+**Tips:**
+- Anerkjenn lojalitet
+- Involver dem i utviklingen
+- Skap felles historie
+
+---
+
+## Vedlikehold av JOURNEY.md
+
+Foreslå oppdatering av JOURNEY.md når:
+- Du har sjekket 5+ innhold for samme stage
+- Bruker gir feedback om kundeopplevelsen
+- Nye kanaler/touchpoints tas i bruk
+- Konverteringsdata viser endringer
+
+---
+
 ## Relaterte Kommandoer
 
 - `/marketing-playbook` - Vis status og versjon
-- `/marketing-playbook:init` - Opprett BRAND.md (interaktiv)
-- `/marketing-playbook:check` - Sjekk innhold mot BRAND.md
+- `/marketing-playbook:init` - Opprett BRAND.md og JOURNEY.md (interaktiv)
+- `/marketing-playbook:check` - Sjekk innhold mot BRAND.md og JOURNEY.md
 - `/marketing-playbook:audit` - Full prosjekt-audit

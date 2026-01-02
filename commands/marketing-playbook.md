@@ -1,5 +1,5 @@
 ---
-description: Show Marketing Playbook status for this project. Displays BRAND.md info, version, and available commands.
+description: Show Marketing Playbook status for this project. Displays BRAND.md and JOURNEY.md info, version, and available commands.
 allowed-tools: Read, Glob
 ---
 
@@ -7,23 +7,32 @@ allowed-tools: Read, Glob
 
 Vis status for Marketing Playbook i dette prosjektet.
 
-## Steg 1: Sjekk om BRAND.md finnes
+## Steg 1: Sjekk om filene finnes
 
-Søk etter `BRAND.md` i prosjekt-rot og undermapper.
+Søk etter `BRAND.md` og `JOURNEY.md` i prosjekt-rot og undermapper.
 
 ## Steg 2: Vis status
 
-### Hvis BRAND.md FINNES:
+### Hvis BEGGE filer finnes:
 
 ```
 ═══════════════════════════════════════════
         MARKETING PLAYBOOK
 ═══════════════════════════════════════════
 
-Status: ✅ Installert
+Status: ✅ Fullstendig oppsett
 
-Fil: ./BRAND.md
-Sist oppdatert: [dato fra fil]
+───────────────────────────────────────────
+FILER
+───────────────────────────────────────────
+
+📋 BRAND.md
+   Sti: ./BRAND.md
+   Sist oppdatert: [dato]
+
+🗺️ JOURNEY.md
+   Sti: ./JOURNEY.md
+   Sist oppdatert: [dato]
 
 ───────────────────────────────────────────
 OPPSUMMERING
@@ -33,18 +42,59 @@ Audience:    [primary audience]
 Positioning: [én setning]
 Tone:        [adjektiver]
 
+Journey stages definert:
+✅ Awareness  ✅ Consideration  ✅ Evaluation
+✅ Purchase   ✅ Post-purchase  ✅ Loyalty
+
 ───────────────────────────────────────────
 KOMMANDOER
 ───────────────────────────────────────────
 
-/marketing-playbook:check   Sjekk innhold mot BRAND.md
+/marketing-playbook:check   Sjekk innhold mot ABC + Journey
 /marketing-playbook:audit   Full prosjekt-audit
 /marketing-playbook:init    Installer på nytt
 
 ═══════════════════════════════════════════
 ```
 
-### Hvis BRAND.md IKKE finnes:
+### Hvis KUN BRAND.md finnes:
+
+```
+═══════════════════════════════════════════
+        MARKETING PLAYBOOK
+═══════════════════════════════════════════
+
+Status: ⚠️ Delvis oppsett
+
+───────────────────────────────────────────
+FILER
+───────────────────────────────────────────
+
+📋 BRAND.md: ✅ Funnet
+🗺️ JOURNEY.md: ❌ Mangler
+
+───────────────────────────────────────────
+ANBEFALING
+───────────────────────────────────────────
+
+Du har BRAND.md, men mangler JOURNEY.md for
+å kartlegge kundereisen.
+
+Kjør /marketing-playbook:init for å legge til
+JOURNEY.md (eksisterende BRAND.md beholdes).
+
+───────────────────────────────────────────
+KOMMANDOER
+───────────────────────────────────────────
+
+/marketing-playbook:check   Sjekk innhold mot BRAND.md
+/marketing-playbook:audit   Full prosjekt-audit
+/marketing-playbook:init    Legg til JOURNEY.md
+
+═══════════════════════════════════════════
+```
+
+### Hvis INGEN filer finnes:
 
 ```
 ═══════════════════════════════════════════
@@ -53,7 +103,7 @@ KOMMANDOER
 
 Status: ❌ Ikke installert
 
-Ingen BRAND.md funnet i prosjektet.
+Ingen BRAND.md eller JOURNEY.md funnet.
 
 ───────────────────────────────────────────
 KOM I GANG
@@ -61,17 +111,31 @@ KOM I GANG
 
 Kjør /marketing-playbook:init for å sette opp.
 
-Dette oppretter BRAND.md med:
-• Audience - Hvem snakker vi til?
-• Brand - Hva tilbyr vi?
-• Communication - Hvordan sier vi det?
+Dette oppretter:
+
+📋 BRAND.md (ABC-rammeverket)
+   • Audience - Hvem snakker vi til?
+   • Brand - Hva tilbyr vi?
+   • Communication - Hvordan sier vi det?
+
+🗺️ JOURNEY.md (Kundereisen)
+   • Awareness → Consideration → Purchase
+   • Post-purchase → Loyalty
+   • Psykologi-prinsipper per stage
 
 ═══════════════════════════════════════════
 ```
 
 ## Steg 3: Vis tilleggsinformasjon
 
-Hvis BRAND.md finnes, vis også:
+Hvis filene finnes, vis også:
+
+**Fra BRAND.md:**
 - Antall "Words We Avoid" definert
 - Antall key messages
 - Om Design-seksjon er inkludert
+
+**Fra JOURNEY.md:**
+- Hvilke stages som er definert vs "[Under utvikling]"
+- Antall touchpoints listet
+- Om metrikker er definert
