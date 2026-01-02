@@ -193,11 +193,19 @@ Guide for storytelling og copywriting med progressiv loading. Hovedfilen gir ove
 | **Channel Strategy** | Distribution follows attention, Owned>Rented, Compounding Touchpoints, Content-Channel Fit |
 | **Consistency** | Consistency Compounds, Earn Attention, Dark Social |
 
-### customer-principles *(kommer snart)*
-Prinsipper for å bygge superfans og lojalitet:
-- The Loyalty Loop
-- Referral dynamics
-- Community building
+### customer-principles
+Tidløse prinsipper for kundelojalitet og community:
+
+| Kategori | Prinsipper |
+|----------|------------|
+| **The Loyalty Loop** | Purchase → Experience → Loyalty → Advocacy → (ny kunde via WOM) |
+| **Loyalty Myths** | 77/23 Rule (de fleste vil ikke ha "relasjon"), Shared Values > Interaksjoner, Mer ≠ Bedre |
+| **Retention Economics** | 5-7x Rule, Leaky Bucket, Behavior ≠ Loyalty |
+| **Experience & Memory** | Peak-End Rule, Moments of Truth, Recovery Paradox |
+| **Word of Mouth** | Referrals are Earned, Negative Spreads Faster, Make it Easy to Share |
+| **Customer Service** | Service as Marketing, Underpromise/Overdeliver, Solve the Problem |
+| **Onboarding** | First 90 Days, Churn is Lagging, Value Lock-in > Contractual |
+| **Community Building** | Crowd→Community progression, Learn from Religion, Sacrifice, Us vs Them |
 
 ## Brand Audience Fit (BAF)
 
