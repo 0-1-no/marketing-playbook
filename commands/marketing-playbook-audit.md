@@ -1,5 +1,5 @@
 ---
-description: Full audit of project against BRAND.md and JOURNEY.md. Scans landing pages, copy, meta tags, and marketing content.
+description: Full audit of project against BRAND.md and JOURNEY.md. Includes ABC check, journey coverage, and brand health evaluation (7 principles).
 allowed-tools: Read, Glob, Grep
 ---
 
@@ -194,7 +194,112 @@ Sjekk om innhold utnytter anbefalte prinsipper fra JOURNEY.md:
 | Consideration | Social Proof, Authority | ✅/❌ |
 | ... | ... | ... |
 
-## Steg 6: Sammendrag
+## Steg 6: Brand Health Evaluering
+
+Evaluer merkevaren mot de 7 brand-prinsippene. Se `skills/brand-principles.md` for detaljer.
+
+### 1. ETHOS (Formål)
+Vurder BRAND.md:
+- Er "why" tydelig artikulert (utover å tjene penger)?
+- Er verdiene spesifikke nok til å utelukke noe?
+- Kan verdiene brukes til å ta beslutninger?
+
+**Score:** [0-10]
+
+### 2. REMARKABLE (Bemerkelsesverdig)
+Vurder BRAND.md + innhold:
+- Er USP/differentiators tydelige og unike?
+- Ville kunder naturlig fortelle andre?
+- Skiller det seg fra konkurrentene?
+
+**Score:** [0-10]
+
+### 3. RELATABLE (Relaterbar)
+Vurder BRAND.md + copy:
+- Er tone of voice distinkt og gjenkjennelig?
+- Føles kommunikasjonen menneskelig?
+- Er personligheten konsistent på tvers av touchpoints?
+
+**Score:** [0-10]
+
+### 4. INVOLVED (Involvert)
+Vurder JOURNEY.md + praksis:
+- Er det dokumentert feedback-loops?
+- Finnes det co-creation eller community-elementer?
+- Hvordan håndteres kundeinnspill?
+
+**Score:** [0-10]
+
+### 5. PRESENT (Tilstede)
+Vurder JOURNEY.md touchpoints:
+- Er merkevaren til stede i relevante kanaler?
+- Gir tilstedeværelsen verdi utover salg?
+- Er det konsistent på tvers av kanaler?
+
+**Score:** [0-10]
+
+### 6. INSPIRATIONAL (Inspirerende)
+Vurder BRAND.md values + mission:
+- Er verdiene noe folk kan rallye rundt?
+- Representerer merkevaren noe større enn produktet?
+- Matcher handlinger ord?
+
+**Score:** [0-10]
+
+### 7. DEFENSIBILITY (Forsvarbarhet)
+Vurder BRAND.md differentiators:
+- Hva gjør merkevaren vanskelig å kopiere?
+- Hvilke typer forsvarbarhet finnes (nettverk, data, kultur)?
+- Blir fordelen sterkere over tid?
+
+**Score:** [0-10]
+
+### Brand Health Output
+
+```
+───────────────────────────────────────────
+BRAND HEALTH (7 Prinsipper)
+───────────────────────────────────────────
+
+1. ETHOS          [██████░░░░] 6/10
+   ✅ Mission definert
+   ⚠️ "Why" kunne vært tydeligere
+
+2. REMARKABLE     [████████░░] 8/10
+   ✅ Tydelig USP
+   ✅ Differentiators dokumentert
+
+3. RELATABLE      [████████░░] 8/10
+   ✅ Tone of voice definert
+   ⚠️ Personality kunne vært mer distinkt
+
+4. INVOLVED       [████░░░░░░] 4/10
+   ⚠️ Ingen feedback-loops dokumentert
+   💡 Vurder community eller NPS
+
+5. PRESENT        [██████░░░░] 6/10
+   ✅ Kanaler definert
+   ⚠️ Mangler verdi-innhold utover salg
+
+6. INSPIRATIONAL  [██░░░░░░░░] 2/10
+   ⚠️ Verdier føles generiske
+   💡 Hva vil folk rallye rundt?
+
+7. DEFENSIBILITY  [░░░░░░░░░░] 0/10
+   ❌ Ikke adressert
+   💡 Hva gjør dere vanskelig å kopiere?
+
+───────────────────────────────────────────
+BRAND HEALTH TOTAL: 34/70 (49%)
+───────────────────────────────────────────
+
+Prioriterte forbedringer:
+1. Definer forsvarbarhet (moat)
+2. Styrk inspirerende verdier
+3. Etabler feedback-loops
+```
+
+## Steg 7: Sammendrag
 
 ```
 ═══════════════════════════════════════════
@@ -210,9 +315,11 @@ Skannet: [antall] filer
 TOTAL SCORE
 ═══════════════════════════════════════════
 
-ABC Score: [X/10]
-Journey Score: [X/10]
-TOTAL: [X/10]
+ABC Score:          [X/10]  (Innhold vs BRAND.md)
+Journey Score:      [X/10]  (Funnel-dekning)
+Brand Health:       [X/70]  (7 prinsipper)
+
+TOTAL: [X]%
 
 ───────────────────────────────────────────
 PER KATEGORI
@@ -259,19 +366,35 @@ JOURNEY GAPS
 - Post-purchase: Ingen velkomst-e-post eller onboarding
 - Loyalty: Ingen nyhetsbrev eller lojalitetsprogram
 
-💡 Anbefalt prioritering:
-1. [Stage med størst gap]
-2. [Neste prioritet]
+═══════════════════════════════════════════
+BRAND HEALTH HIGHLIGHTS
+═══════════════════════════════════════════
+
+Styrker:
+- [Prinsipper med høy score]
+
+Forbedringspotensial:
+- [Prinsipper med lav score]
 
 ═══════════════════════════════════════════
 NESTE STEG
 ═══════════════════════════════════════════
 
+Innhold:
 - [ ] Fiks "Words We Avoid" funn
 - [ ] Oppdater meta descriptions
 - [ ] Legg til manglende key messages
+
+Journey:
 - [ ] Fyll journey gaps (post-purchase, loyalty)
 - [ ] Oppdater JOURNEY.md med nye learnings
+
+Brand Health:
+- [ ] [Laveste prinsipp]: [Konkret tiltak]
+- [ ] [Nest laveste]: [Konkret tiltak]
+- [ ] [Tredje laveste]: [Konkret tiltak]
+
+───────────────────────────────────────────
 
 Kjør `/marketing-playbook:check [fil]` for detaljer om spesifikke filer.
 

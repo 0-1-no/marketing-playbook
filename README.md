@@ -90,16 +90,19 @@ BRAND.md definerer hvem dere er:
 /marketing-playbook:audit
 
 # Skanner landing pages, oversettelser, meta-tagger
-# Returnerer omfattende merkevare-rapport
+# Analyserer journey coverage (hvilke funnel-steg er dekket?)
+# Evaluerer Brand Health (7 prinsipper)
+# Returnerer omfattende merkevare-rapport med prioriterte tiltak
 ```
 
 ## Skills
 
-Pluginen inkluderer to skills som automatisk aktiveres når du jobber med markedsinnhold:
+Pluginen inkluderer tre skills som automatisk aktiveres når du jobber med markedsinnhold:
 
 ### marketing-playbook
-- Leser BRAND.md før du skriver
+- Leser BRAND.md og JOURNEY.md før du skriver
 - Følger ABC-sjekklisten
+- Identifiserer riktig journey stage
 - Bruker riktige ord og tone
 
 ### marketing-psychology
@@ -111,7 +114,20 @@ Pluginen inkluderer to skills som automatisk aktiveres når du jobber med marked
 | **MOFU/BOFU** (Conversion) | Anchoring, Halo Effect, Scarcity, Social Proof, Loss Aversion, Decoy Effect, m.fl. |
 | **CX** (Retention) | Peak-End Rule, Sunk Cost, IKEA Effect, Nostalgia, Self-Reference, m.fl. |
 
-Bruk denne som referanse når du lager landingssider, e-poster eller annonser.
+### brand-principles
+7 prinsipper for å bygge en sterk merkevare (brukes i audit):
+
+| Prinsipp | Beskrivelse |
+|----------|-------------|
+| **Ethos** | Ha et sterkt formål (why), misjon og verdier |
+| **Remarkable** | Vær bemerkelsesverdig - ha en tydelig USP |
+| **Relatable** | Vær relaterbar - ha en menneskelig stemme |
+| **Involved** | Vær involvert - co-create med kunder |
+| **Present** | Vær tilstede - i relevante kanaler |
+| **Inspirational** | Vær inspirerende - folk rallyer rundt dere |
+| **Defensibility** | Vær forsvarbar - vanskelig å kopiere |
+
+Bruk disse som referanse når du bygger og evaluerer merkevarer.
 
 ## Premium-versjon
 
