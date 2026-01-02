@@ -2,7 +2,12 @@
 
 > ABC-rammeverk for konsistent merkevare-kommunikasjon i Claude Code.
 
-Marketing Playbook hjelper deg med å opprettholde konsistent merkevarestemme i alt markedsinnhold ved å opprette og håndheve `BRAND.md`-filer i prosjektene dine.
+Marketing Playbook hjelper deg med å opprettholde konsistent merkevarestemme i alt markedsinnhold ved å opprette og håndheve marketing-filer i prosjektene dine.
+
+**Nøkkelfiler:**
+- `BRAND.md` - Hvem dere er (ABC-rammeverket)
+- `JOURNEY.md` - Hvordan kunder opplever dere (funnel)
+- `LEARNINGS.md` - Bevis på at det fungerer (BAF)
 
 ## Installasjon
 
@@ -40,12 +45,13 @@ Marketing Playbook er bygget rundt tre kjernepilarer:
 
 ## Filer som opprettes
 
-Når du kjører `/marketing-playbook:init`, opprettes to filer:
+Når du kjører `/marketing-playbook:init`, opprettes tre filer:
 
 | Fil | Innhold |
 |-----|---------|
-| `BRAND.md` | ABC-rammeverket (Audience, Brand, Communication) |
+| `BRAND.md` | ABC-rammeverket (Audience, Brand, Communication) + Validering |
 | `JOURNEY.md` | Kundereise-kart (ToFU → Loyalty) |
+| `LEARNINGS.md` | Brand Audience Fit validering og dokumenterte innsikter |
 
 ## BRAND.md-struktur
 
@@ -128,6 +134,27 @@ Pluginen inkluderer tre skills som automatisk aktiveres når du jobber med marke
 | **Defensibility** | Vær forsvarbar - vanskelig å kopiere |
 
 Bruk disse som referanse når du bygger og evaluerer merkevarer.
+
+## Brand Audience Fit (BAF)
+
+> "Brand-Audience Fit er når kunder forstår, bruker og hjelper med å promotere produktet ditt som et resultat av verdien de får fra det."
+
+BAF er inspirert av Product-Market Fit, men fokuserer på merkevare-resonans. En merkevare med høy BAF selger seg selv.
+
+### Indikatorer på høy BAF
+- Konverteringsrate ≥2%
+- Kunder anbefaler aktivt (word-of-mouth)
+- Lavere kundeanskaffelseskost (CAC) over tid
+- Kort salgssyklus
+
+### LEARNINGS.md
+Dokumenter tester, resultater og innsikter i `LEARNINGS.md`:
+- Hva fungerer og hva fungerer ikke
+- Konverteringsrater og metrikker
+- Beste kundesegmenter
+- Hypoteser å teste videre
+
+**Tips:** Ikke skaler markedsføringen før BAF er validert. Test først, dokumenter, iterer.
 
 ## Premium-versjon
 

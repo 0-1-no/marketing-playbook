@@ -1,24 +1,27 @@
 ---
-description: Full audit of project against BRAND.md and JOURNEY.md. Includes ABC check, journey coverage, and brand health evaluation (7 principles).
+description: Full audit of project against BRAND.md, JOURNEY.md, and LEARNINGS.md. Includes ABC check, journey coverage, brand health (7 principles), and Brand Audience Fit validation.
 allowed-tools: Read, Glob, Grep
 ---
 
 # Marketing Playbook - Full Audit
 
-Utfør en komplett gjennomgang av prosjektets marketing-innhold mot `BRAND.md` og `JOURNEY.md`.
+Utfør en komplett gjennomgang av prosjektets marketing-innhold mot `BRAND.md`, `JOURNEY.md` og `LEARNINGS.md`.
 
-## Steg 1: Les BRAND.md og JOURNEY.md
+## Steg 1: Les Marketing Playbook-filer
 
-Finn og les begge filer. Hvis de ikke finnes, anbefal å kjøre `/marketing-playbook:init` først.
+Finn og les alle filer. Hvis de ikke finnes, anbefal å kjøre `/marketing-playbook:init` først.
 
 ```
 Laster Marketing Playbook...
 
 ✅ BRAND.md funnet
 ✅ JOURNEY.md funnet
+✅ LEARNINGS.md funnet
 
 Starter full audit...
 ```
+
+Merk: LEARNINGS.md kan være tom for nye merkevarer. Dette er OK - audit vil anbefale å starte BAF-validering.
 
 ## Steg 2: Skann prosjektet
 
@@ -299,7 +302,74 @@ Prioriterte forbedringer:
 3. Etabler feedback-loops
 ```
 
-## Steg 7: Sammendrag
+## Steg 7: Brand Audience Fit (BAF)
+
+Evaluer om merkevaren resonerer med målgruppen i praksis.
+
+> "Brand-Audience Fit er når kunder forstår, bruker og hjelper med å promotere
+> produktet ditt som et resultat av verdien de får fra det."
+
+BAF er inspirert av Product-Market Fit, men fokuserer på merkevare-resonans.
+
+### Sjekk LEARNINGS.md
+
+Les `LEARNINGS.md` for å vurdere BAF-status:
+
+**Indikatorer på høy BAF:**
+- Konverteringsrate ≥2%
+- Kunder anbefaler aktivt (NPS >50)
+- Word-of-mouth driver vekst
+- Lavere CAC over tid
+- Kort salgssyklus
+
+**Indikatorer på lav BAF:**
+- Må "pushe" hardt for salg
+- Høy CAC som ikke synker
+- Få gjenkjøp/referrals
+- Kunder forstår ikke verdien
+- Mye priskonkurranse
+
+### BAF Evaluering
+
+| Indikator | Status | Kommentar |
+|-----------|--------|-----------|
+| Validert med tester? | ✅/⚠️/❌ | [fra LEARNINGS.md] |
+| Konverteringsrate ≥2%? | ✅/⚠️/❌ | [faktisk rate] |
+| Dokumenterte learnings? | ✅/⚠️/❌ | [antall innsikter] |
+| Segmenter identifisert? | ✅/⚠️/❌ | [beste segment] |
+
+### BAF Output
+
+```
+───────────────────────────────────────────
+BRAND AUDIENCE FIT
+───────────────────────────────────────────
+
+Status: [✅ Validert / ⚠️ Under testing / ❌ Ikke validert]
+
+Resonans-nivå: [Høy / Medium / Lav / Ukjent]
+
+Bevis:
+- Konverteringsrate: [X%] (benchmark: ≥2%)
+- Beste segment: [segment]
+- Dokumenterte tester: [antall]
+- Learnings: [antall innsikter]
+
+[Hvis ikke validert:]
+⚠️ ADVARSEL: Unngå å skalere før BAF er validert.
+
+   Anbefalt:
+   1. Kjør test-kampanje mot målgruppe
+   2. Sett opp venteliste eller forhåndssalg
+   3. Mål konvertering og dokumenter i LEARNINGS.md
+
+   En merkevare med høy BAF selger seg selv.
+   En merkevare med lav BAF krever konstant pushing.
+
+───────────────────────────────────────────
+```
+
+## Steg 8: Sammendrag
 
 ```
 ═══════════════════════════════════════════
@@ -318,6 +388,7 @@ TOTAL SCORE
 ABC Score:          [X/10]  (Innhold vs BRAND.md)
 Journey Score:      [X/10]  (Funnel-dekning)
 Brand Health:       [X/70]  (7 prinsipper)
+Brand Audience Fit: [✅/⚠️/❌] (Validering)
 
 TOTAL: [X]%
 

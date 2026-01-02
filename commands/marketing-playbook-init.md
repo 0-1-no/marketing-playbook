@@ -1,27 +1,29 @@
 ---
-description: Initialize Marketing Playbook for this project. Creates BRAND.md and JOURNEY.md through interactive deep-dive setup.
+description: Initialize Marketing Playbook for this project. Creates BRAND.md, JOURNEY.md, and LEARNINGS.md through interactive deep-dive setup.
 allowed-tools: Read, Write, Glob, AskUserQuestion
 ---
 
 # Marketing Playbook - Init
 
-Opprett `BRAND.md` og `JOURNEY.md` for dette prosjektet gjennom interaktivt intervju.
+Opprett `BRAND.md`, `JOURNEY.md` og `LEARNINGS.md` for dette prosjektet gjennom interaktivt intervju.
 
 ## Steg 1: Sjekk eksisterende
 
-Sjekk om `BRAND.md` eller `JOURNEY.md` allerede finnes.
+Sjekk om `BRAND.md`, `JOURNEY.md` eller `LEARNINGS.md` allerede finnes.
 
 Hvis ja, spør:
 ```
 Eksisterende filer funnet:
 - BRAND.md: [Ja/Nei]
 - JOURNEY.md: [Ja/Nei]
+- LEARNINGS.md: [Ja/Nei]
 
 Vil du:
 1. Overskrive alt (starter på nytt)
 2. Kun oppdatere BRAND.md
 3. Kun oppdatere JOURNEY.md
-4. Avbryt
+4. Kun oppdatere LEARNINGS.md
+5. Avbryt
 ```
 
 ## Steg 2: Introduksjon
@@ -33,7 +35,7 @@ Vil du:
 
 Velkommen! Jeg skal hjelpe deg med å sette opp Marketing Playbook.
 
-Vi går gjennom to deler:
+Vi går gjennom tre deler:
 
 📋 DEL 1: BRAND.md (ABC-rammeverket)
    • Audience - Hvem snakker vi til?
@@ -44,6 +46,11 @@ Vi går gjennom to deler:
    • Hvordan oppdager kunder deg?
    • Hva vurderer de før kjøp?
    • Hvordan ser opplevelsen ut etterpå?
+
+🧪 DEL 3: LEARNINGS.md (Validering)
+   • Brand Audience Fit - Resonerer det?
+   • Tester og resultater
+   • Hva fungerer og hva fungerer ikke?
 
 Dette tar ca. 10-15 minutter. Du kan svare "vet ikke" eller
 "ikke relevant ennå" på spørsmål du er usikker på.
@@ -189,6 +196,56 @@ Svar så godt du kan. "Vet ikke ennå" er helt OK for nye merkevarer.
 
 ---
 
+## DEL 3: LEARNINGS.md
+
+```
+───────────────────────────────────────────────────────────────
+                      🧪 VALIDERING
+───────────────────────────────────────────────────────────────
+
+Nå kartlegger vi Brand Audience Fit - om merkevaren faktisk
+resonerer med målgruppen i praksis.
+
+Nyoppstartede merkevarer: Det er helt OK å svare "ikke testet ennå".
+Vi setter opp strukturen så du kan dokumentere underveis.
+───────────────────────────────────────────────────────────────
+```
+
+### Brand Audience Fit
+
+**Spørsmål 30:** Har dere testet om målgruppen responderer på merkevaren?
+- Alternativer: "Ja, validert", "Under testing", "Ikke testet ennå"
+- Dette er Brand Audience Fit (BAF) - bevis på at det fungerer
+
+**Spørsmål 31:** Hvis testet - hvilke metoder har dere brukt?
+- Eksempler: "Venteliste", "Forhåndssalg", "Annonse-test", "Landing page"
+- Svar "ikke relevant" hvis ikke testet
+
+**Spørsmål 32:** Hva er konverteringsraten deres? (hvis kjent)
+- Eksempel: "2.5% på landing page"
+- Benchmark: ≥2% indikerer sunn e-commerce
+- Svar "vet ikke" hvis ukjent
+
+**Spørsmål 33:** Hvilke segmenter responderer best?
+- Eksempel: "Konsulenter 35-50 år"
+- Hvem konverterer faktisk, ikke bare hvem dere tror er målgruppen
+
+### Learnings
+
+**Spørsmål 34:** Hva har dere lært som fungerer?
+- Eksempel: "Video konverterer bedre enn tekst"
+- List gjerne flere innsikter
+
+**Spørsmål 35:** Hva har dere lært som IKKE fungerer?
+- Eksempel: "Lange produktbeskrivelser gir høy bounce rate"
+- Like viktig som det som fungerer
+
+**Spørsmål 36:** Hvilke spørsmål vil dere teste fremover?
+- Eksempel: "Fungerer budskapet for enterprise-kunder?"
+- Åpne hypoteser å validere
+
+---
+
 ## Steg 3: Generer filer
 
 Basert på svarene, generer:
@@ -198,6 +255,7 @@ Se examples/BRAND.md for struktur. Inkluder:
 - Audience med pain points, goals, use cases
 - Brand med positioning, values, differentiators, competitors
 - Communication med tone, words we use/avoid
+- Validation med BAF status (fra DEL 3)
 
 ### JOURNEY.md
 Se examples/JOURNEY.md for struktur. Inkluder:
@@ -205,6 +263,14 @@ Se examples/JOURNEY.md for struktur. Inkluder:
 - Per stage: Kundens perspektiv, bekymringer, touchpoints, våre mål
 - Kobling til relevante psykologi-prinsipper
 - Marker seksjoner som "Under utvikling" hvis bruker svarte "vet ikke"
+
+### LEARNINGS.md
+Se examples/LEARNINGS.md for struktur. Inkluder:
+- Oversiktstabell med tester og resultater
+- BAF Validering seksjon med status og metoder
+- "Hva fungerer" og "Hva fungerer ikke" seksjoner
+- Kommende tester / åpne spørsmål
+- Marker som "[Ikke testet ennå]" hvis bruker er i tidlig fase
 
 ---
 
@@ -215,10 +281,21 @@ Se examples/JOURNEY.md for struktur. Inkluder:
                          ✅ FERDIG!
 ═══════════════════════════════════════════════════════════════
 
-Marketing Playbook er satt opp:
+Marketing Playbook er satt opp i marketing/-mappen:
 
-📋 BRAND.md - Merkevare-retningslinjer (ABC)
-🗺️ JOURNEY.md - Kundereise-kart
+📋 marketing/BRAND.md - Merkevare-retningslinjer (ABC + Validering)
+🗺️ marketing/JOURNEY.md - Kundereise-kart
+🧪 marketing/LEARNINGS.md - Tester og innsikter
+
+───────────────────────────────────────────────────────────────
+BRAND AUDIENCE FIT STATUS
+───────────────────────────────────────────────────────────────
+
+[✅ Validert / ⚠️ Under testing / ❌ Ikke testet]
+
+[Hvis ikke validert:]
+💡 Anbefaling: Test BAF før du skalerer markedsføringen.
+   Kjør små tester, dokumenter i LEARNINGS.md.
 
 ───────────────────────────────────────────────────────────────
 NESTE STEG
@@ -227,10 +304,10 @@ NESTE STEG
 1. Review filene og juster detaljer
 2. Bruk /marketing-playbook:check før du publiserer innhold
 3. Kjør /marketing-playbook:audit for full gjennomgang
-4. Kjør /marketing-playbook for å se status
+4. Dokumenter learnings i LEARNINGS.md underveis
 
-TIP: Kundereisen utvikles over tid. Oppdater JOURNEY.md
-     etter hvert som du lærer mer om kundene dine.
+TIP: LEARNINGS.md er beviset på at merkevaren fungerer.
+     Jo mer du dokumenterer, jo tryggere beslutninger.
 
 ═══════════════════════════════════════════════════════════════
 ```

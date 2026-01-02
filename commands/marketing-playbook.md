@@ -9,7 +9,11 @@ Vis status for Marketing Playbook i dette prosjektet.
 
 ## Steg 1: Sjekk om filene finnes
 
-Søk etter `BRAND.md` og `JOURNEY.md` i prosjekt-rot og undermapper.
+Søk etter `marketing/`-mappen med `BRAND.md`, `JOURNEY.md` og `LEARNINGS.md`.
+
+Akseptable plasseringer (i prioritert rekkefølge):
+1. `marketing/` (anbefalt)
+2. Prosjekt-rot (legacy)
 
 ## Steg 2: Vis status
 
