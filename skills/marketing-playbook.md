@@ -1,6 +1,6 @@
 ---
 name: marketing-playbook
-description: Apply Marketing Playbook principles when creating marketing content, landing pages, copy, or brand materials. Reads BRAND.md and JOURNEY.md from project root.
+description: Apply Marketing Playbook principles when creating marketing content, landing pages, copy, or brand materials. Reads files from marketing/ folder.
 ---
 
 # Marketing Playbook Skill
@@ -9,15 +9,22 @@ Denne skillen aktiveres automatisk når du jobber med marketing-relatert innhold
 
 ## Før du starter
 
-**Les BRAND.md** i prosjektet for:
+Les filene fra `marketing/`-mappen:
+
+**marketing/BRAND.md** for:
 - **Audience**: Hvem snakker vi til?
 - **Brand**: Hva tilbyr vi og hvorfor?
 - **Communication**: Hvordan sier vi det?
 
-**Les JOURNEY.md** i prosjektet for:
+**marketing/JOURNEY.md** for:
 - **Kundereisen**: Hvilken stage er dette innholdet for?
 - **Psykologi**: Hvilke prinsipper er relevante for denne stagen?
 - **Touchpoints**: Hvilke kanaler/formater brukes i denne stagen?
+
+**marketing/LEARNINGS.md** for:
+- **BAF-status**: Er merkevaren validert?
+- **Hva fungerer**: Dokumenterte innsikter
+- **Segmenter**: Hvem konverterer faktisk?
 
 Hvis filene ikke finnes, foreslå å kjøre `/marketing-playbook:init` for å sette opp.
 

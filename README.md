@@ -4,10 +4,14 @@
 
 Marketing Playbook hjelper deg med å opprettholde konsistent merkevarestemme i alt markedsinnhold ved å opprette og håndheve marketing-filer i prosjektene dine.
 
-**Nøkkelfiler:**
-- `BRAND.md` - Hvem dere er (ABC-rammeverket)
-- `JOURNEY.md` - Hvordan kunder opplever dere (funnel)
-- `LEARNINGS.md` - Bevis på at det fungerer (BAF)
+**Mappestruktur:**
+```
+ditt-prosjekt/
+└── marketing/           ← Alt marketing-innhold samlet
+    ├── BRAND.md         - Hvem dere er (ABC-rammeverket)
+    ├── JOURNEY.md       - Hvordan kunder opplever dere (funnel)
+    └── LEARNINGS.md     - Bevis på at det fungerer (BAF)
+```
 
 ## Installasjon
 
@@ -45,15 +49,15 @@ Marketing Playbook er bygget rundt tre kjernepilarer:
 
 ## Filer som opprettes
 
-Når du kjører `/marketing-playbook:init`, opprettes tre filer:
+Når du kjører `/marketing-playbook:init`, opprettes `marketing/`-mappen med tre filer:
 
 | Fil | Innhold |
 |-----|---------|
-| `BRAND.md` | ABC-rammeverket (Audience, Brand, Communication) + Validering |
-| `JOURNEY.md` | Kundereise-kart (ToFU → Loyalty) |
-| `LEARNINGS.md` | Brand Audience Fit validering og dokumenterte innsikter |
+| `marketing/BRAND.md` | ABC-rammeverket (Audience, Brand, Communication) + Validering |
+| `marketing/JOURNEY.md` | Kundereise-kart (ToFU → Loyalty) |
+| `marketing/LEARNINGS.md` | Brand Audience Fit validering og dokumenterte innsikter |
 
-## BRAND.md-struktur
+## marketing/BRAND.md-struktur
 
 BRAND.md definerer hvem dere er:
 
@@ -88,28 +92,32 @@ BRAND.md definerer hvem dere er:
 /marketing-playbook:check
 
 # Lim inn landing page-tekst, e-post eller annonsetekst
-# Få ABC-score og konkrete forbedringer
+# Sjekker mot marketing/BRAND.md og marketing/JOURNEY.md
+# Gir ABC-score og konkrete forbedringer
 ```
 
 ### Auditer hele prosjektet
 ```
 /marketing-playbook:audit
 
+# Leser marketing/BRAND.md, JOURNEY.md og LEARNINGS.md
 # Skanner landing pages, oversettelser, meta-tagger
 # Analyserer journey coverage (hvilke funnel-steg er dekket?)
 # Evaluerer Brand Health (7 prinsipper)
+# Sjekker Brand Audience Fit validering
 # Returnerer omfattende merkevare-rapport med prioriterte tiltak
 ```
 
 ## Skills
 
-Pluginen inkluderer tre skills som automatisk aktiveres når du jobber med markedsinnhold:
+Pluginen inkluderer fire skills som automatisk aktiveres når du jobber med markedsinnhold:
 
 ### marketing-playbook
-- Leser BRAND.md og JOURNEY.md før du skriver
+- Leser marketing/BRAND.md, JOURNEY.md og LEARNINGS.md før du skriver
 - Følger ABC-sjekklisten
 - Identifiserer riktig journey stage
 - Bruker riktige ord og tone
+- Sjekker BAF-status før skalering
 
 ### marketing-mindset
 20 tidløse strategiske prinsipper for markedstenkning. Brukes som sparrepartner ved strategiske beslutninger:
@@ -159,8 +167,8 @@ BAF er inspirert av Product-Market Fit, men fokuserer på merkevare-resonans. En
 - Lavere kundeanskaffelseskost (CAC) over tid
 - Kort salgssyklus
 
-### LEARNINGS.md
-Dokumenter tester, resultater og innsikter i `LEARNINGS.md`:
+### marketing/LEARNINGS.md
+Dokumenter tester, resultater og innsikter i `marketing/LEARNINGS.md`:
 - Hva fungerer og hva fungerer ikke
 - Konverteringsrater og metrikker
 - Beste kundesegmenter

@@ -9,14 +9,18 @@ Opprett `BRAND.md`, `JOURNEY.md` og `LEARNINGS.md` for dette prosjektet gjennom 
 
 ## Steg 1: Sjekk eksisterende
 
-Sjekk om `BRAND.md`, `JOURNEY.md` eller `LEARNINGS.md` allerede finnes.
+Sjekk om `marketing/`-mappen finnes med `BRAND.md`, `JOURNEY.md` eller `LEARNINGS.md`.
 
-Hvis ja, spør:
+Akseptable plasseringer (i prioritert rekkefølge):
+1. `marketing/` (anbefalt)
+2. Prosjekt-rot (legacy - migrer til marketing/)
+
+Hvis filer finnes, spør:
 ```
 Eksisterende filer funnet:
-- BRAND.md: [Ja/Nei]
-- JOURNEY.md: [Ja/Nei]
-- LEARNINGS.md: [Ja/Nei]
+- marketing/BRAND.md: [Ja/Nei]
+- marketing/JOURNEY.md: [Ja/Nei]
+- marketing/LEARNINGS.md: [Ja/Nei]
 
 Vil du:
 1. Overskrive alt (starter på nytt)
@@ -24,6 +28,15 @@ Vil du:
 3. Kun oppdatere JOURNEY.md
 4. Kun oppdatere LEARNINGS.md
 5. Avbryt
+```
+
+Hvis filer finnes i rot (legacy), tilby migrering:
+```
+Fant filer i prosjekt-rot (legacy plassering):
+- BRAND.md
+- JOURNEY.md
+
+Vil du migrere til marketing/-mappen? (anbefalt)
 ```
 
 ## Steg 2: Introduksjon
@@ -248,23 +261,30 @@ Vi setter opp strukturen så du kan dokumentere underveis.
 
 ## Steg 3: Generer filer
 
-Basert på svarene, generer:
+Opprett `marketing/`-mappen hvis den ikke finnes, og generer filene der:
 
-### BRAND.md
+```
+marketing/
+├── BRAND.md
+├── JOURNEY.md
+└── LEARNINGS.md
+```
+
+### marketing/BRAND.md
 Se examples/BRAND.md for struktur. Inkluder:
 - Audience med pain points, goals, use cases
 - Brand med positioning, values, differentiators, competitors
 - Communication med tone, words we use/avoid
 - Validation med BAF status (fra DEL 3)
 
-### JOURNEY.md
+### marketing/JOURNEY.md
 Se examples/JOURNEY.md for struktur. Inkluder:
 - Oversiktstabell med alle stages
 - Per stage: Kundens perspektiv, bekymringer, touchpoints, våre mål
 - Kobling til relevante psykologi-prinsipper
 - Marker seksjoner som "Under utvikling" hvis bruker svarte "vet ikke"
 
-### LEARNINGS.md
+### marketing/LEARNINGS.md
 Se examples/LEARNINGS.md for struktur. Inkluder:
 - Oversiktstabell med tester og resultater
 - BAF Validering seksjon med status og metoder
@@ -281,11 +301,12 @@ Se examples/LEARNINGS.md for struktur. Inkluder:
                          ✅ FERDIG!
 ═══════════════════════════════════════════════════════════════
 
-Marketing Playbook er satt opp i marketing/-mappen:
+Marketing Playbook er satt opp:
 
-📋 marketing/BRAND.md - Merkevare-retningslinjer (ABC + Validering)
-🗺️ marketing/JOURNEY.md - Kundereise-kart
-🧪 marketing/LEARNINGS.md - Tester og innsikter
+📁 marketing/
+   📋 BRAND.md      - Merkevare-retningslinjer (ABC + Validering)
+   🗺️ JOURNEY.md    - Kundereise-kart
+   🧪 LEARNINGS.md  - Tester og innsikter
 
 ───────────────────────────────────────────────────────────────
 BRAND AUDIENCE FIT STATUS

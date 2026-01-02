@@ -9,15 +9,24 @@ Verifiser at innhold samsvarer med prosjektets `BRAND.md` og `JOURNEY.md`.
 
 ## Steg 1: Les BRAND.md og JOURNEY.md
 
-Finn og les begge filer fra prosjekt-rot eller nærmeste overordnede mappe.
+Finn og les filene fra `marketing/`-mappen:
+
+```
+marketing/BRAND.md
+marketing/JOURNEY.md
+```
+
+Akseptable plasseringer (i prioritert rekkefølge):
+1. `marketing/` (anbefalt)
+2. Prosjekt-rot (legacy)
 
 Hvis filene ikke finnes:
 ```
 ⚠️ Marketing Playbook ikke satt opp.
 
 Mangler:
-- BRAND.md: [Ja/Nei]
-- JOURNEY.md: [Ja/Nei]
+- marketing/BRAND.md: [Ja/Nei]
+- marketing/JOURNEY.md: [Ja/Nei]
 
 Kjør `/marketing-playbook:init` for å sette opp.
 ```

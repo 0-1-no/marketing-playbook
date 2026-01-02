@@ -30,13 +30,10 @@ Status: ✅ Fullstendig oppsett
 FILER
 ───────────────────────────────────────────
 
-📋 BRAND.md
-   Sti: ./BRAND.md
-   Sist oppdatert: [dato]
-
-🗺️ JOURNEY.md
-   Sti: ./JOURNEY.md
-   Sist oppdatert: [dato]
+📁 marketing/
+   📋 BRAND.md      Sist oppdatert: [dato]
+   🗺️ JOURNEY.md    Sist oppdatert: [dato]
+   🧪 LEARNINGS.md  Sist oppdatert: [dato]
 
 ───────────────────────────────────────────
 OPPSUMMERING
@@ -74,18 +71,20 @@ Status: ⚠️ Delvis oppsett
 FILER
 ───────────────────────────────────────────
 
-📋 BRAND.md: ✅ Funnet
-🗺️ JOURNEY.md: ❌ Mangler
+📁 marketing/
+   📋 BRAND.md:      ✅ Funnet
+   🗺️ JOURNEY.md:    ❌ Mangler
+   🧪 LEARNINGS.md:  ❌ Mangler
 
 ───────────────────────────────────────────
 ANBEFALING
 ───────────────────────────────────────────
 
-Du har BRAND.md, men mangler JOURNEY.md for
-å kartlegge kundereisen.
+Du har BRAND.md, men mangler JOURNEY.md og
+LEARNINGS.md for komplett oppsett.
 
 Kjør /marketing-playbook:init for å legge til
-JOURNEY.md (eksisterende BRAND.md beholdes).
+manglende filer (BRAND.md beholdes).
 
 ───────────────────────────────────────────
 KOMMANDOER
@@ -107,7 +106,7 @@ KOMMANDOER
 
 Status: ❌ Ikke installert
 
-Ingen BRAND.md eller JOURNEY.md funnet.
+Ingen marketing/-mappe funnet.
 
 ───────────────────────────────────────────
 KOM I GANG
@@ -117,15 +116,21 @@ Kjør /marketing-playbook:init for å sette opp.
 
 Dette oppretter:
 
-📋 BRAND.md (ABC-rammeverket)
-   • Audience - Hvem snakker vi til?
-   • Brand - Hva tilbyr vi?
-   • Communication - Hvordan sier vi det?
+📁 marketing/
+   📋 BRAND.md (ABC-rammeverket)
+      • Audience - Hvem snakker vi til?
+      • Brand - Hva tilbyr vi?
+      • Communication - Hvordan sier vi det?
 
-🗺️ JOURNEY.md (Kundereisen)
-   • Awareness → Consideration → Purchase
-   • Post-purchase → Loyalty
-   • Psykologi-prinsipper per stage
+   🗺️ JOURNEY.md (Kundereisen)
+      • Awareness → Consideration → Purchase
+      • Post-purchase → Loyalty
+      • Psykologi-prinsipper per stage
+
+   🧪 LEARNINGS.md (Validering)
+      • Brand Audience Fit status
+      • Tester og resultater
+      • Hva fungerer / hva fungerer ikke
 
 ═══════════════════════════════════════════
 ```
