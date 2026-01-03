@@ -7,9 +7,42 @@ description: Apply Marketing Playbook principles when creating marketing content
 
 Denne skillen aktiveres automatisk når du jobber med marketing-relatert innhold.
 
+---
+
+## Arkitektur: Global Plugin → Lokal Kodebase
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│ MARKETING-PLAYBOOK (Global Plugin)                                  │
+│                                                                     │
+│ Du leser dette nå. Det er installert GLOBALT for brukeren.         │
+│ Inneholder kun metodikk, prosesser og rammeverk.                   │
+│ INGEN konkrete verdier - de kommer fra kodebasen du jobber i.      │
+└─────────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│ ./marketing/ (DENNE KODEBASEN)                                      │
+│                                                                     │
+│ Skreddersydd for prosjektet du jobber i akkurat nå.                │
+│ ALLTID les herfra for faktiske verdier:                            │
+│ • Hvem er målgruppen? → BRAND.md                                   │
+│ • Hvilke farger/fonts? → DESIGN-SYSTEM.md                          │
+│ • Hvilke kanaler? → DISTRIBUTION.md                                │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+**Viktig distinksjon:**
+- **Plugin-filer** (denne og andre skills): Guider for HVORDAN jobbe
+- **./marketing/-filer** (i denne kodebasen): Kilde til sannhet for faktiske verdier
+
+**Alltid les fra ./marketing/ først** - det er der de prosjektspesifikke verdiene bor.
+
+---
+
 ## Før du starter
 
-Les filene fra `marketing/`-mappen:
+Les filene fra `marketing/`-mappen (disse er prosjektspesifikke):
 
 **marketing/BRAND.md** for:
 - **Audience**: Hvem snakker vi til?
@@ -31,7 +64,15 @@ Les filene fra `marketing/`-mappen:
 - **Hva fungerer**: Dokumenterte innsikter
 - **Segmenter**: Hvem konverterer faktisk?
 
-Hvis filene ikke finnes, foreslå å kjøre `/marketing-playbook:init` for å sette opp.
+**marketing/DESIGN-SYSTEM.md** for (hvis UI-arbeid):
+- **Aesthetic direction**: Visuell retning og vibe
+- **Farger**: Faktisk fargepalett med hex-verdier
+- **Typografi**: Faktiske fonts og størrelser
+- **Komponenter**: Faktiske patterns og kode
+
+Hvis filene ikke finnes:
+- Kjør `/marketing-playbook:init` for BRAND, JOURNEY, DISTRIBUTION, LEARNINGS
+- Kjør `/design-system:init` for DESIGN-SYSTEM.md
 
 ---
 
@@ -202,16 +243,25 @@ Foreslå oppdatering av JOURNEY.md når:
 
 ## Relaterte Kommandoer
 
-- `/marketing-playbook` - Vis status og versjon
-- `/marketing-playbook:init` - Opprett alle 4 filer (BRAND, JOURNEY, DISTRIBUTION, LEARNINGS)
-- `/marketing-playbook:check` - Sjekk innhold mot marketing/-filene
-- `/marketing-playbook:audit` - Full prosjekt-audit
+| Kommando | Output |
+|----------|--------|
+| `/marketing-playbook:init` | Oppretter BRAND, JOURNEY, DISTRIBUTION, LEARNINGS |
+| `/marketing-playbook:check` | Validerer innhold mot ./marketing/ |
+| `/marketing-playbook:audit` | Full prosjekt-audit |
+| `/design-system:init` | Oppretter DESIGN-SYSTEM.md |
 
 ## Relaterte Skills
 
-- `distribution-principles` - Tidløse distribusjonsprinsipper (SOV→SOM, 60:40, Reach>Frequency)
-- `customer-principles` - Lojalitet, retention, community building
-- `storytelling-copywriting` - Rammeverk for copy og innhold (AIDA, PAS, headlines)
-- `marketing-psychology` - 35+ psykologiske prinsipper per funnel-stage
-- `marketing-mindset` - 20 strategiske prinsipper
-- `brand-principles` - 7 prinsipper for merkevarebygging
+Alle skills inneholder **metodikk og prinsipper** - ikke konkrete verdier:
+
+| Skill | Innhold |
+|-------|---------|
+| `design-system` | UI/UX metodikk, anti-patterns, estetiske retninger |
+| `storytelling-copywriting` | Rammeverk for copy (AIDA, PAS, headlines) |
+| `marketing-psychology` | 35+ psykologiske prinsipper per funnel-stage |
+| `marketing-mindset` | 20 strategiske prinsipper |
+| `brand-principles` | 7 prinsipper for merkevarebygging |
+| `distribution-principles` | SOV→SOM, 60:40, Reach>Frequency |
+| `customer-principles` | Lojalitet, retention, community |
+
+**Husk:** Disse er guider. Faktiske verdier kommer fra `./marketing/`.

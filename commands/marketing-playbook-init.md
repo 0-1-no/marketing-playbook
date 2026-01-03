@@ -7,6 +7,26 @@ allowed-tools: Read, Write, Glob, AskUserQuestion
 
 Opprett `BRAND.md`, `JOURNEY.md`, `DISTRIBUTION.md` og `LEARNINGS.md` for dette prosjektet gjennom interaktivt intervju (47 spørsmål).
 
+---
+
+## Arkitektur-påminnelse
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│ DU ER HER: Kjører init i en spesifikk kodebase                     │
+│                                                                     │
+│ Marketing Playbook (plugin) = Rammeverk og metodikk                │
+│ ./marketing/ (denne kodebasen) = Skreddersydde verdier            │
+│                                                                     │
+│ Alt du samler inn nå skal handle om DETTE PROSJEKTET.              │
+│ Ikke generelle prinsipper - konkrete verdier for denne merkevaren. │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+**Fokus:** Spør om og dokumenter verdier som er spesifikke for denne kodebasen og merkevaren den representerer.
+
+---
+
 ## Steg 1: Sjekk eksisterende
 
 Sjekk om `marketing/`-mappen finnes med `BRAND.md`, `JOURNEY.md`, `DISTRIBUTION.md` eller `LEARNINGS.md`.
