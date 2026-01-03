@@ -389,11 +389,20 @@ Se examples/DISTRIBUTION.md for struktur. Inkluder:
 - Channel Performance med metrics
 - Owned vs Rented assets
 - Gaps & Opportunities
+- **SEO & AEO Strategy** med tomme tabeller for:
+  - Primary Keywords (fylles ut etter keyword research)
+  - Content Plan (planlegges etter at keywords er identifisert)
+  - AEO Tracking (spores etter at innhold er publisert)
+  - Technical SEO Status
 
 **Hvis from scratch (ingen stack/kanaler ennå):**
 - Inkluder Quick Start: Organic SEO seksjon
 - Marker stack-felter som "[Ikke satt opp ennå]"
 - Fokuser på de 5 første SEO-stegene
+- SEO Strategy-tabeller settes opp med placeholder-verdier
+
+> **Viktig:** Detaljert keyword research gjøres ETTER init.
+> Bruk `seo-aeo` skill og kjør `/seo-aeo:audit` for teknisk sjekk.
 
 ### marketing/LEARNINGS.md
 Se examples/LEARNINGS.md for struktur. Inkluder:
@@ -443,6 +452,13 @@ NESTE STEG
 3. Kjør /marketing-playbook:audit for full gjennomgang
 4. Dokumenter learnings i LEARNINGS.md underveis
 5. Oppdater DISTRIBUTION.md når stack/kanaler endres
+
+[Hvis du har en nettside:]
+6. Kjør /seo-aeo:audit for SEO og AI-synlighet-sjekk
+7. Fyll ut keyword-tabellene i DISTRIBUTION.md
+
+[Hvis du jobber med UI/design:]
+8. Kjør /design-system:init for å opprette DESIGN-SYSTEM.md
 
 TIP: LEARNINGS.md er beviset på at merkevaren fungerer.
      Jo mer du dokumenterer, jo tryggere beslutninger.

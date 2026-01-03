@@ -60,6 +60,23 @@ Hvis filene ikke finnes, kjør `/marketing-playbook:init` først.
 
 ---
 
+## Hvor lagres SEO-data?
+
+All SEO-data for prosjektet lagres i `./marketing/DISTRIBUTION.md` under seksjonen **SEO & AEO Strategy**:
+
+| Data | Lagres i |
+|------|----------|
+| Primary keywords | `DISTRIBUTION.md` → Primary Keywords tabell |
+| Secondary keywords | `DISTRIBUTION.md` → Secondary Keywords tabell |
+| Content plan | `DISTRIBUTION.md` → Content Plan tabell |
+| AEO tracking | `DISTRIBUTION.md` → AEO Tracking tabell |
+| Technical SEO status | `DISTRIBUTION.md` → Technical SEO Status tabell |
+| Test-resultater | `LEARNINGS.md` → Dokumenter hva som fungerer |
+
+**Denne skillen** (seo-aeo) inneholder kun metodikk - faktiske verdier går i `./marketing/`.
+
+---
+
 ## Ressurser (Metodikk)
 
 | Fil | Bruk når du... |

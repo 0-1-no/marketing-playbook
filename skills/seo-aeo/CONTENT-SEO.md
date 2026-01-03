@@ -57,13 +57,15 @@ Alle søk har en underliggende intent. Match innhold til intent.
 
 Hver side skal optimaliseres for ETT hovedsøkeord.
 
-### Mapping-template
+### Mapping-template (eksempel)
 
 | Side | Primary Query | Secondary Keywords | Intent | Status |
 |------|---------------|-------------------|--------|--------|
 | /crm/ | beste crm for smb | crm-system, kundeoppfølging | Commercial | Live |
 | /blogg/seo-guide/ | seo for nybegynnere | seo-tips, seo-guide | Informational | Live |
 | /priser/ | norea pris | norea kostnader, prising | Transactional | Live |
+
+> **Lagring:** Dokumenter faktiske søkeord i `./marketing/DISTRIBUTION.md` → Primary Keywords tabell.
 
 ### Optimalisering per side
 
@@ -308,7 +310,7 @@ Google kan nedgradere åpenbart AI-generert innhold som mangler verdi.
 
 ## Innholdskalender
 
-### Template
+### Template (eksempel)
 
 | Uke | Innhold | Primary Query | Type | Status | Ansvarlig |
 |-----|---------|---------------|------|--------|-----------|
@@ -316,6 +318,8 @@ Google kan nedgradere åpenbart AI-generert innhold som mangler verdi.
 | 2 | On-page tips | on-page seo tips | Cluster | Planlagt | - |
 | 3 | Technical audit | teknisk seo sjekkliste | Cluster | Planlagt | - |
 | 4 | Link building | link building strategi | Cluster | Planlagt | - |
+
+> **Lagring:** Dokumenter faktisk innholdsplan i `./marketing/DISTRIBUTION.md` → Content Plan tabell.
 
 ### Prioritering
 

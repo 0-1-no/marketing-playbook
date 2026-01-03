@@ -58,6 +58,7 @@ Les filene fra `marketing/`-mappen (disse er prosjektspesifikke):
 - **Stack**: Hvilke verktøy brukes (email, CMS, analytics)?
 - **Kanaler**: Hvor er merkevaren til stede?
 - **Budget**: Hvordan fordeles ressursene (60:40)?
+- **SEO & AEO Strategy**: Søkeord, innholdsplan, AI-synlighet
 
 **marketing/LEARNINGS.md** for:
 - **BAF-status**: Er merkevaren validert?
@@ -249,6 +250,7 @@ Foreslå oppdatering av JOURNEY.md når:
 | `/marketing-playbook:check` | Validerer innhold mot ./marketing/ |
 | `/marketing-playbook:audit` | Full prosjekt-audit |
 | `/design-system:init` | Oppretter DESIGN-SYSTEM.md |
+| `/seo-aeo:audit` | SEO og AEO teknisk audit |
 
 ## Relaterte Skills
 
@@ -256,6 +258,7 @@ Alle skills inneholder **metodikk og prinsipper** - ikke konkrete verdier:
 
 | Skill | Innhold |
 |-------|---------|
+| `seo-aeo` | SEO, AEO, søkeord, AI-synlighet |
 | `design-system` | UI/UX metodikk, anti-patterns, estetiske retninger |
 | `storytelling-copywriting` | Rammeverk for copy (AIDA, PAS, headlines) |
 | `marketing-psychology` | 35+ psykologiske prinsipper per funnel-stage |

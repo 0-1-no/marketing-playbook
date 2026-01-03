@@ -427,6 +427,9 @@ Hvordan hørte du først om oss?
 └─────────────────────────────────────────────────┘
 ```
 
+> **Lagring:** Dokumenter AEO-resultater i `./marketing/DISTRIBUTION.md` → AEO Tracking tabell.
+> Detaljerte test-resultater og innsikter går i `./marketing/LEARNINGS.md`.
+
 ---
 
 ## Diagnostikk

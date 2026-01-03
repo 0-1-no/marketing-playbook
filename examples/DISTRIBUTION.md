@@ -145,6 +145,89 @@ Benchmark: 60% brand / 40% activation (Binet & Field)
 
 ---
 
+## SEO & AEO Strategy
+
+> Søkeordstrategi, innholdsplan og AI-synlighet.
+> For metodikk og prinsipper, se `seo-aeo` skill.
+
+---
+
+### Primary Keywords
+
+Hovedsøkeordene vi fokuserer på. Én primary keyword per viktig side.
+
+| Keyword | Volume/mnd | Difficulty | Intent | Target Page | Ranking | Status |
+|---------|------------|------------|--------|-------------|---------|--------|
+| [hovedsøkeord 1] | [tall] | [1-100] | [Info/Commercial/Trans] | [/side/] | [pos] | [🟢/🟡/🔴] |
+| [hovedsøkeord 2] | [tall] | [1-100] | [Info/Commercial/Trans] | [/side/] | [pos] | [🟢/🟡/🔴] |
+| [hovedsøkeord 3] | [tall] | [1-100] | [Info/Commercial/Trans] | [/side/] | [pos] | [🟢/🟡/🔴] |
+
+**Intent-typer:**
+- **Informational** - "Hva er...", "Hvordan..."
+- **Commercial** - "Beste...", "Sammenligning..."
+- **Transactional** - "Kjøp...", "Pris..."
+- **Navigational** - "[merkenavn]", "Logg inn..."
+
+---
+
+### Secondary Keywords
+
+Støttesøkeord som bygger topical authority rundt primary keywords.
+
+| Keyword | Volume | Target Page | Cluster (tilhører) |
+|---------|--------|-------------|-------------------|
+| [sekundært 1] | [tall] | [/side/] | [primary keyword] |
+| [sekundært 2] | [tall] | [/side/] | [primary keyword] |
+
+---
+
+### Content Plan
+
+Innhold som skal produseres for å dekke søkeordstrategien.
+
+| Prioritet | Tittel | Primary Query | Type | Ord | Status |
+|-----------|--------|---------------|------|-----|--------|
+| 🔴 Kritisk | [Tittel 1] | [søkeord] | Pillar | 2500+ | [Planlagt/Skrives/Publisert] |
+| 🟡 Høy | [Tittel 2] | [søkeord] | Cluster | 1500+ | [Planlagt/Skrives/Publisert] |
+| 🟢 Medium | [Tittel 3] | [søkeord] | Cluster | 1000+ | [Planlagt/Skrives/Publisert] |
+
+**Innholdstyper:**
+- **Pillar** - Hovedartikkel (2500+ ord), linker til clusters
+- **Cluster** - Støtteartikkel (1500+ ord), linker til pillar
+- **FAQ** - Spørsmål-svar format, optimalisert for AEO
+- **How-to** - Steg-for-steg guide
+
+---
+
+### AEO Tracking (AI-synlighet)
+
+Spor om innholdet blir sitert i AI-søkemotorer.
+
+| AI Engine | Testet query | Sitert? | URL vist? | Sist sjekket |
+|-----------|--------------|---------|-----------|--------------|
+| ChatGPT | "[spørsmål]" | [Ja/Nei/Delvis] | [Ja/Nei] | [YYYY-MM-DD] |
+| Perplexity | "[spørsmål]" | [Ja/Nei/Delvis] | [Ja/Nei] | [YYYY-MM-DD] |
+| Claude | "[spørsmål]" | [Ja/Nei/Delvis] | [Ja/Nei] | [YYYY-MM-DD] |
+| Google AI Overview | "[spørsmål]" | [Ja/Nei/Delvis] | [Ja/Nei] | [YYYY-MM-DD] |
+
+**Mål:** Bli sitert i minst 2 AI-motorer for hvert primary keyword.
+
+---
+
+### Technical SEO Status
+
+| Sjekk | Status | Sist verifisert |
+|-------|--------|-----------------|
+| robots.txt tillater AI-crawlere | [✅/❌] | [YYYY-MM-DD] |
+| sitemap.xml oppdatert | [✅/❌] | [YYYY-MM-DD] |
+| Core Web Vitals (LCP ≤2.5s) | [✅/❌] | [YYYY-MM-DD] |
+| llms.txt fil | [✅/❌/Ikke relevant] | [YYYY-MM-DD] |
+| Schema.org markup | [✅/❌] | [YYYY-MM-DD] |
+
+> Kjør `/seo-aeo:audit` for full teknisk sjekk.
+
+---
+
 ## Quick Start: Organic SEO
 
 *For prosjekter som starter fra scratch.*
@@ -161,18 +244,20 @@ Organic SEO er ofte det beste startpunktet fordi:
 - Hva søker målgruppen etter?
 - Verktøy: Google Keyword Planner (gratis), Ahrefs, SEMrush
 - Fokus på long-tail keywords med lavere konkurranse
+- **Dokumenter i "Primary Keywords"-tabellen over**
 
 **2. Cornerstone Content (5-10 artikler)**
 - Evergreen innhold som svarer på hovedspørsmålene
 - Minimum 1500 ord per artikkel
 - Inkluder visuelle elementer
+- **Planlegg i "Content Plan"-tabellen over**
 
 **3. Technical Basics**
 ```
 □ Meta title og description på alle sider
 □ Sitemap.xml submitted til Google Search Console
-□ Robots.txt konfigurert
-□ PageSpeed score >80
+□ Robots.txt konfigurert (inkl. AI-crawlere)
+□ PageSpeed score >80 (Core Web Vitals)
 □ Mobile-friendly
 □ HTTPS
 ```
@@ -182,10 +267,11 @@ Organic SEO er ofte det beste startpunktet fordi:
 - Viktig selv for online-only businesses
 - Samle reviews tidlig
 
-**5. Answer "People Also Ask"**
+**5. Answer "People Also Ask" + AI**
 - Søk på dine keywords i Google
-- Se hvilke spørsmål som dukker opp
-- Skriv innhold som svarer direkte på disse
+- Test samme spørsmål i ChatGPT og Perplexity
+- Skriv innhold som svarer direkte (40-60 ord answer blocks)
+- **Spor resultater i "AEO Tracking"-tabellen**
 
 ### Forventet tidslinje
 

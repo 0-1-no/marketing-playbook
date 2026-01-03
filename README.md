@@ -186,7 +186,7 @@ JOURNEY.md kartlegger kundereisen:
 
 ## marketing/DISTRIBUTION.md-struktur
 
-DISTRIBUTION.md kartlegger hvor dere er til stede:
+DISTRIBUTION.md kartlegger hvor dere er til stede og SEO-strategi:
 
 ```markdown
 # [Prosjektnavn] Distribution
@@ -204,13 +204,23 @@ DISTRIBUTION.md kartlegger hvor dere er til stede:
 **Secondary:** [Vedlikeholdes]
 **Experimental:** [Testes]
 
+## SEO & AEO Strategy
+### Primary Keywords
+| Keyword | Volume | Difficulty | Intent | Target Page | Status |
+
+### Content Plan
+| Tittel | Primary Query | Type | Status |
+
+### AEO Tracking
+| AI Engine | Testet query | Sitert? | Sist sjekket |
+
 ## Quick Start: Organic SEO
 *For nye prosjekter uten etablert stack*
-1. Keyword research
-2. Cornerstone content (5-10 artikler)
+1. Keyword research → dokumenter i Primary Keywords
+2. Cornerstone content → planlegg i Content Plan
 3. Technical basics
 4. Google Business Profile
-5. Answer "People Also Ask"
+5. Answer "People Also Ask" + AI → spor i AEO Tracking
 ```
 
 ## Brukseksempler
