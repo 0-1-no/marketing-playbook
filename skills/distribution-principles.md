@@ -1,6 +1,6 @@
 ---
 name: distribution-principles
-description: Timeless principles for marketing distribution. Use when planning media strategy, channel selection, budget allocation, or evaluating reach and frequency trade-offs.
+description: Tidløse prinsipper for markedsføringsdistribusjon. Aktiveres ved planlegging av mediestrategi, kanalvalg, budsjettallokering, eller evaluering av reach vs frekvens.
 ---
 
 # Distribution Principles

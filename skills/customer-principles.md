@@ -1,6 +1,6 @@
 ---
 name: customer-principles
-description: Principles for building customer loyalty, retention, and community. Use when designing post-purchase experiences, loyalty programs, customer service strategy, or community building initiatives.
+description: Prinsipper for kundelojalitet, retention og community. Aktiveres ved design av post-purchase opplevelser, lojalitetsprogrammer, kundeservice-strategi, eller community-bygging.
 ---
 
 # Customer Principles

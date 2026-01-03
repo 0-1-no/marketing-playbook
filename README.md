@@ -119,6 +119,7 @@ Marketing Playbook er bygget rundt tre kjernepilarer:
 | `/marketing-playbook:audit` | Full prosjekt-audit med Brand Health og BAF |
 | `/design-system:init` | Opprett DESIGN-SYSTEM.md gjennom iterativ demo-prosess |
 | `/seo-aeo:audit` | SEO og AEO audit med scorecard og prioriterte forbedringer |
+| `/content-writer:init` | Opprett CONTENT-RULES.md med voice-dimensjoner og strukturregler |
 
 ## Filer som opprettes
 
