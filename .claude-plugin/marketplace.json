@@ -15,7 +15,7 @@
         "name": "0-1.no",
         "url": "https://0-1.no"
       },
-      "source": ".",
+      "source": "./",
       "category": "productivity"
     }
   ]
