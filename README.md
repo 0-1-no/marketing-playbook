@@ -70,7 +70,16 @@ ditt-prosjekt/
 ## Installasjon
 
 ```bash
-claude plugin install 0-1-no/marketing-playbook
+# 1. Legg til marketplace
+claude plugin marketplace add 0-1-no/marketing-playbook
+
+# 2. Installer plugin
+claude plugin install marketing-playbook
+```
+
+### Verifiser installasjon
+```bash
+claude plugins list
 ```
 
 ## De 6 Kategoriene

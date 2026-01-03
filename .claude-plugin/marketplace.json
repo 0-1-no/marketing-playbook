@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "0-1-plugins",
+  "description": "Claude Code plugins fra 0-1.no",
+  "owner": {
+    "name": "0-1.no",
+    "email": "kontakt@0-1.no"
+  },
+  "plugins": [
+    {
+      "name": "marketing-playbook",
+      "description": "ABC-rammeverk for konsistent merkevare-kommunikasjon",
+      "version": "0.1.0",
+      "author": {
+        "name": "0-1.no",
+        "url": "https://0-1.no"
+      },
+      "source": ".",
+      "category": "productivity"
+    }
+  ]
+}
