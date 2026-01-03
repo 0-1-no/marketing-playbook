@@ -4,14 +4,67 @@
 
 Marketing Playbook hjelper deg med å bygge og opprettholde en konsistent merkevare gjennom hele kundereisen - fra første kontakt til lojal ambassadør.
 
-**Mappestruktur:**
+---
+
+## Arkitektur
+
+Marketing Playbook har en **to-lags arkitektur**:
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│ MARKETING-PLAYBOOK (Global Plugin)                                  │
+│                                                                     │
+│ Installeres globalt for brukeren. Inneholder:                      │
+│ • Metodikk og prinsipper                                           │
+│ • Prosesser for å opprette ./marketing/                            │
+│ • Sjekklister og best practices                                    │
+│ • Guider for hvordan Claude skal jobbe                             │
+│                                                                     │
+│ INGEN konkrete verdier - kun rammeverk og arkitektur               │
+└─────────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────────┐
+│ ./marketing/ (Per-Repo Innhold)                                     │
+│                                                                     │
+│ Opprettes i hver kodebase. Inneholder:                             │
+│ • BRAND.md      - Faktiske brand-verdier, tone of voice            │
+│ • JOURNEY.md    - Faktisk kundereise, touchpoints                  │
+│ • DISTRIBUTION.md - Faktisk stack, kanaler, budsjett               │
+│ • LEARNINGS.md  - Faktiske tester og resultater                    │
+│ • DESIGN-SYSTEM.md - Faktiske farger, fonts, komponenter           │
+│                                                                     │
+│ SKREDDERSYDD for hver kodebase - dette er kildene til sannhet     │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+### Hvordan det fungerer
+
+1. **Plugin installeres globalt** - Gir Claude tilgang til metodikk og prosesser
+2. **Claude kjører init** - Oppretter `./marketing/` med brukerens verdier
+3. **Claude leser fra ./marketing/** - Alltid kilde til sannhet for faktiske verdier
+4. **Plugin-skills guider arbeidet** - Prinsipper og sjekklister, ikke verdier
+
+### Fleksibilitet
+
+`./marketing/` tilpasses hver kodebase:
+- **Full-stack nettside**: Alle filer inkludert DESIGN-SYSTEM.md
+- **API/Backend**: Kanskje bare BRAND.md for dokumentasjon
+- **Social media bot**: BRAND.md + DISTRIBUTION.md
+- **Landing page**: Alt fokusert på konvertering
+
+---
+
+## Mappestruktur
+
 ```
 ditt-prosjekt/
-└── marketing/           ← Alt marketing-innhold samlet
-    ├── BRAND.md         - Hvem dere er (ABC-rammeverket)
-    ├── JOURNEY.md       - Hvordan kunder opplever dere (funnel)
-    ├── DISTRIBUTION.md  - Hvor dere viser dere (kanaler & stack)
-    └── LEARNINGS.md     - Bevis på at det fungerer (BAF)
+└── marketing/                 ← Skreddersydd for dette prosjektet
+    ├── BRAND.md               - Hvem dere er (ABC-rammeverket)
+    ├── JOURNEY.md             - Hvordan kunder opplever dere (funnel)
+    ├── DISTRIBUTION.md        - Hvor dere viser dere (kanaler & stack)
+    ├── LEARNINGS.md           - Bevis på at det fungerer (BAF)
+    └── DESIGN-SYSTEM.md       - Visuell identitet (farger, fonts, komponenter)
 ```
 
 ## Installasjon
@@ -61,9 +114,11 @@ Marketing Playbook er bygget rundt tre kjernepilarer:
 | Kommando | Beskrivelse |
 |----------|-------------|
 | `/marketing-playbook` | Vis status og versjon |
-| `/marketing-playbook:init` | Opprett alle 4 filer interaktivt (54 spørsmål) |
+| `/marketing-playbook:init` | Opprett BRAND, JOURNEY, DISTRIBUTION, LEARNINGS (54 spørsmål) |
 | `/marketing-playbook:check` | Verifiser innhold mot marketing/-filene |
 | `/marketing-playbook:audit` | Full prosjekt-audit med Brand Health og BAF |
+| `/design-system:init` | Opprett DESIGN-SYSTEM.md gjennom iterativ demo-prosess |
+| `/seo-aeo:audit` | SEO og AEO audit med scorecard og prioriterte forbedringer |
 
 ## Filer som opprettes
 
@@ -183,7 +238,43 @@ DISTRIBUTION.md kartlegger hvor dere er til stede:
 
 ## Skills
 
-Pluginen inkluderer syv skills som automatisk aktiveres når du jobber med markedsinnhold:
+Pluginen inkluderer skills som automatisk aktiveres når du jobber med relevant innhold.
+
+> **Viktig:** Skill-filene inneholder metodikk og prinsipper - ikke konkrete verdier.
+> Faktiske verdier leses alltid fra `./marketing/`-mappen i prosjektet.
+
+### design-system
+Aktiveres ved UI/UX-arbeid, styling, komponenter, landing pages.
+
+| Fil | Innhold |
+|-----|---------|
+| `SKILL.md` | Decision tree og quick reference |
+| `AESTHETIC-DIRECTION.md` | 7 visuelle retninger (Brutalist→Playful) |
+| `ANTI-PATTERNS.md` | AI slop detection, sjekklister |
+| `TYPOGRAPHY.md` | Font-valg prinsipper, pairing |
+| `COLOR-THEORY.md` | Fargepalett-strategier, kontrast |
+| `COMPONENTS.md` | Komponent-patterns, states |
+| `MICRO-INTERACTIONS.md` | Animasjon-prinsipper, timing |
+| `RESPONSIVE.md` | Mobile-first, breakpoints |
+| `ACCESSIBILITY.md` | WCAG, keyboard-nav, kontrast |
+
+**Output:** Oppretter/leser `marketing/DESIGN-SYSTEM.md` med faktiske verdier.
+
+### seo-aeo
+Aktiveres ved SEO-arbeid, meta-tagger, strukturert data, og AI-søkeoptimalisering (AEO).
+
+| Fil | Innhold |
+|-----|---------|
+| `SKILL.md` | Decision tree og quick reference |
+| `TECHNICAL-SEO.md` | Core Web Vitals, robots.txt, sitemap, AI-crawlere |
+| `ON-PAGE-SEO.md` | Title tags, meta, headings, bilder, URLs |
+| `STRUCTURED-DATA.md` | Schema.org, JSON-LD, rich snippets |
+| `AEO.md` | Answer Engine Optimization for AI-søk |
+| `CONTENT-SEO.md` | Søkeord, intern lenking, innholdsstrategi |
+| `SOCIAL-META.md` | Open Graph, Twitter Cards |
+| `AUDIT-CHECKLIST.md` | Pre-launch sjekkliste (63 punkter) |
+
+**Kjør:** `/seo-aeo:audit` for full SEO/AEO-audit med scorecard.
 
 ### marketing-playbook
 - Leser alle 4 marketing/-filer før du skriver
