@@ -82,6 +82,29 @@ claude plugin install marketing-playbook
 claude plugins list
 ```
 
+## Oppdatering
+
+Når det kommer nye versjoner av pluginen:
+
+```bash
+# Oppdater til nyeste versjon
+claude plugin update marketing-playbook
+
+# Eller med marketplace-navn
+claude plugin update marketing-playbook@0-1-no
+```
+
+### Sjekk tilgjengelige oppdateringer
+```bash
+# Oppdater marketplace-metadata først
+claude plugin marketplace update
+
+# Deretter kjør update
+claude plugin update marketing-playbook
+```
+
+> **Tips:** Se [CHANGELOG.md](CHANGELOG.md) for oversikt over hva som er nytt i hver versjon.
+
 ## De 6 Kategoriene
 
 Marketing Playbook dekker seks fundamentale kategorier:
@@ -120,15 +143,27 @@ Marketing Playbook er bygget rundt tre kjernepilarer:
 
 ## Kommandoer
 
+### Hovedkommandoer
+
 | Kommando | Beskrivelse |
 |----------|-------------|
 | `/marketing-playbook` | Vis status og versjon |
-| `/marketing-playbook:init` | Opprett BRAND, JOURNEY, DISTRIBUTION, LEARNINGS (54 spørsmål) |
+| `/marketing-playbook:init` | Opprett alle filer med checkpoint-basert generering |
 | `/marketing-playbook:check` | Verifiser innhold mot marketing/-filene |
 | `/marketing-playbook:audit` | Full prosjekt-audit med Brand Health og BAF |
-| `/design-system:init` | Opprett DESIGN-SYSTEM.md gjennom iterativ demo-prosess |
+| `/design-system:init` | Opprett DESIGN-SYSTEM.md med iterativ demo (bevarer alle versjoner) |
+| `/content-writer:init` | Opprett CONTENT-RULES.md med valgfri showcase-app |
 | `/seo-aeo:audit` | SEO og AEO audit med scorecard og prioriterte forbedringer |
-| `/content-writer:init` | Opprett CONTENT-RULES.md med voice-dimensjoner og strukturregler |
+
+### Separate init-kommandoer
+
+For fleksibilitet kan du også kjøre hver del separat:
+
+| Kommando | Beskrivelse |
+|----------|-------------|
+| `/marketing-playbook:brand-init` | Opprett kun BRAND.md (ABC-rammeverket) |
+| `/marketing-playbook:journey-init` | Opprett kun JOURNEY.md (kundereise) |
+| `/marketing-playbook:distribution-init` | Opprett DISTRIBUTION.md + LEARNINGS.md (kanaler og stack) |
 
 ## Filer som opprettes
 

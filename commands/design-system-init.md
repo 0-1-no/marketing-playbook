@@ -215,19 +215,32 @@ npx shadcn@latest init  # hvis shadcn valgt
 ```
 design-showcase/
 ├── app/
-│   ├── page.tsx           # Directory med alle alternativer
-│   ├── option-1/page.tsx  # Landing page variant 1
-│   ├── option-2/page.tsx  # Landing page variant 2
-│   └── option-3/page.tsx  # Landing page variant 3
+│   ├── page.tsx           # Oversikt med alle versjoner
+│   ├── v1/page.tsx        # Første iterasjon
+│   ├── v2/page.tsx        # Andre iterasjon (etter feedback)
+│   ├── v3/page.tsx        # Tredje iterasjon (osv.)
+│   └── compare/page.tsx   # Side-by-side sammenligning
 ```
+
+> **VIKTIG:** Ved hver iterasjon, opprett NY versjon (v2, v3, osv).
+> IKKE overskriv tidligere versjoner - behold dem for sammenligning.
 
 3. Directory-side med oversikt:
 ```tsx
-// Mørk bakgrunn, kort for hver variant
+// Mørk bakgrunn, kort for hver versjon
+// Viser: versjonsnummer, dato, hovedendringer
 // Klikk for å åpne full-page preview
+// Badge på nyeste versjon
 ```
 
-4. Kjør lokalt:
+4. Compare-side:
+```tsx
+// Side-by-side visning av alle versjoner
+// Kan velge hvilke 2 versjoner å sammenligne
+// Nyttig for å se progresjon
+```
+
+5. Kjør lokalt:
 ```bash
 npm run dev
 # Bruker evaluerer i browser på localhost:3000
@@ -330,11 +343,17 @@ Gjenta til bruker gir sign-off:
    - Konkrete endringer basert på feedback
    - Prioriter de viktigste
 
-3. **Bygg oppdatert demo**
-   - Implementer endringer
+3. **Bygg NY versjon (ikke overskriv!)**
+   - Opprett `v2/page.tsx`, `v3/page.tsx` osv.
+   - **BEHOLD tidligere versjoner** for sammenligning
+   - Implementer endringer i ny versjon
    - Test mot ANTI-PATTERNS.md
 
-4. **Be om ny feedback**
+4. **Oppdater oversiktssiden**
+   - Legg til nyeste versjon i listen
+   - Marker som "Current"
+
+5. **Be om ny feedback**
 
 ### Etter 3 iterasjoner
 
@@ -438,7 +457,22 @@ Design System er satt opp:
 
 📝 BRAND.md oppdatert med Design-referanse
 
-📂 design-showcase/     ← Demo-app (kan slettes eller beholdes)
+📂 design-showcase/     ← Demo-app med alle iterasjoner bevart
+   ├── v1/              ← Første versjon
+   ├── v2/              ← Andre versjon (etter feedback)
+   ├── v3/              ← Tredje versjon (osv.)
+   └── compare/         ← Sammenligning av versjoner
+
+───────────────────────────────────────────────────────────────
+STATUS - MARKETING PLAYBOOK
+───────────────────────────────────────────────────────────────
+
+[✅/❌] BRAND.md        - Merkevare
+[✅/❌] JOURNEY.md      - Kundereise
+[✅/❌] DISTRIBUTION.md - Kanaler og stack
+[✅/❌] LEARNINGS.md    - Tester og innsikter
+✅ DESIGN-SYSTEM.md - Nettopp opprettet
+[✅/❌] CONTENT-RULES.md - Innholdsregler
 
 ───────────────────────────────────────────────────────────────
 NESTE STEG
@@ -449,6 +483,12 @@ NESTE STEG
 3. Kjør /design-system for å se status
 4. Design system aktiveres automatisk ved UI-arbeid
 
+[Hvis CONTENT-RULES.md mangler:]
+💡 Kjør /content-writer:init for innholdsregler
+
+[Hvis BRAND.md mangler:]
+💡 Kjør /marketing-playbook:brand-init for merkevare-grunnlag
+
 ───────────────────────────────────────────────────────────────
 TIPS
 ───────────────────────────────────────────────────────────────
@@ -457,6 +497,7 @@ TIPS
 • Den sjekker alltid mot DESIGN-SYSTEM.md
 • Bruk /marketing-playbook:check for å validere UI mot brand
 • Oppdater DESIGN-SYSTEM.md når designet utvikler seg
+• design-showcase/ kan beholdes for fremtidige iterasjoner
 
 ═══════════════════════════════════════════════════════════════
 ```

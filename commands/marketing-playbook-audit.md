@@ -7,20 +7,82 @@ allowed-tools: Read, Glob, Grep
 
 Utfør en komplett gjennomgang av prosjektets marketing-innhold mot alle 4 marketing/-filer.
 
-## Steg 1: Les Marketing Playbook-filer
+## Steg 1: Les Marketing Playbook-filer og Vurder Modenhets-fase
 
-Finn og les alle filer. Hvis de ikke finnes, anbefal å kjøre `/marketing-playbook:init` først.
+Finn og les alle filer. Identifiser prosjektets modenhets-fase for å tilpasse forventninger.
+
+### Fil-sjekk
 
 ```
 Laster Marketing Playbook...
 
-✅ BRAND.md funnet
-✅ JOURNEY.md funnet
-✅ DISTRIBUTION.md funnet
-✅ LEARNINGS.md funnet
+[✅/❌] BRAND.md
+[✅/❌] JOURNEY.md
+[✅/❌] DISTRIBUTION.md
+[✅/❌] LEARNINGS.md
+[✅/❌] DESIGN-SYSTEM.md
+[✅/❌] CONTENT-RULES.md
+```
 
+### Modenhets-deteksjon
+
+Vurder prosjektets fase basert på:
+
+| Indikator | Tidlig fase | Etablert fase |
+|-----------|-------------|---------------|
+| Antall sider | < 5 | > 10 |
+| LEARNINGS.md | Tom/placeholder | Dokumenterte tester |
+| Konverteringsdata | Ukjent | Dokumentert |
+| Marketing stack | Minimal/ingen | Satt opp |
+| Journey stages | 1-2 dekket | 4+ dekket |
+
+### Fase-tilpasning
+
+**Hvis TIDLIG FASE (< 5 sider, tom LEARNINGS.md):**
+```
+───────────────────────────────────────────────────────────────
+                    📊 TIDLIG-FASE PROSJEKT
+───────────────────────────────────────────────────────────────
+
+Dette ser ut som et prosjekt i tidlig fase. Audit tilpasses:
+
+• Fokus på grunnleggende oppsett, ikke fullstendighet
+• Journey-analyse fokuserer på Awareness/Consideration
+• Purchase/Post-purchase/Loyalty merkes som "Ikke relevant ennå"
+• Distribution-analyse fokuserer på Quick Start SEO
+• Brand Health evalueres med mildere forventninger
+
+Manglende filer? Jeg kan opprette dem med placeholder-verdier:
+[Spør bruker om de vil opprette manglende filer]
+
+───────────────────────────────────────────────────────────────
+```
+
+**Hvis ETABLERT FASE:**
+```
 Starter full audit...
 ```
+
+### Håndtering av manglende filer
+
+Hvis noen filer mangler, tilby å opprette dem:
+
+```
+⚠️ Manglende filer:
+- JOURNEY.md
+- DISTRIBUTION.md
+- LEARNINGS.md
+
+Vil du at jeg:
+1. Oppretter filene med placeholder-verdier (raskest)
+2. Kjører /marketing-playbook:init for fullstendig oppsett
+3. Fortsetter audit uten disse filene
+```
+
+**Hvis bruker velger 1 (placeholder-verdier):**
+- Opprett JOURNEY.md med "[Under utvikling - tidlig fase]" markører
+- Opprett DISTRIBUTION.md med "[Ikke satt opp ennå]" markører
+- Opprett LEARNINGS.md med tom template
 
 Merk: LEARNINGS.md og DISTRIBUTION.md kan være delvis tomme for nye merkevarer. Dette er OK - audit vil anbefale konkrete neste steg.
 
@@ -171,8 +233,9 @@ Kategoriser alle marketing-filer etter journey stage:
 
 ### Journey Gaps
 
-Identifiser mangler:
+Identifiser mangler, tilpasset prosjektets fase:
 
+**For ETABLERT FASE:**
 ```
 📊 Journey Coverage
 
@@ -186,6 +249,23 @@ Loyalty:       ░░░░░░░░░░ 0%   (0 filer) ⚠️
 Anbefalinger:
 - ⚠️ Mangler post-purchase innhold (velkomst, onboarding)
 - ⚠️ Mangler loyalty innhold (nyhetsbrev, lojalitetsprogram)
+```
+
+**For TIDLIG FASE:**
+```
+📊 Journey Coverage (Tidlig fase)
+
+Awareness:     ████████░░ 80%  ✅ Bra for tidlig fase
+Consideration: ██████████ 100% ✅ Bra for tidlig fase
+Evaluation:    ██████░░░░ 60%  ✅ Greit for nå
+Purchase:      ────────── N/A  (Ikke relevant ennå)
+Post-purchase: ────────── N/A  (Ikke relevant ennå)
+Loyalty:       ────────── N/A  (Ikke relevant ennå)
+
+💡 For tidlig-fase prosjekter:
+• Fokuser på Awareness og Consideration først
+• Purchase/Post-purchase/Loyalty kommer når du har konverteringer
+• Dokumenter i JOURNEY.md når du er klar
 ```
 
 ### Psykologi-bruk
@@ -440,10 +520,16 @@ Bevis:
 ═══════════════════════════════════════════
 
 Prosjekt: [navn]
-BRAND.md: [dato sist oppdatert]
-JOURNEY.md: [dato sist oppdatert]
-DISTRIBUTION.md: [dato sist oppdatert]
-LEARNINGS.md: [dato sist oppdatert]
+Fase: [📊 Tidlig fase / 🚀 Etablert fase]
+
+Filer:
+[✅/❌] BRAND.md        [dato]
+[✅/❌] JOURNEY.md      [dato]
+[✅/❌] DISTRIBUTION.md [dato]
+[✅/❌] LEARNINGS.md    [dato]
+[✅/❌] DESIGN-SYSTEM.md [dato]
+[✅/❌] CONTENT-RULES.md [dato]
+
 Skannet: [antall] filer
 
 ═══════════════════════════════════════════

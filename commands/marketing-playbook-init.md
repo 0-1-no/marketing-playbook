@@ -5,7 +5,11 @@ allowed-tools: Read, Write, Glob, AskUserQuestion
 
 # Marketing Playbook - Init
 
-Opprett `BRAND.md`, `JOURNEY.md`, `DISTRIBUTION.md` og `LEARNINGS.md` for dette prosjektet gjennom interaktivt intervju (47 spørsmål).
+Opprett `BRAND.md`, `JOURNEY.md`, `DISTRIBUTION.md` og `LEARNINGS.md` for dette prosjektet gjennom interaktivt intervju.
+
+> **VIKTIG INSTRUKSJON:** Denne kommandoen oppretter filer UNDERVEIS, ikke på slutten.
+> Etter hver DEL skal du umiddelbart opprette den tilhørende filen før du går videre.
+> Dette sikrer at alle filer blir opprettet selv om samtalen avbrytes.
 
 ---
 
@@ -174,6 +178,47 @@ Velg 3-4 som beskriver hvordan dere kommuniserer:
 
 ---
 
+## ✅ CHECKPOINT: Opprett BRAND.md
+
+**STOPP HER og opprett filen UMIDDELBART før du fortsetter til DEL 2.**
+
+```
+═══════════════════════════════════════════════════════════════
+                    ✅ OPPRETTER BRAND.md
+═══════════════════════════════════════════════════════════════
+
+[████░░░░░░░░░░░░] 25% - BRAND.md
+
+Basert på svarene i DEL 1, oppretter jeg nå marketing/BRAND.md...
+
+═══════════════════════════════════════════════════════════════
+```
+
+1. Opprett `marketing/`-mappen hvis den ikke finnes
+2. Opprett `marketing/BRAND.md` basert på svarene fra DEL 1
+3. Se `examples/BRAND.md` for struktur
+4. Inkluder alle ABC-elementer:
+   - Audience: primary, secondary, use cases, pain points, goals
+   - Brand: positioning, values, differentiators, competitors
+   - Communication: tone, signature story, principles, words we use/avoid
+5. Bekreft for brukeren:
+
+```
+✅ BRAND.md opprettet!
+
+📁 marketing/BRAND.md
+
+Inneholder:
+• Audience-definisjon
+• Brand-posisjonering
+• Communication-retningslinjer
+
+Fortsetter til DEL 2: JOURNEY.md...
+───────────────────────────────────────────────────────────────
+```
+
+---
+
 ## DEL 2: JOURNEY.md
 
 ```
@@ -254,6 +299,50 @@ Svar så godt du kan. "Vet ikke ennå" er helt OK for nye merkevarer.
 
 ---
 
+## ✅ CHECKPOINT: Opprett JOURNEY.md
+
+**STOPP HER og opprett filen UMIDDELBART før du fortsetter til DEL 3.**
+
+```
+═══════════════════════════════════════════════════════════════
+                    ✅ OPPRETTER JOURNEY.md
+═══════════════════════════════════════════════════════════════
+
+[████████░░░░░░░░] 50% - JOURNEY.md
+
+Basert på svarene i DEL 2, oppretter jeg nå marketing/JOURNEY.md...
+
+═══════════════════════════════════════════════════════════════
+```
+
+1. Opprett `marketing/JOURNEY.md`
+2. Se `examples/JOURNEY.md` for struktur
+3. Inkluder alle stages fra svarene:
+   - Awareness (ToFU)
+   - Consideration (MoFU)
+   - Evaluation (BoFU)
+   - Purchase
+   - Post-purchase
+   - Loyalty
+4. Marker seksjoner som "[Under utvikling]" hvis bruker svarte "vet ikke"
+5. Bekreft for brukeren:
+
+```
+✅ JOURNEY.md opprettet!
+
+📁 marketing/JOURNEY.md
+
+Inneholder:
+• Kundereise-oversikt (6 stages)
+• Touchpoints per stage
+• Psykologi-prinsipper
+
+Fortsetter til DEL 3: DISTRIBUTION.md...
+───────────────────────────────────────────────────────────────
+```
+
+---
+
 ## DEL 3: DISTRIBUTION.md
 
 ```
@@ -305,116 +394,127 @@ Vi inkluderer Quick Start-tips for organic SEO.
 
 ---
 
-## DEL 4: LEARNINGS.md
+## ✅ CHECKPOINT: Opprett DISTRIBUTION.md og LEARNINGS.md
+
+**STOPP HER og opprett begge filer UMIDDELBART.**
 
 ```
-───────────────────────────────────────────────────────────────
-                      🧪 VALIDERING
-───────────────────────────────────────────────────────────────
+═══════════════════════════════════════════════════════════════
+                    ✅ OPPRETTER DISTRIBUTION.md
+═══════════════════════════════════════════════════════════════
 
-Nå kartlegger vi Brand Audience Fit - om merkevaren faktisk
-resonerer med målgruppen i praksis.
+[████████████░░░░] 75% - DISTRIBUTION.md
 
-Nyoppstartede merkevarer: Det er helt OK å svare "ikke testet ennå".
-Vi setter opp strukturen så du kan dokumentere underveis.
-───────────────────────────────────────────────────────────────
+Basert på svarene i DEL 3, oppretter jeg nå marketing/DISTRIBUTION.md...
+
+═══════════════════════════════════════════════════════════════
 ```
 
-### Brand Audience Fit
+### Opprett DISTRIBUTION.md
 
-**Spørsmål 48:** Har dere testet om målgruppen responderer på merkevaren?
-- Alternativer: "Ja, validert", "Under testing", "Ikke testet ennå"
-- Dette er Brand Audience Fit (BAF) - bevis på at det fungerer
+1. Opprett `marketing/DISTRIBUTION.md`
+2. Se `examples/DISTRIBUTION.md` for struktur
+3. Inkluder:
+   - Marketing Stack (email, CMS, analytics, social, ads, CRM)
+   - Current Channels med primary/secondary/experimental
+   - Budget Split visualisering
+   - SEO & AEO Strategy med tomme tabeller
+4. Marker "[Ikke satt opp ennå]" for verktøy som mangler
 
-**Spørsmål 49:** Hvis testet - hvilke metoder har dere brukt?
-- Eksempler: "Venteliste", "Forhåndssalg", "Annonse-test", "Landing page"
-- Svar "ikke relevant" hvis ikke testet
+### Opprett LEARNINGS.md (automatisk template)
 
-**Spørsmål 50:** Hva er konverteringsraten deres? (hvis kjent)
-- Eksempel: "2.5% på landing page"
-- Benchmark: ≥2% indikerer sunn e-commerce
-- Svar "vet ikke" hvis ukjent
+```
+═══════════════════════════════════════════════════════════════
+                    ✅ OPPRETTER LEARNINGS.md
+═══════════════════════════════════════════════════════════════
 
-**Spørsmål 51:** Hvilke segmenter responderer best?
-- Eksempel: "Konsulenter 35-50 år"
-- Hvem konverterer faktisk, ikke bare hvem dere tror er målgruppen
+[████████████████] 100% - LEARNINGS.md
 
-### Learnings
+Oppretter tom template for å dokumentere tester og innsikter...
 
-**Spørsmål 52:** Hva har dere lært som fungerer?
-- Eksempel: "Video konverterer bedre enn tekst"
-- List gjerne flere innsikter
+═══════════════════════════════════════════════════════════════
+```
 
-**Spørsmål 53:** Hva har dere lært som IKKE fungerer?
-- Eksempel: "Lange produktbeskrivelser gir høy bounce rate"
-- Like viktig som det som fungerer
+LEARNINGS.md opprettes som **tom template** - ingen intervju nødvendig:
 
-**Spørsmål 54:** Hvilke spørsmål vil dere teste fremover?
-- Eksempel: "Fungerer budskapet for enterprise-kunder?"
-- Åpne hypoteser å validere
+```markdown
+# Learnings
+
+> Dokumentasjon av tester, resultater og innsikter.
+> Fyll ut underveis når du kjører markedsføringsaktiviteter.
 
 ---
 
-## Steg 3: Generer filer
+## Oversikt
 
-Opprett `marketing/`-mappen hvis den ikke finnes, og generer filene der:
+| Periode | Test | Resultat | BAF Status |
+|---------|------|----------|------------|
+| [dato] | [test] | [resultat] | [status] |
 
-```
-marketing/
-├── BRAND.md
-├── JOURNEY.md
-├── DISTRIBUTION.md
-└── LEARNINGS.md
-```
-
-### marketing/BRAND.md
-Se examples/BRAND.md for struktur. Inkluder:
-- Audience med pain points, goals, use cases
-- Brand med positioning, values, differentiators, competitors
-- Communication med tone, Signature Story, Communication Principles, words we use/avoid
-- Validation med BAF status (fra DEL 4)
-
-### marketing/JOURNEY.md
-Se examples/JOURNEY.md for struktur. Inkluder:
-- Oversiktstabell med alle stages
-- Per stage: Kundens perspektiv, bekymringer, touchpoints, våre mål
-- Kobling til relevante psykologi-prinsipper
-- Marker seksjoner som "Under utvikling" hvis bruker svarte "vet ikke"
-
-### marketing/DISTRIBUTION.md
-Se examples/DISTRIBUTION.md for struktur. Inkluder:
-- Marketing Stack (email, CMS, analytics, social, ads, CRM)
-- Current Channels med primary/secondary/experimental
-- Budget Split med 60:40 visualisering
-- Channel Performance med metrics
-- Owned vs Rented assets
-- Gaps & Opportunities
-- **SEO & AEO Strategy** med tomme tabeller for:
-  - Primary Keywords (fylles ut etter keyword research)
-  - Content Plan (planlegges etter at keywords er identifisert)
-  - AEO Tracking (spores etter at innhold er publisert)
-  - Technical SEO Status
-
-**Hvis from scratch (ingen stack/kanaler ennå):**
-- Inkluder Quick Start: Organic SEO seksjon
-- Marker stack-felter som "[Ikke satt opp ennå]"
-- Fokuser på de 5 første SEO-stegene
-- SEO Strategy-tabeller settes opp med placeholder-verdier
-
-> **Viktig:** Detaljert keyword research gjøres ETTER init.
-> Bruk `seo-aeo` skill og kjør `/seo-aeo:audit` for teknisk sjekk.
-
-### marketing/LEARNINGS.md
-Se examples/LEARNINGS.md for struktur. Inkluder:
-- Oversiktstabell med tester og resultater
-- BAF Validering seksjon med status og metoder
-- "Hva fungerer" og "Hva fungerer ikke" seksjoner
-- Kommende tester / åpne spørsmål
-- Marker som "[Ikke testet ennå]" hvis bruker er i tidlig fase
+**Nåværende BAF Status:** ⚠️ Ikke validert ennå
 
 ---
 
-## Steg 4: Bekreft
+## Brand Audience Fit Validering
+
+*[Fyll ut når du kjører første validering]*
+
+### Test 1: [Navn]
+
+**Hypotese:** [Hva tror du?]
+**Oppsett:** [Kanal, budsjett, varighet, målgruppe]
+**Resultater:** [Metrikker og tall]
+**Konklusjon:** [Validert / Ikke validert / Under terskel]
+
+---
+
+## Hva vi har lært
+
+### Hva fungerer ✅
+
+| Innsikt | Bevis | Implementert? |
+|---------|-------|---------------|
+| [innsikt] | [bevis] | [✅/❌] |
+
+### Hva fungerer ikke ❌
+
+| Innsikt | Bevis | Handling |
+|---------|-------|----------|
+| [innsikt] | [bevis] | [handling] |
+
+### Åpne spørsmål ❓
+
+- [ ] [spørsmål 1]
+- [ ] [spørsmål 2]
+
+---
+
+## Kommende tester
+
+*[Planlagte tester å kjøre]*
+
+---
+
+*Sist oppdatert: [dato]*
+```
+
+Bekreft for brukeren:
+
+```
+✅ Alle filer opprettet!
+
+📁 marketing/
+   ✅ BRAND.md        - Merkevare-retningslinjer
+   ✅ JOURNEY.md      - Kundereise-kart
+   ✅ DISTRIBUTION.md - Kanaler og stack
+   ✅ LEARNINGS.md    - Tom template for tester
+
+───────────────────────────────────────────────────────────────
+```
+
+---
+
+## Steg 4: Bekreft og Neste Steg
 
 ```
 ═══════════════════════════════════════════════════════════════
@@ -424,25 +524,41 @@ Se examples/LEARNINGS.md for struktur. Inkluder:
 Marketing Playbook er satt opp:
 
 📁 marketing/
-   📋 BRAND.md        - Merkevare-retningslinjer (ABC)
-   🗺️ JOURNEY.md      - Kundereise-kart
-   📡 DISTRIBUTION.md - Kanaler og marketing stack
-   🧪 LEARNINGS.md    - Tester og innsikter
+   ✅ BRAND.md        - Merkevare-retningslinjer (ABC)
+   ✅ JOURNEY.md      - Kundereise-kart
+   ✅ DISTRIBUTION.md - Kanaler og marketing stack
+   ✅ LEARNINGS.md    - Tom template for tester
+
+═══════════════════════════════════════════════════════════════
+```
+
+### Sjekk andre filer
+
+Sjekk om følgende filer finnes og vis status til brukeren:
+
+```
+───────────────────────────────────────────────────────────────
+STATUS - MARKETING PLAYBOOK
+───────────────────────────────────────────────────────────────
+
+Grunnoppsett:
+✅ BRAND.md        - Nettopp opprettet
+✅ JOURNEY.md      - Nettopp opprettet
+✅ DISTRIBUTION.md - Nettopp opprettet
+✅ LEARNINGS.md    - Nettopp opprettet
+
+Valgfrie tillegg:
+[✅/❌] DESIGN-SYSTEM.md  - Visuell identitet
+[✅/❌] CONTENT-RULES.md  - Innholdsregler
 
 ───────────────────────────────────────────────────────────────
-BRAND AUDIENCE FIT STATUS
-───────────────────────────────────────────────────────────────
+```
 
-[✅ Validert / ⚠️ Under testing / ❌ Ikke testet]
+### Foreslå neste kommandoer
 
-[Hvis ikke validert:]
-💡 Anbefaling: Test BAF før du skalerer markedsføringen.
-   Kjør små tester, dokumenter i LEARNINGS.md.
+Basert på hva som mangler:
 
-[Hvis from scratch:]
-🚀 Quick Start: Se DISTRIBUTION.md for organic SEO-guide.
-   Start med keyword research og 5 cornerstone-artikler.
-
+```
 ───────────────────────────────────────────────────────────────
 NESTE STEG
 ───────────────────────────────────────────────────────────────
@@ -450,20 +566,18 @@ NESTE STEG
 1. Review filene og juster detaljer
 2. Bruk /marketing-playbook:check før du publiserer innhold
 3. Kjør /marketing-playbook:audit for full gjennomgang
-4. Dokumenter learnings i LEARNINGS.md underveis
-5. Oppdater DISTRIBUTION.md når stack/kanaler endres
 
-[Hvis du har en nettside:]
-6. Kjør /seo-aeo:audit for SEO og AI-synlighet-sjekk
-7. Fyll ut keyword-tabellene i DISTRIBUTION.md
+[Hvis DESIGN-SYSTEM.md mangler og bruker jobber med UI:]
+💡 Kjør /design-system:init for visuell identitet
 
-[Hvis du jobber med UI/design:]
-8. Kjør /design-system:init for å opprette DESIGN-SYSTEM.md
+[Hvis CONTENT-RULES.md mangler og bruker skriver innhold:]
+💡 Kjør /content-writer:init for innholdsregler
 
-TIP: LEARNINGS.md er beviset på at merkevaren fungerer.
-     Jo mer du dokumenterer, jo tryggere beslutninger.
+[Hvis fra scratch:]
+🚀 Quick Start: Se DISTRIBUTION.md for organic SEO-guide
+   Kjør /seo-aeo:audit for SEO og AI-synlighet-sjekk
 
-═══════════════════════════════════════════════════════════════
+───────────────────────────────────────────────────────────────
 ```
 
 ---
@@ -485,3 +599,15 @@ Eksempel i JOURNEY.md:
 **Status:** Ikke definert ennå
 **Tips:** Vurder lojalitetsprogram når du har etablert kundebase
 ```
+
+---
+
+## Alternative kommandoer
+
+Hvis brukeren bare vil opprette én fil av gangen, kan de bruke:
+
+- `/marketing-playbook:brand-init` - Kun BRAND.md
+- `/marketing-playbook:journey-init` - Kun JOURNEY.md
+- `/marketing-playbook:distribution-init` - Kun DISTRIBUTION.md
+
+LEARNINGS.md opprettes automatisk som tom template og fylles ut manuelt underveis.

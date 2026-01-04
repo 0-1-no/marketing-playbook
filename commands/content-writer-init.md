@@ -330,32 +330,104 @@ Velg A-D:
 
 ---
 
-### Fase 4: Generer eksempler (Iterativt)
+### Fase 4: Content Showcase (Valgfritt)
 
 ```
-Basert på dine svar, her er 3 eksempelavsnitt i din voice:
+───────────────────────────────────────────────────────────────
+                    CONTENT SHOWCASE
+───────────────────────────────────────────────────────────────
 
----
+Vil du se eksempler i en visuell showcase-app?
 
-**Educational tone (for guider/artikler):**
-> [Generert eksempel basert på dimensjoner]
+┌─────────────────────────────────────────────────────────────┐
+│ 1. SHOWCASE APP (anbefalt)                                   │
+│    - Visuell demo av voice i ulike kontekster               │
+│    - Lett å sammenligne og iterere                          │
+│    - Kan deles med team                                     │
+└─────────────────────────────────────────────────────────────┘
 
----
+┌─────────────────────────────────────────────────────────────┐
+│ 2. INLINE EKSEMPLER                                          │
+│    - Raskere, ingen app å sette opp                         │
+│    - Eksempler rett i samtalen                              │
+└─────────────────────────────────────────────────────────────┘
 
-**Persuasive tone (for landing pages):**
-> [Generert eksempel basert på dimensjoner]
+───────────────────────────────────────────────────────────────
+```
 
----
+#### Hvis Showcase App:
 
-**Helpful tone (for support/FAQ):**
-> [Generert eksempel basert på dimensjoner]
+1. Opprett prosjekt:
+```bash
+npx create-next-app@latest content-showcase --typescript --tailwind --app
+cd content-showcase
+```
 
----
+2. Bygg showcase-struktur:
+```
+content-showcase/
+├── app/
+│   ├── page.tsx              # Oversikt med alle eksempler
+│   ├── article-intro/page.tsx
+│   ├── landing-hero/page.tsx
+│   ├── faq-answer/page.tsx
+│   ├── error-message/page.tsx
+│   ├── email-subject/page.tsx
+│   ├── cta-button/page.tsx
+│   └── compare/page.tsx      # Før/etter sammenligning
+```
+
+3. Hver side viser:
+   - Eksempeltekst i din voice
+   - Voice-dimensjoner som ble brukt
+   - "This" vs "Not that" sammenligning
+   - Redigerbar versjon for tweaking
+
+4. Kjør lokalt:
+```bash
+npm run dev
+# Bruker evaluerer i browser på localhost:3000
+```
+
+#### Hvis Inline Eksempler:
+
+Generer 6 eksempler i ulike kontekster:
+
+```
+Basert på dine svar, her er eksempler i din voice:
+
+───────────────────────────────────────────────────────────────
+
+**1. Artikkel-intro:**
+> [Generert eksempel]
+
+**2. Landing page hero:**
+> [Generert eksempel]
+
+**3. FAQ-svar:**
+> [Generert eksempel]
+
+**4. Error-melding:**
+> [Generert eksempel]
+
+**5. Email subject line:**
+> [Generert eksempel]
+
+**6. CTA-tekst:**
+> [Generert eksempel]
+
+───────────────────────────────────────────────────────────────
 
 Høres disse ut som merkevaren din? Hva ville du endret?
 ```
 
+### Fase 4b: Iterasjon
+
 **Iterer til bruker bekrefter.**
+
+Ved iterasjon (hvis showcase):
+- Opprett ny versjon, IKKE overskriv
+- Behold alle versjoner for sammenligning
 
 ---
 
@@ -456,16 +528,49 @@ Generer filen basert på svarene:
 ## Avslutning
 
 ```
-CONTENT-RULES.md er opprettet i ./marketing/
+═══════════════════════════════════════════════════════════════
+                  ✅ CONTENT-RULES.md OPPRETTET
+═══════════════════════════════════════════════════════════════
 
-Innholdsregler er nå klare. Når du skriver innhold, refererer Claude til:
-- BRAND.md for merkevare-fundament
-- CONTENT-RULES.md for voice-dimensjoner og struktur
+📁 marketing/CONTENT-RULES.md
 
-Vil du:
-1. Se filen jeg opprettet?
-2. Gjøre justeringer?
-3. Begynne å skrive innhold?
+Inneholder:
+• Voice-dimensjoner (formalitet, entusiasme, teknisk dybde, personlighet)
+• "This but not that"-eksempler
+• Strukturelle regler
+• Kvalitetsporter
+
+[Hvis showcase-app:]
+📂 content-showcase/    ← Demo-app med alle eksempler bevart
+
+───────────────────────────────────────────────────────────────
+STATUS - MARKETING PLAYBOOK
+───────────────────────────────────────────────────────────────
+
+[✅/❌] BRAND.md        - Merkevare
+[✅/❌] JOURNEY.md      - Kundereise
+[✅/❌] DISTRIBUTION.md - Kanaler og stack
+[✅/❌] LEARNINGS.md    - Tester og innsikter
+[✅/❌] DESIGN-SYSTEM.md - Visuell identitet
+✅ CONTENT-RULES.md - Nettopp opprettet
+
+───────────────────────────────────────────────────────────────
+NESTE STEG
+───────────────────────────────────────────────────────────────
+
+1. Når du skriver innhold, refererer Claude til:
+   - BRAND.md for merkevare-fundament
+   - CONTENT-RULES.md for voice-dimensjoner og struktur
+
+2. Bruk /marketing-playbook:check for å validere innhold
+
+[Hvis DESIGN-SYSTEM.md mangler:]
+💡 Kjør /design-system:init for visuell identitet
+
+[Hvis BRAND.md mangler:]
+💡 Kjør /marketing-playbook:brand-init for merkevare-grunnlag
+
+═══════════════════════════════════════════════════════════════
 ```
 
 ---
