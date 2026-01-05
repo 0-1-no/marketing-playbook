@@ -87,20 +87,24 @@ claude plugins list
 Når det kommer nye versjoner av pluginen:
 
 ```bash
-# Oppdater til nyeste versjon
-claude plugin update marketing-playbook
+# 1. Oppdater marketplace-metadata (henter versjonsinformasjon fra GitHub)
+claude plugin marketplace update 0-1-plugins
 
-# Eller med marketplace-navn
-claude plugin update marketing-playbook@0-1-no
+# 2. Reinstaller plugin for å hente ny versjon
+claude plugin uninstall marketing-playbook@0-1-plugins
+claude plugin install marketing-playbook@0-1-plugins
 ```
 
-### Sjekk tilgjengelige oppdateringer
-```bash
-# Oppdater marketplace-metadata først
-claude plugin marketplace update
+### Sjekk installert versjon
 
-# Deretter kjør update
-claude plugin update marketing-playbook
+Du kan sjekke hvilken versjon du har installert:
+
+```bash
+# Via interaktiv UI
+/plugin  # → Installed tab → Se versjonsnummer
+
+# Eller sjekk filen direkte
+cat ~/.claude/plugins/installed_plugins.json | grep -A5 "marketing-playbook"
 ```
 
 > **Tips:** Se [CHANGELOG.md](CHANGELOG.md) for oversikt over hva som er nytt i hver versjon.
