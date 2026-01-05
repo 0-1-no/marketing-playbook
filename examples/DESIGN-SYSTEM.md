@@ -1,6 +1,8 @@
 # [Prosjektnavn] Design System
 
 > Visuell identitet og komponentguide for [prosjektnavn].
+>
+> **Visuell referanse:** [design-showcase/](design-showcase/) for interaktive eksempler
 
 ---
 
@@ -51,33 +53,64 @@
 | Error | `#XXXXXX` | Feil, destruktive handlinger |
 | Info | `#XXXXXX` | Informasjonsmeldinger |
 
-### CSS Variables
+### CSS Variables (Light + Dark)
 
 ```css
 :root {
+  /* Light mode - default */
+
   /* Core */
   --color-primary: #XXXXXX;
   --color-primary-hover: #XXXXXX;
   --color-secondary: #XXXXXX;
-  --color-background: #XXXXXX;
-  --color-surface: #XXXXXX;
+  --color-background: #FFFFFF;
+  --color-surface: #F9FAFB;
 
   /* Text */
-  --color-text: #XXXXXX;
-  --color-text-muted: #XXXXXX;
-  --color-text-inverted: #XXXXXX;
+  --color-text: #111827;
+  --color-text-muted: #6B7280;
+  --color-text-inverted: #FFFFFF;
 
   /* Border */
-  --color-border: #XXXXXX;
+  --color-border: #E5E7EB;
   --color-border-focus: #XXXXXX;
 
   /* Semantic */
-  --color-success: #XXXXXX;
-  --color-warning: #XXXXXX;
-  --color-error: #XXXXXX;
-  --color-info: #XXXXXX;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+}
+
+.dark {
+  /* Dark mode */
+
+  /* Core */
+  --color-primary: #XXXXXX;
+  --color-primary-hover: #XXXXXX;
+  --color-secondary: #XXXXXX;
+  --color-background: #0A0A0A;
+  --color-surface: #171717;
+
+  /* Text */
+  --color-text: #FAFAFA;
+  --color-text-muted: #A3A3A3;
+  --color-text-inverted: #0A0A0A;
+
+  /* Border */
+  --color-border: #262626;
+  --color-border-focus: #XXXXXX;
+
+  /* Semantic */
+  --color-success: #34D399;
+  --color-warning: #FBBF24;
+  --color-error: #F87171;
+  --color-info: #60A5FA;
 }
 ```
+
+> **Merk:** `#XXXXXX` erstattes med faktiske fargeverdier basert på merkevaren.
+> Dark mode semantic farger er litt lysere for bedre synlighet på mørk bakgrunn.
 
 ### Tailwind Config
 
@@ -98,6 +131,67 @@ colors: {
   },
 }
 ```
+
+---
+
+## Dark Mode Strategy
+
+### Color Mapping (Light → Dark)
+
+| Element | Light Mode | Dark Mode | Transformasjon |
+|---------|-----------|-----------|----------------|
+| Background | `#FFFFFF` | `#0A0A0A` | Inverter |
+| Surface | `#F9FAFB` | `#171717` | Inverter |
+| Primary | `#XXXXXX` | `#XXXXXX` | Juster saturation/lightness |
+| Text | `#111827` | `#FAFAFA` | Inverter |
+| Text Muted | `#6B7280` | `#A3A3A3` | Juster for lesbarhet |
+| Border | `#E5E7EB` | `#262626` | Inverter |
+| Semantic (success/warning/error) | Standard | +10% lightness | Lysere for synlighet |
+
+### Toggle Implementation
+
+```tsx
+// app/layout.tsx eller ThemeProvider
+import { ThemeProvider } from 'next-themes'
+
+export default function RootLayout({ children }) {
+  return (
+    <html suppressHydrationWarning>
+      <body>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
+      </body>
+    </html>
+  )
+}
+```
+
+```tsx
+// Minimal toggle-komponent
+'use client'
+import { useTheme } from 'next-themes'
+
+export function ThemeToggle() {
+  const { theme, setTheme } = useTheme()
+  return (
+    <button onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+      {theme === 'dark' ? '☀️' : '🌙'}
+    </button>
+  )
+}
+```
+
+### Kontrast-krav
+
+| Element | Minimum kontrast |
+|---------|------------------|
+| Body text | 4.5:1 (WCAG AA) |
+| Large text (24px+) | 3:1 |
+| UI components | 3:1 |
+| Focus indicators | 3:1 |
+
+> **Tips:** Bruk [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/) for å validere.
 
 ---
 
@@ -404,6 +498,40 @@ Card padding: 24px
 Section padding: 64-128px
 Container max-width: 1280px
 ```
+
+---
+
+## Visual Reference
+
+### Showcase App
+
+Interaktive eksempler finnes i `design-showcase/`:
+
+```bash
+cd marketing/design-showcase && npm run dev
+# Åpne http://localhost:3000
+```
+
+| Side | Viser |
+|------|-------|
+| `/` | Oversikt over alle versjoner |
+| `/v1`, `/v2`, etc | Iterasjoner med progresjon |
+| `/compare` | Side-by-side sammenligning |
+| `/gallery` | Alle komponenter i light/dark mode |
+
+### Component Gallery
+
+`/gallery` viser alle godkjente komponenter med:
+- Side-by-side light/dark visning
+- Alle states (default, hover, active, disabled, focus)
+- Dark mode toggle for testing
+
+### Beslutningslogg
+
+Se `design-showcase/DECISIONS.md` for:
+- Valg gjort i hver iterasjon
+- Feedback fra bruker
+- Begrunnelser for designbeslutninger
 
 ---
 

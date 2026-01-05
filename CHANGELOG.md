@@ -5,6 +5,30 @@ All notable changes to Marketing Playbook will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.3.0] - 2026-01-05
+
+### Added
+- Dark mode CSS variables i DESIGN-SYSTEM.md template (light + dark default)
+- Dark Mode Strategy seksjon i template med mapping-tabell og toggle-implementasjon
+- DECISIONS.md beslutningslogg i showcase-struktur (kortfattet format)
+- Component Gallery side (`/gallery`) med alle komponenter i light/dark mode
+- Showcase som permanent visuell referanse under `marketing/design-showcase/`
+- Dark mode toggle-krav i demo builds med next-themes
+- Lenker mellom DESIGN-SYSTEM.md og showcase
+- Visual Reference seksjon i template
+
+### Changed
+- design-system-init krever nå light + dark mode fra Steg 5
+- Showcase opprettes under `marketing/` (samlet med andre marketing-filer)
+- Iterasjonsfeedback inkluderer dark mode check
+- Steg 8 ekstraksjon bruker strukturert beslutningslogg
+- Gallery genereres automatisk ved sign-off
+
+### Fixed
+- Dark mode mistes ikke lenger under iterasjoner
+- Visuelle beslutninger bevares i DECISIONS.md
+- Showcase integrert som pågående referanse (ikke kastet etter godkjenning)
+
 ## [0.2.0] - 2026-01-04
 
 ### Added

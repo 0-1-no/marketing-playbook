@@ -203,29 +203,65 @@ Velg demo-tilnærming:
 
 ### Hvis Showcase App:
 
-1. Opprett midlertidig prosjekt:
+> **VIKTIG:** Showcase opprettes som permanent referanse i prosjektet,
+> ikke som midlertidig mappe. Den blir din "visual storybook".
+
+1. Opprett under marketing/:
 ```bash
-# Med valgt framework
+# Opprett i marketing-mappen (ikke tmp)
+cd marketing
 npx create-next-app@latest design-showcase --typescript --tailwind --app
 cd design-showcase
 npx shadcn@latest init  # hvis shadcn valgt
+npm install next-themes  # For dark mode toggle
 ```
 
 2. Bygg showcase-struktur:
 ```
-design-showcase/
+marketing/design-showcase/
 ├── app/
 │   ├── page.tsx           # Oversikt med alle versjoner
 │   ├── v1/page.tsx        # Første iterasjon
 │   ├── v2/page.tsx        # Andre iterasjon (etter feedback)
 │   ├── v3/page.tsx        # Tredje iterasjon (osv.)
-│   └── compare/page.tsx   # Side-by-side sammenligning
+│   ├── compare/page.tsx   # Side-by-side sammenligning
+│   └── gallery/page.tsx   # Komponent-galleri (light/dark) ← opprettes ved sign-off
+├── DECISIONS.md           # Beslutningslogg (oppdateres ved hver iterasjon)
+└── README.md              # Hvordan kjøre og bruke showcase
+```
+
+3. Opprett `DECISIONS.md` ved oppstart:
+```markdown
+# Design Decisions Log
+
+> Kortfattet logg over designvalg og iterasjoner.
+
+---
+
+## Versjon 1 - [DATO]
+
+**Valg:**
+- Font: [valgt font]
+- Primærfarge: [hex]
+- Layout: [beskrivelse]
+
+**Fungerte:**
+- [Bullet points]
+
+**Feedback:**
+- [Bruker feedback]
+
+**Neste:**
+- [Konkrete endringer til v2]
+
+---
 ```
 
 > **VIKTIG:** Ved hver iterasjon, opprett NY versjon (v2, v3, osv).
 > IKKE overskriv tidligere versjoner - behold dem for sammenligning.
+> Oppdater DECISIONS.md med hva som endret seg og hvorfor.
 
-3. Directory-side med oversikt:
+4. Directory-side med oversikt:
 ```tsx
 // Mørk bakgrunn, kort for hver versjon
 // Viser: versjonsnummer, dato, hovedendringer
@@ -233,14 +269,14 @@ design-showcase/
 // Badge på nyeste versjon
 ```
 
-4. Compare-side:
+5. Compare-side:
 ```tsx
 // Side-by-side visning av alle versjoner
 // Kan velge hvilke 2 versjoner å sammenligne
 // Nyttig for å se progresjon
 ```
 
-5. Kjør lokalt:
+6. Kjør lokalt:
 ```bash
 npm run dev
 # Bruker evaluerer i browser på localhost:3000
@@ -288,11 +324,51 @@ Framework:           [Next.js + Tailwind + shadcn / etc]
 ### Bygg demo
 
 1. Velg fonts som matcher aesthetic direction
-2. Definer fargepalett
-3. Bygg hero section
-4. Bygg 2-3 ekstra seksjoner
-5. Legg til mikro-interaksjoner
-6. Sjekk mot ANTI-PATTERNS.md
+2. Definer fargepalett **for BEGGE moduser (light + dark)**
+3. Implementer dark mode toggle i header
+4. Bygg hero section **test i begge moduser**
+5. Bygg 2-3 ekstra seksjoner
+6. Legg til mikro-interaksjoner
+7. **Test at alle komponenter ser bra ut i BEGGE moduser**
+8. Sjekk mot ANTI-PATTERNS.md
+
+### Dark Mode Krav
+
+> **KRITISK:** Bygg alltid light OG dark mode samtidig.
+> Dette forhindrer at dark mode glemmes under iterasjoner.
+
+Demo-appen må ha:
+- Dark mode toggle i header (øverst til høyre)
+- Alle farger definert for begge moduser via CSS variables
+- Test: Bytt mellom moduser OFTE under bygging
+
+```tsx
+// Legg til i layout.tsx
+import { ThemeProvider } from 'next-themes'
+
+// Wrap children i ThemeProvider
+<ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+  {children}
+</ThemeProvider>
+```
+
+```tsx
+// Minimal dark mode toggle i header
+'use client'
+import { useTheme } from 'next-themes'
+
+export function ThemeToggle() {
+  const { theme, setTheme } = useTheme()
+  return (
+    <button
+      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+      className="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800"
+    >
+      {theme === 'dark' ? '☀️' : '🌙'}
+    </button>
+  )
+}
+```
 
 ### Etter bygging
 
@@ -320,7 +396,12 @@ GI MEG FEEDBACK
 3. Hva MANGLER?
    (Noe du forventet som ikke er der?)
 
-4. Skala 1-10: Hvor nær er dette?
+4. DARK MODE CHECK:
+   - Bytt til dark mode (🌙 knappen) og vurder
+   - Er kontrastene OK?
+   - Føles det som samme merkevare i begge moduser?
+
+5. Skala 1-10: Hvor nær er dette?
    (10 = perfekt, 1 = helt feil)
 
 Eller skriv "godkjent" for å gå videre til dokumentasjon.
@@ -338,22 +419,37 @@ Gjenta til bruker gir sign-off:
    - Hva fungerer?
    - Hva må endres?
    - Hva mangler?
+   - Dark mode OK?
 
-2. **Identifiser justeringer**
-   - Konkrete endringer basert på feedback
-   - Prioriter de viktigste
+2. **Oppdater DECISIONS.md**
+   ```markdown
+   ## Versjon [X] - [DATO]
+
+   **Valg:**
+   - [Beskrivelse av endring] - Fordi [kort begrunnelse]
+
+   **Fungerte (behold):**
+   - [Ting fra forrige versjon som fungerte]
+
+   **Feedback:**
+   - [Viktige punkter fra bruker]
+
+   **Neste:**
+   - [Planlagte endringer til neste versjon]
+   ```
 
 3. **Bygg NY versjon (ikke overskriv!)**
    - Opprett `v2/page.tsx`, `v3/page.tsx` osv.
    - **BEHOLD tidligere versjoner** for sammenligning
    - Implementer endringer i ny versjon
+   - **Test begge moduser (light/dark)**
    - Test mot ANTI-PATTERNS.md
 
 4. **Oppdater oversiktssiden**
    - Legg til nyeste versjon i listen
    - Marker som "Current"
 
-5. **Be om ny feedback**
+5. **Be om ny feedback** (inkluder dark mode check)
 
 ### Etter 3 iterasjoner
 
@@ -392,19 +488,44 @@ Når bruker godkjenner:
 
 Demo godkjent etter [X] iterasjoner!
 
-Jeg dokumenterer nå design systemet i:
-📁 marketing/DESIGN-SYSTEM.md
+Jeg gjør nå følgende:
 
-Inkluderer:
-- Aesthetic direction og vibe
-- Fargepalett med tokens
-- Typografi-system med fonts
-- Komponent-eksempler fra demo
-- Motion/animation guidelines
-- Do's and Don'ts basert på feedback
+1. 📦 Genererer Component Gallery
+2. 📝 Oppretter DESIGN-SYSTEM.md
+3. 🔗 Oppdaterer BRAND.md referanse
 
 ═══════════════════════════════════════════════════════════════
 ```
+
+### Generer Component Gallery
+
+Opprett `marketing/design-showcase/app/gallery/page.tsx` med:
+
+```tsx
+// Component Gallery - viser alle godkjente komponenter
+// Inkluderer:
+// - Dark mode toggle øverst
+// - Alle buttons (primary, secondary, ghost) i light + dark
+// - Cards i light + dark
+// - Form inputs i light + dark
+// - Alle states: default, hover, active, disabled, focus
+
+// Struktur:
+// <Section title="Buttons">
+//   <div className="grid grid-cols-2"> <!-- Light | Dark -->
+//     <ComponentPreview theme="light">...</ComponentPreview>
+//     <ComponentPreview theme="dark">...</ComponentPreview>
+//   </div>
+// </Section>
+```
+
+Gallery-siden skal vise:
+- **Buttons:** Primary, Secondary, Ghost - alle states
+- **Cards:** Standard, hover state
+- **Forms:** Inputs, selects, checkboxes - alle states
+- **Typography:** Headings, body text, captions
+
+Hver komponent vises side-by-side i light og dark mode.
 
 ---
 
@@ -412,15 +533,35 @@ Inkluderer:
 
 Opprett `marketing/DESIGN-SYSTEM.md` basert på godkjent demo.
 
-Se examples/DESIGN-SYSTEM.md for template-struktur.
+Se `examples/DESIGN-SYSTEM.md` for template-struktur.
 
-Inkluder:
-- Alt fra demo som ble godkjent
-- Konkrete CSS-variabler
-- Font-loading instruksjoner
-- Komponent-kode fra demo
+### 8.1 Automatisk fra demo-kode
+
+Ekstraher direkte fra godkjent versjon:
+- CSS variabler (BEGGE moduser - light + dark)
+- Font-loading kode
+- Komponent-klasser
 - Animasjon-verdier
-- Do's and Don'ts fra iterasjonene
+
+### 8.2 Fra DECISIONS.md
+
+Overfør beslutninger til DESIGN-SYSTEM.md:
+- **Aesthetic Direction:** Fra første versjon
+- **Do's:** Ting som fungerte (fra "Fungerte" i hver versjon)
+- **Don'ts:** Ting som ble forkastet med begrunnelse
+- **The One Thing:** Det som gjorde siste versjon unik
+
+### 8.3 Struktur
+
+Inkluder alle seksjoner fra template:
+- Aesthetic Direction og vibe
+- Color Palette (light + dark CSS variables)
+- Dark Mode Strategy med mapping-tabell
+- Typografi-system med fonts
+- Komponent-eksempler fra demo
+- Motion/animation guidelines
+- Do's and Don'ts fra DECISIONS.md
+- **Visual Reference med lenke til showcase**
 
 ---
 
@@ -453,15 +594,36 @@ Oppdater Design-seksjonen i BRAND.md for å referere til DESIGN-SYSTEM.md:
 Design System er satt opp:
 
 📁 marketing/
-   🎨 DESIGN-SYSTEM.md  ← Komplett design system
+   🎨 DESIGN-SYSTEM.md  ← Komplett design system (light + dark)
 
 📝 BRAND.md oppdatert med Design-referanse
 
-📂 design-showcase/     ← Demo-app med alle iterasjoner bevart
-   ├── v1/              ← Første versjon
-   ├── v2/              ← Andre versjon (etter feedback)
-   ├── v3/              ← Tredje versjon (osv.)
-   └── compare/         ← Sammenligning av versjoner
+📂 marketing/design-showcase/  ← Permanent visuell referanse
+   ├── app/
+   │   ├── v1/, v2/, v[final]/  ← Alle iterasjoner bevart
+   │   ├── compare/             ← Side-by-side sammenligning
+   │   └── gallery/             ← Komponent-galleri (light/dark)
+   ├── DECISIONS.md             ← Beslutningslogg
+   └── README.md                ← Bruksveiledning
+
+───────────────────────────────────────────────────────────────
+SLIK BRUKER DU SHOWCASE
+───────────────────────────────────────────────────────────────
+
+# Kjør lokalt for å se design
+cd marketing/design-showcase && npm run dev
+
+# Tilgjengelige sider:
+/           → Oversikt over alle versjoner
+/v[N]       → Spesifikk iterasjon
+/compare    → Sammenlign versjoner side-by-side
+/gallery    → Alle komponenter i light + dark mode
+
+# Neste gang du itererer på design:
+1. Opprett ny versjon (v4, v5, etc)
+2. Oppdater DECISIONS.md med valg og begrunnelser
+3. Oppdater gallery med nye komponenter
+4. Synkroniser endringer til DESIGN-SYSTEM.md
 
 ───────────────────────────────────────────────────────────────
 STATUS - MARKETING PLAYBOOK
@@ -497,7 +659,7 @@ TIPS
 • Den sjekker alltid mot DESIGN-SYSTEM.md
 • Bruk /marketing-playbook:check for å validere UI mot brand
 • Oppdater DESIGN-SYSTEM.md når designet utvikler seg
-• design-showcase/ kan beholdes for fremtidige iterasjoner
+• Showcase er din "lett storybook" - bruk den som referanse
 
 ═══════════════════════════════════════════════════════════════
 ```
