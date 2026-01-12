@@ -261,6 +261,7 @@ Alle skills inneholder **metodikk og prinsipper** - ikke konkrete verdier:
 | `seo-aeo` | SEO, AEO, søkeord, AI-synlighet |
 | `design-system` | UI/UX metodikk, anti-patterns, estetiske retninger |
 | `storytelling-copywriting` | Rammeverk for copy (AIDA, PAS, headlines) |
+| `image-gen` | AI-bildegenerering for OG-bilder, social media, bannere |
 | `marketing-psychology` | 35+ psykologiske prinsipper per funnel-stage |
 | `marketing-mindset` | 20 strategiske prinsipper |
 | `brand-principles` | 7 prinsipper for merkevarebygging |

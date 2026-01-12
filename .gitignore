@@ -1,0 +1,33 @@
+# Environment / Secrets
+.env
+.env.local
+.env.development
+.env.production
+.envrc
+*.key
+secrets/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+.python-version
+
+# UV cache
+.uv/
+
+# Generated images
+generated/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Test outputs
+test-*.jpg
+test-*.png

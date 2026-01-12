@@ -5,6 +5,31 @@ All notable changes to Marketing Playbook will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.0] - 2026-01-12
+
+### Added
+- AI-bildegenerering med Gemini API (Nano Banana Pro)
+- Ny skill: `image-gen` for marketing-bilder
+  - SKILL.md - Hovedskill med beslutningstre
+  - PROMPT-GUIDE.md - Prompting best practices
+  - OG-IMAGES.md - OpenGraph templates
+  - SOCIAL-GRAPHICS.md - Social media templates
+  - MARKETING-ASSETS.md - Bannere og artikkelbilder
+- Python script: `scripts/generate_image.py` med uv-støtte
+  - Marketing presets: og, twitter, instagram, story, linkedin, banner, etc.
+  - Støtte for 1K/2K/4K oppløsning
+  - Image editing med --input flag
+- `.gitignore` for å beskytte API-nøkler og secrets
+
+### Changed
+- Plugin description oppdatert til å inkludere bildegenerering
+- Keywords utvidet med "image-gen" og "gemini"
+
+### Technical
+- Bruker `gemini-3-pro-image-preview` (Nano Banana Pro) som default modell
+- PEP 723 inline dependencies (ingen separat requirements.txt)
+- Krever `GEMINI_API_KEY` miljøvariabel
+
 ## [0.3.0] - 2026-01-05
 
 ### Added
