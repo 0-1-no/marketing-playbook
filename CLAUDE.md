@@ -20,10 +20,10 @@ skills/               # Auto-activated contextual skills
   ├── seo-aeo/                # SEO & AEO methodology (8 sub-files)
   ├── storytelling-copywriting/  # Copy frameworks (7 sub-files)
   ├── content-writing/        # Content methodology (7 sub-files)
-  ├── image-gen/              # AI image generation (5 sub-files)
+  ├── image-gen/              # AI image generation (5 sub-files + scripts/)
+  │   └── scripts/generate_image.py  # Gemini API (uv run)
   └── *.md                    # Principle files (mindset, psychology, etc.)
-scripts/              # Utility scripts
-  └── generate_image.py       # Gemini API image generation (uv run)
+scripts/              # Git hooks og utility scripts (ikke skill-relatert)
 examples/             # Example outputs (BRAND.md, JOURNEY.md, etc.)
 ```
 

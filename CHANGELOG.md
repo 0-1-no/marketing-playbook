@@ -5,6 +5,15 @@ All notable changes to Marketing Playbook will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.4.1] - 2026-01-13
+
+### Changed
+- Flyttet `generate_image.py` til `skills/image-gen/scripts/` (følger Claude Code skill best practice)
+- Scripts tilhørende en skill skal ligge inne i skill-mappen, ikke på plugin rot-nivå
+
+### Fixed
+- Script ikke funnet når skill kjøres fra plugin-cache (feil working directory)
+
 ## [0.4.0] - 2026-01-12
 
 ### Added
