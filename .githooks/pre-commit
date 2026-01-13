@@ -1,0 +1,9 @@
+#!/bin/bash
+# Git pre-commit hook for marketing-playbook
+# Runs version consistency check before allowing commits
+
+# Run the validation script
+./scripts/pre-commit-check.sh
+
+# Exit with the same status as the script
+exit $?

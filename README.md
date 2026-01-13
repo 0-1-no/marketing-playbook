@@ -434,6 +434,31 @@ Dokumenter tester, resultater og innsikter i `marketing/LEARNINGS.md`:
 
 **Tips:** Ikke skaler markedsføringen før BAF er validert. Test først, dokumenter, iterer.
 
+## Versjonering og Releases
+
+Marketing Playbook følger [Semantic Versioning](https://semver.org/):
+
+- **MAJOR** (1.0.0): Breaking changes i plugin API
+- **MINOR** (0.X.0): Ny funksjonalitet, bakoverkompatibel
+- **PATCH** (0.0.X): Bugfixes, dokumentasjonsendringer
+
+### Automatisering
+
+Repoet bruker GitHub Actions for:
+- **Versjon-synkronisering**: `marketplace.json` synkes automatisk med `plugin.json`
+- **Release-tags**: Git tags og GitHub Releases opprettes automatisk
+
+### Pre-commit validering
+
+For å sikre versjonskonsistens lokalt:
+
+```bash
+# Aktiver pre-commit hook
+git config core.hooksPath .githooks
+```
+
+Se [CONTRIBUTING.md](CONTRIBUTING.md) for full release-workflow.
+
 ## Lisens
 
 MIT

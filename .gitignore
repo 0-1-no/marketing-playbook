@@ -7,6 +7,9 @@
 *.key
 secrets/
 
+# Claude Code local settings (may contain API keys)
+.claude/
+
 # Python
 __pycache__/
 *.py[cod]

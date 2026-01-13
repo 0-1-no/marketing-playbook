@@ -1,0 +1,58 @@
+name: Sync Marketplace Version
+
+on:
+  push:
+    paths:
+      - '.claude-plugin/plugin.json'
+    branches: [main]
+
+jobs:
+  sync-version:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Extract version from plugin.json
+        id: plugin
+        run: |
+          VERSION=$(jq -r '.version' .claude-plugin/plugin.json)
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "Extracted version: $VERSION"
+
+      - name: Check current marketplace version
+        id: marketplace
+        run: |
+          MARKETPLACE_VERSION=$(jq -r '.plugins[0].version' .claude-plugin/marketplace.json)
+          echo "marketplace_version=$MARKETPLACE_VERSION" >> $GITHUB_OUTPUT
+          echo "Current marketplace version: $MARKETPLACE_VERSION"
+
+      - name: Update marketplace.json if needed
+        if: steps.plugin.outputs.version != steps.marketplace.outputs.marketplace_version
+        env:
+          PLUGIN_VERSION: ${{ steps.plugin.outputs.version }}
+          MARKETPLACE_VERSION: ${{ steps.marketplace.outputs.marketplace_version }}
+        run: |
+          echo "Updating marketplace.json from $MARKETPLACE_VERSION to $PLUGIN_VERSION"
+          jq --arg v "$PLUGIN_VERSION" \
+            '.plugins[0].version = $v' \
+            .claude-plugin/marketplace.json > tmp.json
+          mv tmp.json .claude-plugin/marketplace.json
+
+      - name: Commit and push if changed
+        env:
+          PLUGIN_VERSION: ${{ steps.plugin.outputs.version }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add .claude-plugin/marketplace.json
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: sync marketplace version to $PLUGIN_VERSION"
+            git push
+          fi
