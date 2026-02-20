@@ -227,11 +227,28 @@ Kjør denne sjekklisten (eller `/seo-aeo:audit`):
 
 ---
 
+## Audit-Prioritering
+
+Når du gjør en SEO-audit, prioriter i denne rekkefølgen:
+
+1. **Crawlability og indeksering** — Kan Google finne og indeksere sidene?
+2. **Teknisk fundament** — Er siden rask og funksjonell?
+3. **On-page optimalisering** — Er innholdet riktig optimalisert?
+4. **Innholdskvalitet** — Fortjener innholdet å rangere?
+5. **Autoritet** — Har siden troverdighet og lenker?
+
+**Viktig:** Det nytter ikke å optimalisere innhold (steg 3) hvis Google ikke kan crawle siden (steg 1).
+
+---
+
 ## Relaterte Skills
 
 - `storytelling-copywriting` - Copy som konverterer og ranker
+- `content-writing` - Lengre innholdsformater
+- `programmatic-seo` - Skalerbar SEO med templates og data
+- `competitor-alternatives` - Konkurrent-sammenligningssider for SEO
+- `analytics-tracking` - Mål SEO-resultater
 - `marketing-psychology` - Psykologi bak søkeadferd
-- `brand-principles` - Merkevare-fundament for posisjonering
 - `design-system` - UI som støtter SEO (hastighet, a11y)
 
 ---

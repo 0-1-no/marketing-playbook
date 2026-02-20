@@ -5,6 +5,48 @@ All notable changes to Marketing Playbook will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.0] - 2026-02-20
+
+### Added — 19 nye skills
+
+**Tier 1 — Kjerneverdier (7 stk)**
+- `page-cro` — Konverteringsoptimalisering for nettsider (7-stegs analyse, sidespesifikke rammeverk)
+- `programmatic-seo` — Skalerbar SEO med templates og data (10 playbooks, norske datakilder)
+- `social-content` — LinkedIn, X, Instagram, Facebook innholdsstrategi (hooks, repurposing)
+- `email-sequence` — E-postsekvenser og automatisering (velkomst, nurture, re-engasjering, onboarding)
+- `analytics-tracking` — Generell tracking-metodikk (PostHog + GA4 som referanser)
+- `paid-ads` — Kampanjestrategi for Google, Meta, LinkedIn, Finn.no
+- `ad-creative` — Annonseinnhold, bulk-generering, iterasjon fra performance data
+
+**Tier 2 — CRO-pakke (6 stk)**
+- `signup-flow-cro` — Registreringsflyt-optimalisering (felt-for-felt, friksjonskart)
+- `onboarding-cro` — Post-signup aktivering (aha-øyeblikk, progressiv onboarding)
+- `form-cro` — Skjema-optimalisering for leads, kontakt, demo, checkout
+- `popup-cro` — Modals, overlays, slide-ins (triggere, frekvensregler)
+- `paywall-upgrade-cro` — In-app paywalls og upgrade moments
+- `churn-prevention` — Cancel flows, save offers, dunning, proaktiv retensjon
+
+**Tier 3 — Strategi (6 stk)**
+- `launch-strategy` — Produktlanseringer med ORB-rammeverk (Owned/Rented/Borrowed)
+- `competitor-alternatives` — Konkurrent-sammenligningssider for SEO og salg
+- `ab-test-setup` — A/B-testing med hypotese-rammeverk og PIE-prioritering
+- `pricing-strategy` — Prisstrategi, packaging, value metrics (NOK/MVA)
+- `referral-program` — Referral og affiliate tilpasset norsk marked
+- `marketing-ideas` — Idébank etter kategori, filtrert etter modenhet og ressurser
+
+### Changed — 5 berikede skills
+
+- `content-writing` — Lagt til searchable vs shareable, content pillars, idékilder, prioritering
+- `storytelling-copywriting` — Lagt til CRO sidestruktur, CTA-retningslinjer, sidetype-veiledning
+- `seo-aeo` — Lagt til audit-prioritering (5-stegs hierarki), oppdatert relaterte skills
+- `marketing-psychology` — Lagt til strategiske tenkningsmodeller, prispsykologi, design/delivery-modeller, vekstmodeller, quick reference-tabell
+- `marketing-playbook` — Lagt til switching dynamics, anti-persona, komplett skills-katalog (30 skills)
+
+### Technical
+- Version bump til 0.5.0
+- Oppdatert plugin.json og marketplace.json descriptions
+- Utvidet keywords med CRO, konvertering, e-post, sosiale-medier, annonser, prising, lansering
+
 ## [0.4.1] - 2026-01-13
 
 ### Changed

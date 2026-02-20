@@ -174,3 +174,88 @@ For å definere voice-regler spesifikt for innhold, kjør:
 ```
 
 Dette oppretter `marketing/CONTENT-RULES.md` med detaljerte voice-dimensjoner.
+
+---
+
+## CRO-fokusert Sidestruktur
+
+### Above the Fold
+
+| Element | Retningslinjer |
+|---------|---------------|
+| **Overskrift** | Ditt viktigste budskap. Kommuniser kjerneverdi. Spesifikt > generisk. |
+| **Underoverskrift** | Utvider overskriften. Legger til spesifisitet. 1–2 setninger maks. |
+| **Primær CTA** | Handlingsorientert. Kommuniser hva de får: «Start gratis prøve» > «Registrer deg» |
+
+**Overskrift-formler:**
+- «{Oppnå resultat} uten {smertepunkt}»
+- «{Kategori} for {målgruppe}»
+- «Aldri {ubehagelig hendelse} igjen»
+- «{Spørsmål som adresserer hovedsmerte}»
+
+### Kjerneseksjoner
+
+| Seksjon | Formål |
+|---------|--------|
+| Sosialt bevis | Bygg troverdighet (logoer, tall, testimonials) |
+| Problem/Smerte | Vis at du forstår situasjonen |
+| Løsning/Fordeler | Koble til resultater (3–5 nøkkelfordeler) |
+| Hvordan det fungerer | Reduser opplevd kompleksitet (3–4 steg) |
+| Innvendingshåndtering | FAQ, sammenligninger, garantier |
+| Siste CTA | Oppsummer verdi, gjenta CTA, risikoreversering |
+
+---
+
+## CTA-Retningslinjer
+
+### Svake CTAs (unngå)
+- Send inn, Registrer deg, Les mer, Klikk her, Kom i gang
+
+### Sterke CTAs (bruk)
+- Start gratis prøve
+- Få [spesifikk ting]
+- Se [Produkt] i aksjon
+- Lag din første [ting]
+- Last ned guiden
+
+**Formel:** [Handlingsverb] + [Hva de får] + [Kvalifisering om nødvendig]
+
+---
+
+## Sidetype-Spesifikk Veiledning
+
+### Hjemmeside
+- Server flere målgrupper uten å bli generisk
+- Led med bredeste verdiforslag
+- Gi tydelige stier for ulike besøksintenter
+
+### Landing Page
+- Én melding, én CTA
+- Match overskrift til annonse/trafikkilde
+- Komplett argument på én side
+
+### Prisside
+- Hjelp besøkende velge riktig plan
+- Adresser «hvilken passer for meg?»-angst
+- Gjør anbefalt plan tydelig
+
+### Funksjonsside
+- Koble funksjon → fordel → resultat
+- Vis brukstilfeller og eksempler
+- Tydelig sti til å prøve eller kjøpe
+
+### Om oss-side
+- Fortell historien om hvorfor dere finnes
+- Koble misjon til kundefordel
+- Inkluder fortsatt en CTA
+
+---
+
+## Skriveregler for Konvertering
+
+1. **Enkelt over komplekst** — «Bruk» ikke «benytt», «hjelp» ikke «tilrettelegg»
+2. **Spesifikt over vagt** — Unngå «effektivisere», «optimalisere», «innovativt»
+3. **Aktivt over passivt** — «Vi lager rapporter» ikke «Rapporter blir lagd»
+4. **Trygt over kvalifisert** — Fjern «nesten», «veldig», «egentlig»
+5. **Vis over fortell** — Beskriv resultatet i stedet for å bruke adjektiver
+6. **Ærlig over sensasjonelt** — Aldri fabriker statistikk eller testimonials

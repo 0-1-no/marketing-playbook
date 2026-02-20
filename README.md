@@ -297,121 +297,70 @@ DISTRIBUTION.md kartlegger hvor dere er til stede og SEO-strategi:
 
 ## Skills
 
-Pluginen inkluderer skills som automatisk aktiveres når du jobber med relevant innhold.
+Pluginen inkluderer 30 skills som automatisk aktiveres når du jobber med relevant innhold.
 
-> **Viktig:** Skill-filene inneholder metodikk og prinsipper - ikke konkrete verdier.
+> **Viktig:** Skill-filene inneholder metodikk og prinsipper — ikke konkrete verdier.
 > Faktiske verdier leses alltid fra `./marketing/`-mappen i prosjektet.
 
-### design-system
-Aktiveres ved UI/UX-arbeid, styling, komponenter, landing pages.
+### Fundament
 
-| Fil | Innhold |
-|-----|---------|
-| `SKILL.md` | Decision tree og quick reference |
-| `AESTHETIC-DIRECTION.md` | 7 visuelle retninger (Brutalist→Playful) |
-| `ANTI-PATTERNS.md` | AI slop detection, sjekklister |
-| `TYPOGRAPHY.md` | Font-valg prinsipper, pairing |
-| `COLOR-THEORY.md` | Fargepalett-strategier, kontrast |
-| `COMPONENTS.md` | Komponent-patterns, states |
-| `MICRO-INTERACTIONS.md` | Animasjon-prinsipper, timing |
-| `RESPONSIVE.md` | Mobile-first, breakpoints |
-| `ACCESSIBILITY.md` | WCAG, keyboard-nav, kontrast |
+| Skill | Beskrivelse |
+|-------|-------------|
+| `marketing-playbook` | Hovedskill — ABC-sjekkliste, journey-mapping, switching dynamics |
+| `marketing-mindset` | 20 strategiske prinsipper for markedstenkning |
+| `brand-principles` | 7 prinsipper for merkevarebygging |
+| `distribution-principles` | SOV→SOM, 60:40, Reach>Frequency |
+| `customer-principles` | Lojalitet, retention, community |
+| `marketing-psychology` | 50+ psykologiske prinsipper, prispsykologi, vekstmodeller |
 
-**Output:** Oppretter/leser `marketing/DESIGN-SYSTEM.md` med faktiske verdier.
+### Innhold og Copy
 
-### seo-aeo
-Aktiveres ved SEO-arbeid, meta-tagger, strukturert data, og AI-søkeoptimalisering (AEO).
+| Skill | Beskrivelse |
+|-------|-------------|
+| `content-writing` | Artikler, guider, landing pages, content pillars, searchable vs shareable |
+| `storytelling-copywriting` | AIDA, PAS, headlines, CRO-copy, sidestruktur |
+| `social-content` | LinkedIn, X, Instagram, Facebook — hooks, repurposing |
+| `email-sequence` | Velkomst, nurture, re-engasjering, onboarding-sekvenser |
+| `ad-creative` | Annonseinnhold, bulk-generering, iterasjon |
+| `marketing-ideas` | Idébank etter kategori tilpasset norske forhold |
 
-| Fil | Innhold |
-|-----|---------|
-| `SKILL.md` | Decision tree og quick reference |
-| `TECHNICAL-SEO.md` | Core Web Vitals, robots.txt, sitemap, AI-crawlere |
-| `ON-PAGE-SEO.md` | Title tags, meta, headings, bilder, URLs |
-| `STRUCTURED-DATA.md` | Schema.org, JSON-LD, rich snippets |
-| `AEO.md` | Answer Engine Optimization for AI-søk |
-| `CONTENT-SEO.md` | Søkeord, intern lenking, innholdsstrategi |
-| `SOCIAL-META.md` | Open Graph, Twitter Cards |
-| `AUDIT-CHECKLIST.md` | Pre-launch sjekkliste (63 punkter) |
+### SEO og Synlighet
 
-**Kjør:** `/seo-aeo:audit` for full SEO/AEO-audit med scorecard.
+| Skill | Beskrivelse |
+|-------|-------------|
+| `seo-aeo` | SEO + Answer Engine Optimization for AI-søk (7 sub-guider) |
+| `programmatic-seo` | Skalerbar SEO med templates og data (10 playbooks) |
+| `competitor-alternatives` | Konkurrent-sammenligningssider for SEO og salg |
 
-### marketing-playbook
-- Leser alle 4 marketing/-filer før du skriver
-- Følger ABC-sjekklisten + Distribution-sjekk
-- Identifiserer riktig journey stage
-- Bruker riktige ord og tone
-- Sjekker BAF-status før skalering
+### Konvertering (CRO)
 
-### storytelling-copywriting
-Guide for storytelling og copywriting med progressiv loading. Hovedfilen gir oversikt, sub-filer lastes ved behov:
+| Skill | Beskrivelse |
+|-------|-------------|
+| `page-cro` | Landingssider, hjemmesider, prissider (7-stegs analyse) |
+| `signup-flow-cro` | Registreringsflyt-optimalisering |
+| `onboarding-cro` | Post-signup aktivering og aha-øyeblikk |
+| `form-cro` | Skjema-optimalisering for leads, kontakt, demo |
+| `popup-cro` | Modals, overlays, slide-ins |
+| `paywall-upgrade-cro` | In-app paywalls og upgrade moments |
 
-| Fil | Innhold |
-|-----|---------|
-| `SKILL.md` | Beslutningstre og quick reference |
-| `STORYTELLING.md` | Signature Story, narrativ, StoryBrand |
-| `FRAMEWORKS.md` | AIDA, PAS, BAB, FAB med anti-patterns |
-| `HEADLINES.md` | Curiosity gap, numbers, "How to" |
-| `MICROCOPY.md` | Buttons, errors, CTAs, empty states |
-| `PERSUASION.md` | Conversational copy, rhythm, etikk |
-| `CONTENT.md` | Evergreen, library vs publication |
+### Strategi og Vekst
 
-### marketing-mindset
-20 tidløse strategiske prinsipper for markedstenkning. Brukes som sparrepartner ved strategiske beslutninger:
+| Skill | Beskrivelse |
+|-------|-------------|
+| `launch-strategy` | Produktlanseringer med ORB-rammeverk |
+| `pricing-strategy` | Prisstrategi, packaging, value metrics |
+| `paid-ads` | Kampanjestrategi for Google, Meta, LinkedIn, Finn.no |
+| `referral-program` | Referral og affiliate tilpasset norsk marked |
+| `churn-prevention` | Cancel flows, save offers, dunning, retensjon |
+| `ab-test-setup` | A/B-testing med hypotese-rammeverk |
+| `analytics-tracking` | Generell tracking (PostHog + GA4 referanser) |
 
-| Kategori | Prinsipper |
-|----------|------------|
-| **Konkurransefordel** | Hvis det er lett å måle er det for sent, Alle taktikker har livssyklus, Vinn ved å ikke konkurrere, First mover overvurdert |
-| **Verdi & Posisjonering** | Folk kjøper problemløsning, Pris er signal, Strategi er fravalg |
-| **Merkevarebygging** | 60/40 regelen, Brand compounds, SOV→SOM, Mental+Physical availability, Distinctiveness>Differentiation |
-| **Distribusjon** | Rule of Seven, Reach>Frequency, 95/5 (B2B) |
-| **Kreativitet** | Emotion beats rational, Gjentatt eksponering, Kompleks≠Komplisert |
-| **Måling** | Correlation≠causation, Det du måler er det du får |
+### Design og Bilder
 
-### marketing-psychology
-35+ psykologiske prinsipper for effektiv markedsføring, organisert etter funnel-steg:
-
-| Fase | Prinsipper |
-|------|------------|
-| **TOFU** (Awareness) | Mere Exposure, Information Gap, Von Restorff, Picture Superiority, Confirmation Bias, m.fl. |
-| **MOFU/BOFU** (Conversion) | Anchoring, Halo Effect, Scarcity, Social Proof, Loss Aversion, Decoy Effect, m.fl. |
-| **CX** (Retention) | Peak-End Rule, Sunk Cost, IKEA Effect, Nostalgia, Self-Reference, m.fl. |
-
-### brand-principles
-7 prinsipper for å bygge en sterk merkevare (brukes i audit):
-
-| Prinsipp | Beskrivelse |
-|----------|-------------|
-| **Ethos** | Ha et sterkt formål (why), misjon og verdier |
-| **Remarkable** | Vær bemerkelsesverdig - ha en tydelig USP |
-| **Relatable** | Vær relaterbar - ha en menneskelig stemme |
-| **Involved** | Vær involvert - co-create med kunder |
-| **Present** | Vær tilstede - i relevante kanaler |
-| **Inspirational** | Vær inspirerende - folk rallyer rundt dere |
-| **Defensibility** | Vær forsvarbar - vanskelig å kopiere |
-
-### distribution-principles
-14 tidløse prinsipper for å få budskapet ut:
-
-| Kategori | Prinsipper |
-|----------|------------|
-| **Brand Building** | Cultural Imprinting, SOV→SOM, 60:40 Split, How Advertising Works |
-| **Reach & Frequency** | Reach>Frequency, Rule of 7, 95/5 Rule (B2B) |
-| **Channel Strategy** | Distribution follows attention, Owned>Rented, Compounding Touchpoints, Content-Channel Fit |
-| **Consistency** | Consistency Compounds, Earn Attention, Dark Social |
-
-### customer-principles
-Tidløse prinsipper for kundelojalitet og community:
-
-| Kategori | Prinsipper |
-|----------|------------|
-| **The Loyalty Loop** | Purchase → Experience → Loyalty → Advocacy → (ny kunde via WOM) |
-| **Loyalty Myths** | 77/23 Rule (de fleste vil ikke ha "relasjon"), Shared Values > Interaksjoner, Mer ≠ Bedre |
-| **Retention Economics** | 5-7x Rule, Leaky Bucket, Behavior ≠ Loyalty |
-| **Experience & Memory** | Peak-End Rule, Moments of Truth, Recovery Paradox |
-| **Word of Mouth** | Referrals are Earned, Negative Spreads Faster, Make it Easy to Share |
-| **Customer Service** | Service as Marketing, Underpromise/Overdeliver, Solve the Problem |
-| **Onboarding** | First 90 Days, Churn is Lagging, Value Lock-in > Contractual |
-| **Community Building** | Crowd→Community progression, Learn from Religion, Sacrifice, Us vs Them |
+| Skill | Beskrivelse |
+|-------|-------------|
+| `design-system` | UI/UX metodikk, anti-patterns, estetiske retninger (9 sub-filer) |
+| `image-gen` | AI-bildegenerering for OG-bilder, social media, bannere |
 
 ## Brand Audience Fit (BAF)
 

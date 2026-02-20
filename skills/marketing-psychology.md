@@ -609,6 +609,139 @@ E-post 4: Siste sjanse (Goal Gradient)
 
 ---
 
+## Strategiske Tenkningsmodeller
+
+Modeller som skjerper strategi og hjelper deg løse riktig problem.
+
+### First Principles (Førsteprinsipper)
+Bryt problemer ned til grunnleggende sannheter. Spør «hvorfor» gjentatte ganger i stedet for å kopiere konkurrenter.
+
+**Marketing takeaway:** Ikke anta at du trenger content marketing fordi konkurrentene har det. Spør hva problemet er og om det finnes en bedre løsning.
+
+### Jobs to Be Done (JTBD)
+Folk kjøper ikke produkter — de «ansetter» dem for å gjøre en jobb. Fokuser på resultatet kunden vil ha.
+
+**Marketing takeaway:** En drill-kjøper vil ikke ha en drill — de vil ha et hull. Ramm inn produktet rundt jobben det utfører.
+
+### Pareto-Prinsippet (80/20)
+~80% av resultater kommer fra ~20% av innsatsen. Identifiser og fokuser på de vitale få.
+
+**Marketing takeaway:** Finn de 20% av kanaler, kunder eller innhold som driver 80% av resultatene. Kutt eller reduser resten.
+
+### Theory of Constraints (Flaskehals)
+Hvert system har én flaskehals som begrenser gjennomstrømning. Fiks den begrensningen før du optimaliserer annet.
+
+**Marketing takeaway:** Hvis funnelen konverterer bra men trafikken er lav, hjelper det ikke å optimalisere konvertering mer. Fiks trafikk-flaskehalsen først.
+
+### Inversion (Inversjon)
+I stedet for «Hvordan lykkes jeg?», spør «Hva garanterer at jeg feiler?» Unngå deretter de tingene.
+
+**Marketing takeaway:** List alt som ville gjort kampanjen mislykket — uklar melding, feil målgruppe, treg side — og forhindre systematisk hver ting.
+
+### Lokal vs. Global Optima
+Et lokalt optimum er den beste løsningen i nærheten, men det globale optimumet er det beste totalt sett.
+
+**Marketing takeaway:** Å optimalisere e-post subject lines (lokalt) hjelper ikke hvis e-post ikke er riktig kanal (globalt). Zoom ut før du zoomer inn.
+
+---
+
+## Prispsykologi
+
+### Charm Pricing (Venstresiffer-effekten)
+Priser som ender på 9 føles vesentlig lavere. 99 kr føles mye billigere enn 100 kr.
+
+**Marketing takeaway:** Bruk .99-prising for verdi-produkter. Bruk runde tall (500 kr/mnd) for premium-produkter.
+
+### Rule of 100
+For priser under 100: prosentrabatt føles større («20% avslag»). For priser over 100: kronerrabatt føles større («100 kr avslag»).
+
+**Marketing takeaway:** 80 kr produkt: «20% av» > «16 kr av». 500 kr produkt: «100 kr av» > «20% av».
+
+### Prisrelativitet (Good-Better-Best)
+Folk bedømmer priser relativt til presenterte alternativer. En mellomplan virker rimelig mellom billig og dyrt.
+
+**Marketing takeaway:** Tre nivåer der midten er målet. Dyr plan gjør midten rimelig; billig plan gir et anker.
+
+### Mental Accounting (Prisinnramming)
+Å ramme inn samme pris ulikt endrer oppfatningen.
+
+**Marketing takeaway:** «10 kr/dag» føles billigere enn «300 kr/mnd». «Mindre enn en kopp kaffe» rammer inn utgiften.
+
+---
+
+## Design og Leveransemodeller
+
+### Hick's Law (Beslutningskompleksitet)
+Beslutningstid øker med antall og kompleksitet av valg. Flere alternativer = tregere beslutninger = mer frafall.
+
+**Marketing takeaway:** Forenkle valg. Én tydelig CTA slår tre. Færre skjemafelt slår flere.
+
+### BJ Fogg Atferdsmodell
+Atferd = Motivasjon × Evne × Prompt. Alle tre må være til stede for handling.
+
+**Marketing takeaway:** Høy motivasjon men vanskelig å gjøre = skjer ikke. Lett å gjøre men ingen prompt = skjer ikke. Design for alle tre.
+
+### EAST-Rammeverk
+Gjør ønsket atferd: **Easy** (enkel), **Attractive** (attraktiv), **Social** (sosial), **Timely** (rettidig).
+
+**Marketing takeaway:** Reduser friksjon (enkel), gjør det tiltalende (attraktiv), vis at andre gjør det (sosial), spør i riktig øyeblikk (rettidig).
+
+### Rule of 7 (Berøringspunkter)
+Prospekter trenger ~7 kontaktpunkter før de konverterer. Én annonse konverterer sjelden alene.
+
+**Marketing takeaway:** Bygg multi-touch-kampanjer på tvers av kanaler. Retargeting, e-postsekvenser og konsistent tilstedeværelse bygger seg opp.
+
+### Aktiveringsenergi
+Den initielle energien som kreves for å starte. Høy aktiveringsenergi forhindrer handling selv om oppgaven er enkel totalt sett.
+
+**Marketing takeaway:** Reduser startfriksjon. Forhåndsutfyll skjemaer, tilby maler, vis raske gevinster. Gjør første steg trivielt enkelt.
+
+---
+
+## Vekst og Skaleringsmodeller
+
+### Feedback Loops (Tilbakekoblingssløyfer)
+Output blir input og skaper sykluser. Positive sløyfer akselererer vekst.
+
+**Marketing takeaway:** Bygg gode sirkler: flere brukere → mer innhold → bedre SEO → flere brukere. Identifiser og forsterke positive sløyfer.
+
+### Compounding (Rentes-rente-effekten)
+Små, konsistente gevinster akkumuleres til store resultater over tid.
+
+**Marketing takeaway:** Konsistent innhold, SEO og merkevarebygging har rentes-rente-effekt. Start tidlig.
+
+### Network Effects (Nettverkseffekter)
+Et produkt blir mer verdifullt jo flere som bruker det.
+
+**Marketing takeaway:** Design funksjoner som forbedres med flere brukere: delte arbeidsområder, integrasjoner, markedsplasser, community.
+
+### Flywheel Effect (Svinghjulseffekten)
+Vedvarende innsats skaper momentum som til slutt opprettholder seg selv.
+
+**Marketing takeaway:** Innhold → trafikk → leads → kunder → case studies → mer innhold. Hvert element driver det neste.
+
+### Survivorship Bias (Overlevelseseffekten)
+Fokus på suksesser mens feil som ikke er synlige ignoreres.
+
+**Marketing takeaway:** Studer mislykkede kampanjer, ikke bare vellykkede. Den virale hitten du kopierer hadde 99 feil du ikke så.
+
+---
+
+## Quick Reference: Utfordring → Modeller
+
+| Utfordring | Relevante modeller |
+|------------|-------------------|
+| Lave konverteringer | Hick's Law, Aktiveringsenergi, BJ Fogg, Choice Overload |
+| Prisinnvendinger | Anchoring, Framing, Mental Accounting, Loss Aversion |
+| Bygge tillit | Authority, Social Proof, Reciprocity |
+| Øke hastverk | Scarcity, Loss Aversion, Zeigarnik |
+| Retensjon/churn | Endowment Effect, Sunk Cost, IKEA Effect |
+| Vekst stagnerer | Theory of Constraints, Local vs Global Optima, Compounding |
+| Beslutningslammelse | Choice Overload, Default Options, Nudge Theory |
+| Onboarding | Goal Gradient, IKEA Effect, Commitment & Consistency |
+
+---
+
 ## Etisk bruk
 
 Disse prinsippene er kraftige. Bruk dem ansvarlig:
@@ -620,4 +753,15 @@ Disse prinsippene er kraftige. Bruk dem ansvarlig:
 
 ---
 
-*Basert på forskning fra Cialdini, Kahneman, Thaler, og andre atferdsøkonomer.*
+## Relaterte Skills
+
+- `page-cro` — Anvend psykologi på sideoptimalisering
+- `storytelling-copywriting` — Skriv copy med psykologiske prinsipper
+- `pricing-strategy` — Prisstrategi og packaging
+- `popup-cro` — Triggere og psykologi i popups
+- `ab-test-setup` — Test psykologiske hypoteser
+- `churn-prevention` — Retensjon og lojalitet
+
+---
+
+*Basert på forskning fra Cialdini, Kahneman, Thaler, Fogg, og andre atferdsøkonomer og -psykologer.*

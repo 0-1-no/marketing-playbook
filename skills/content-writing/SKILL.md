@@ -271,3 +271,114 @@ Interaktiv setup for voice-dimensjoner og innholdsregler. Oppretter `./marketing
 /marketing-playbook:check
 ```
 Sjekker innhold mot BRAND.md og CONTENT-RULES.md.
+
+---
+
+## Innholdsstrategi: Searchable vs Shareable
+
+Hvert innhold må være **søkbart**, **delbart**, eller begge. Prioriter i den rekkefølgen — søketrafikk er fundamentet.
+
+### Søkbart Innhold (Searchable)
+
+Fanger eksisterende etterspørsel. Optimalisert for folk som aktivt leter.
+
+- Target et spesifikt søkeord eller spørsmål
+- Match search intent nøyaktig
+- Bruk titler som matcher søk
+- Strukturer med overskrifter som speiler søkemønstre
+- Gi komplett dekning (ikke la spørsmål stå ubesvart)
+- Inkluder data, eksempler og kilder
+
+**Innholdstyper:** Use-case-innhold, hub & spoke, template-bibliotek, FAQ, glossar
+
+### Delbart Innhold (Shareable)
+
+Skaper etterspørsel. Sprer ideer og får folk til å snakke.
+
+- Led med en ny innsikt, egne data, eller kontraintuitiv vinkling
+- Utfordre konvensjonell visdom med gode argumenter
+- Fortell historier som skaper følelser
+- Lag innhold folk vil dele for å virke kunnskapsrike
+- Koble til aktuelle trender
+
+**Innholdstyper:** Thought leadership, datadrevet innhold, ekspertroundups, case studies, bak-kulissene
+
+---
+
+## Innholdspilarer og Topic Clusters
+
+Innholdspilarer er de 3–5 kjernetemaene merkevaren din skal eie. Hver pilar spawner en klynge av relatert innhold.
+
+### Identifiser Pilarer
+
+| Metode | Spørsmål |
+|--------|----------|
+| **Produktledet** | Hvilke problemer løser produktet? |
+| **Målgruppeledet** | Hva trenger ICP å lære? |
+| **Søkeledet** | Hvilke temaer har volum i ditt segment? |
+| **Konkurrentledet** | Hva rangerer konkurrentene for? |
+
+### Pilarstruktur
+
+```
+Pilartema (Hub-side)
+├── Klynge 1
+│   ├── Artikkel A
+│   ├── Artikkel B
+│   └── Artikkel C
+├── Klynge 2
+│   ├── Artikkel D
+│   └── Artikkel E
+└── Klynge 3
+    ├── Artikkel F
+    └── Artikkel G
+```
+
+**Tips:** Det meste av innhold kan leve under `/blog` med god intern lenking. Dedikerte pilarsider med egne URL-strukturer trengs kun for omfattende ressurser med flere lag av dybde.
+
+---
+
+## Idékilder for Innhold
+
+### 1. Salgs- og supportdata
+- Spørsmål kunder stiller før kjøp
+- Innvendinger i salgsmøter
+- Gjentakende temaer i support
+- Språk kunder bruker om problemene sine
+
+### 2. Forum og Sosiale Medier
+- Reddit, norske Facebook-grupper, bransjeforum
+- Finn.no-diskusjoner (for relevante bransjer)
+- LinkedIn-diskusjoner i norske faggrupper
+- Quora (for internasjonale temaer)
+
+### 3. Konkurrentanalyse
+- Temaer konkurrentene dekker godt
+- Innholdsgap de ikke dekker
+- Utdatert innhold du kan forbedre
+- Vinkler de mangler
+
+### 4. Søkeorddata
+Hvis du har tilgang til Ahrefs, GSC eller lignende:
+
+| Analyse | Hva du ser etter |
+|---------|-----------------|
+| Topic clusters | Grupper relaterte søkeord |
+| Buyer stage | Awareness/consideration/decision |
+| Quick wins | Lav konkurranse + ok volum + høy relevans |
+| Content gaps | Søkeord konkurrenter rangerer for som du ikke gjør |
+
+---
+
+## Prioriter Innholdsideer
+
+Score hver idé på fire faktorer:
+
+| Faktor | Vekt | Spørsmål |
+|--------|------|----------|
+| **Kundeimpakt** | 40% | Hvor ofte dukker dette opp i research? |
+| **Content-Market Fit** | 30% | Kobler dette til produktets løsning? |
+| **Søkepotensial** | 20% | Volum, konkurranse, trender? |
+| **Ressursbehov** | 10% | Har vi ekspertisen og kapasiteten? |
+
+**Mål:** Prioriter innhold som løser reelle kundeproblemer OG har søkepotensial. Ikke lag innhold bare fordi det har volum.

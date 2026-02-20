@@ -252,20 +252,93 @@ Foreslå oppdatering av JOURNEY.md når:
 | `/design-system:init` | Oppretter DESIGN-SYSTEM.md |
 | `/seo-aeo:audit` | SEO og AEO teknisk audit |
 
+## Switching Dynamics
+
+Når du analyserer konkurrentbildet i BRAND.md, vurder de fire kreftene som påvirker bytte:
+
+| Kraft | Retning | Spørsmål |
+|-------|---------|----------|
+| **Push** | Bort fra nåværende | Hva frustrerer dem med dagens løsning? |
+| **Pull** | Mot deg | Hva tiltrekker dem ved ditt produkt? |
+| **Vane** | Holder dem igjen | Hva gjør det vanskelig å bytte? |
+| **Angst** | Hindrer bytte | Hva frykter de ved å bytte? |
+
+**Bruk i BRAND.md:** Dokumenter push/pull for å forme budskap. Adresser vane og angst i copy.
+
+---
+
+## Anti-Persona
+
+Like viktig som å definere hvem du vil nå er å definere hvem du **ikke** vil nå.
+
+**Spørsmål for anti-persona:**
+- Hvem er dårlige kunder? (høy churn, lav NPS, mye support)
+- Hvem har vi ikke kapasitet/ekspertise til å betjene?
+- Hvilke forventninger kan vi ikke innfri?
+
+**Dokumenter i BRAND.md** under Audience-seksjonen.
+
+---
+
 ## Relaterte Skills
 
-Alle skills inneholder **metodikk og prinsipper** - ikke konkrete verdier:
+Alle skills inneholder **metodikk og prinsipper** — ikke konkrete verdier:
 
+### Prinsipper og Fundament
 | Skill | Innhold |
 |-------|---------|
-| `seo-aeo` | SEO, AEO, søkeord, AI-synlighet |
-| `design-system` | UI/UX metodikk, anti-patterns, estetiske retninger |
-| `storytelling-copywriting` | Rammeverk for copy (AIDA, PAS, headlines) |
-| `image-gen` | AI-bildegenerering for OG-bilder, social media, bannere |
-| `marketing-psychology` | 35+ psykologiske prinsipper per funnel-stage |
+| `marketing-psychology` | 50+ psykologiske prinsipper, prispsykologi, vekstmodeller |
 | `marketing-mindset` | 20 strategiske prinsipper |
 | `brand-principles` | 7 prinsipper for merkevarebygging |
 | `distribution-principles` | SOV→SOM, 60:40, Reach>Frequency |
 | `customer-principles` | Lojalitet, retention, community |
+
+### Innhold og Copy
+| Skill | Innhold |
+|-------|---------|
+| `content-writing` | Artikler, guider, landing pages, innholdsstrategi |
+| `storytelling-copywriting` | Rammeverk (AIDA, PAS), headlines, CRO-copy |
+| `social-content` | LinkedIn, X, Instagram, Facebook |
+| `email-sequence` | E-postsekvenser og automatisering |
+| `ad-creative` | Annonseinnhold og kreativ produksjon |
+
+### SEO og Synlighet
+| Skill | Innhold |
+|-------|---------|
+| `seo-aeo` | SEO, AEO, søkeord, AI-synlighet |
+| `programmatic-seo` | Skalerbar SEO med templates og data |
+| `competitor-alternatives` | Konkurrent-sammenligningssider |
+
+### Konvertering (CRO)
+| Skill | Innhold |
+|-------|---------|
+| `page-cro` | Landingssider, hjemmesider, prissider |
+| `signup-flow-cro` | Registreringsflyt-optimalisering |
+| `onboarding-cro` | Post-signup aktivering |
+| `form-cro` | Skjema-optimalisering |
+| `popup-cro` | Modals og overlays |
+| `paywall-upgrade-cro` | In-app paywalls og upgrade |
+
+### Strategi og Vekst
+| Skill | Innhold |
+|-------|---------|
+| `launch-strategy` | Produktlanseringer |
+| `pricing-strategy` | Prisstrategi og packaging |
+| `paid-ads` | Kampanjestrategi og annonsering |
+| `referral-program` | Referral og affiliate |
+| `churn-prevention` | Cancel flows, dunning, retensjon |
+| `ab-test-setup` | A/B-testing rammeverk |
+| `marketing-ideas` | Idébank for norske forhold |
+
+### Design og Bilder
+| Skill | Innhold |
+|-------|---------|
+| `design-system` | UI/UX metodikk, anti-patterns, estetiske retninger |
+| `image-gen` | AI-bildegenerering for OG-bilder, social media, bannere |
+
+### Verktøy
+| Skill | Innhold |
+|-------|---------|
+| `analytics-tracking` | Generell tracking, PostHog, GA4 |
 
 **Husk:** Disse er guider. Faktiske verdier kommer fra `./marketing/`.
