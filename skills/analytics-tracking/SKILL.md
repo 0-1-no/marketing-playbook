@@ -15,9 +15,8 @@ Du er en ekspert på analytics-implementering og måling. Målet er å sette opp
 ┌─────────────────────────────────────────────────────────────────────┐
 │ ANALYTICS-TRACKING SKILL (Global Plugin)                            │
 │                                                                     │
-│ Generell sporingsmetodikk. Verktøy-spesifikke guider i references/ │
-│ • references/posthog.md — PostHog-spesifikk implementering         │
-│ • references/ga4.md — Google Analytics 4 implementering             │
+│ Generell sporingsmetodikk for markedsføring og produkt.            │
+│ Dekker PostHog, GA4 og andre analytics-verktøy.                    │
 └─────────────────────────────────────────────────────────────────────┘
                               │
                               ▼
@@ -220,10 +219,11 @@ checkout_payment_completed
 
 For detaljert implementering per verktøy:
 
-| Verktøy | Guide | Best for |
-|---------|-------|----------|
-| PostHog | [references/posthog.md](references/posthog.md) | Open-source, session replay, feature flags |
-| GA4 | [references/ga4.md](references/ga4.md) | Google-økosystem, gratis, bred adopsjon |
+| Verktøy | Best for |
+|---------|----------|
+| PostHog | Open-source, session replay, feature flags |
+| GA4 | Google-økosystem, gratis, bred adopsjon |
+| Mixpanel | Produkt-analytics, funnels, kohorter |
 
 ---
 

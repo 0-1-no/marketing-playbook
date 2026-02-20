@@ -53,7 +53,6 @@ Hvis filene ikke finnes, kjør `/marketing-playbook:init` først.
 
 **Norsk kontekst:** LinkedIn er spesielt sterkt i Norge — 80%+ penetrasjon blant yrkesaktive. Start der for B2B.
 
-For detaljerte plattformstrategier, se [references/platforms.md](references/platforms.md).
 
 ---
 
@@ -106,7 +105,6 @@ Første linje avgjør om noen leser resten.
 - «[Vanlig råd] er feil. Her er hvorfor:»
 - «Jeg sluttet med [vanlig praksis] og [positivt resultat].»
 
-For flere maler, se [references/post-templates.md](references/post-templates.md).
 
 ---
 
