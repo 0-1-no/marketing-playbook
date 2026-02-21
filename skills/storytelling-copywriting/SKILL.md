@@ -1,6 +1,6 @@
 ---
 name: storytelling-copywriting
-description: Storytelling og copywriting for markedsføringsinnhold. Aktiveres ved skriving av markedsføringstekst, overskrifter, artikler, e-poster, landing pages, eller annen overbevisende tekst. Gir rammeverk (AIDA, PAS) og teknikker for effektiv kommunikasjon. Leser fra marketing/BRAND.md for tone of voice.
+description: Storytelling og copywriting for markedsføringsinnhold. Aktiveres ved skriving av markedsføringstekst, overskrifter, artikler, e-poster, landing pages, eller annen overbevisende tekst. Gir rammeverk (AIDA, ATIDCOA, PAS) og teknikker for effektiv kommunikasjon. Leser fra marketing/BRAND.md for tone of voice.
 ---
 
 # Storytelling & Copywriting
@@ -16,7 +16,7 @@ Denne skillen hjelper deg med å skrive overbevisende innhold.
 │ STORYTELLING-COPYWRITING SKILL (Global Plugin)                      │
 │                                                                     │
 │ Du leser dette nå. Det er del av marketing-playbook plugin.        │
-│ Inneholder kun metodikk: hvordan skrive headlines, bruke AIDA, etc.│
+│ Inneholder kun metodikk: hvordan skrive headlines, bruke AIDA/ATIDCOA, etc.│
 │ INGEN konkrete verdier - de kommer fra kodebasen du jobber i.      │
 └─────────────────────────────────────────────────────────────────────┘
                               │
@@ -57,7 +57,7 @@ Hvis filene ikke finnes, kjør `/marketing-playbook:init` for å opprette dem.
 | Fil | Bruk når du... |
 |-----|----------------|
 | [STORYTELLING.md](STORYTELLING.md) | Utvikler narrativ, Signature Story, brand story |
-| [FRAMEWORKS.md](FRAMEWORKS.md) | Trenger struktur: AIDA, PAS, BAB, FAB |
+| [FRAMEWORKS.md](FRAMEWORKS.md) | Trenger struktur: AIDA, ATIDCOA, PAS, BAB, FAB |
 | [HEADLINES.md](HEADLINES.md) | Skriver titler, overskrifter, hooks |
 | [MICROCOPY.md](MICROCOPY.md) | Skriver buttons, error messages, CTAs |
 | [PERSUASION.md](PERSUASION.md) | Vil overbevise uten å manipulere |
@@ -105,7 +105,8 @@ Hva skriver du?
 
 | Situasjon | Framework | Hvorfor |
 |-----------|-----------|---------|
-| Ukjent produkt/problem | **AIDA** | Bygger fra oppmerksomhet til handling |
+| Kort format: email, annonse | **AIDA** | Bygger fra oppmerksomhet til handling |
+| Landing page / salgsside | **ATIDCOA** | Komplett konverteringsløp med 7 steg |
 | Kjent smerte | **PAS** | Agiterer problemet før løsning |
 | Transformasjonshistorie | **BAB** | Viser før/etter tydelig |
 | Funksjoner → Fordeler | **FAB** | Kobler features til verdi |
@@ -230,6 +231,7 @@ Dette oppretter `marketing/CONTENT-RULES.md` med detaljerte voice-dimensjoner.
 - Gi tydelige stier for ulike besøksintenter
 
 ### Landing Page
+- Bruk **ATIDCOA**-sekvensen for sidestruktur (se [FRAMEWORKS.md](FRAMEWORKS.md))
 - Én melding, én CTA
 - Match overskrift til annonse/trafikkilde
 - Komplett argument på én side

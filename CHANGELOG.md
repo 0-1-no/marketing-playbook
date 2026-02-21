@@ -5,6 +5,26 @@ All notable changes to Marketing Playbook will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.5.1] - 2026-02-21
+
+### Added
+- **ATIDCOA-rammeverket** i storytelling-copywriting/FRAMEWORKS.md — 7-stegs landing page-modell som utvider klassisk AIDA med Transformation, Compare og Objections
+  - Komplett strukturbeskrivelse med alle steg
+  - AIDA vs. ATIDCOA sammenligningstabell
+  - Vanlige feil
+  - Bransjespesifikke tilpasninger (B2B/SaaS + E-commerce/DTC)
+  - Kilde-attribusjon til Oliver Kenyon
+
+### Changed
+- storytelling-copywriting/SKILL.md — ATIDCOA lagt til i description, arkitektur-boks, ressurstabell, framework quick reference og landing page-seksjon
+- page-cro/SKILL.md — ATIDCOA-referanse under landingsside-rammeverket
+- competitor-alternatives/SKILL.md — Kryss-referanse til ATIDCOA Compare-steget
+- Beslutningsmatrisen i FRAMEWORKS.md oppdatert: AIDA → kort format, ATIDCOA → landing pages
+- Kombinasjoner-seksjonen utvidet med ATIDCOA + FAB og PAS → ATIDCOA
+
+### Technical
+- Version bump til 0.5.1
+
 ## [0.5.0] - 2026-02-20
 
 ### Added — 19 nye skills

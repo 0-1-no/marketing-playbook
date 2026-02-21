@@ -107,5 +107,5 @@ Du er en ekspert på å lage konkurrent-sammenlignings- og alternativsider. Mål
 
 - `programmatic-seo` — Lag sammenligningssider i skala
 - `seo-aeo` — Optimaliser individuelle sider
-- `storytelling-copywriting` — Tekst for sammenligningssider
+- `storytelling-copywriting` — Tekst for sammenligningssider (se ATIDCOA Compare-steget for inline-sammenligninger på landing pages)
 - `page-cro` — Optimaliser konvertering på sammenligningssider

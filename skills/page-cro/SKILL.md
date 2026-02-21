@@ -134,6 +134,7 @@ Analyser siden i rekkefølge etter påvirkning:
 - Håndter både «klar til å kjøpe» og «undersøker fortsatt»
 
 ### Landingsside
+- **Sidestruktur:** Bruk ATIDCOA-sekvensen fra `storytelling-copywriting` → [FRAMEWORKS.md](../storytelling-copywriting/FRAMEWORKS.md) for optimal seksjonering
 - Budskapsamsvar med trafikkilde (annonse → side)
 - Én CTA (fjern navigasjon om mulig)
 - Komplett argument på én side

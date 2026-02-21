@@ -1,6 +1,6 @@
 # Copywriting Frameworks
 
-Fire tidtestede strukturer for overbevisende tekst.
+Fem strukturer for overbevisende tekst — fra korte annonser til komplette landing pages.
 
 ---
 
@@ -26,6 +26,65 @@ Fire tidtestede strukturer for overbevisende tekst.
 - For lang "Attention" - mister momentum
 - Hopper rett til "Action" - mangler oppbygging
 - Vag CTA - "Les mer" i stedet for "Start gratis i dag"
+
+---
+
+## ATIDCOA
+
+**Attention → Transformation → Interest → Desire → Compare → Objections → Action**
+
+En utvidelse av AIDA spesielt designet for landing pages og salgssider. Legger til tre nye steg som adresserer moderne kjøpsatferd: besøkende vil *se* transformasjonen, sammenligne alternativer, og få svar på innvendinger — alt før de handler.
+
+### Når bruke
+
+- Landing pages og salgssider
+- Produktsider med konverteringsmål
+- Lengre format der du har plass til komplett argumentasjon
+
+### Struktur
+
+1. **Attention** — Above the fold, 3–5 sekunder. Sterkt verdiforslag, trust-signaler, grabbing imagery, primær CTA.
+2. **Transformation** — Visuell reise fra «uten produktet» → «med produktet». Bruk ikoner, steg og tekst for å la besøkende *se seg selv* med løsningen. Before/after, ikke bare påstander.
+3. **Interest (Benefits)** — Fokuser på nøyaktig hvilke fordeler kjøperen får: tid, penger, frihet, resultater. Benefits sell.
+4. **Interest (Features)** — Først etter at de har visualisert utfallet, vis *hvordan* du leverer det. Bilder, ikoner, video. Features tell.
+5. **Desire** — Bruk andre mennesker til å skape ønske: reviews, testimonials, case studies, brukervideoer.
+6. **Compare** — Sammenligning mot konkurrenter eller markedsnorm. Bruk tabeller. Kontroller narrativet — kjøpere googler alternativene uansett.
+7. **Objections** — Strategisk plassert FAQ *før* siste CTA. Har de scrollet hit, er de interesserte men har spørsmål. Besvare innvendinger rundt pris, oppstart og utfall.
+8. **Action** — Én klar knapp. Ikke la dem lete. Oppsummer verdi og gjenta CTA.
+
+### AIDA vs. ATIDCOA
+
+| Element | AIDA | ATIDCOA |
+|---------|------|---------|
+| Attention | ✓ | ✓ |
+| Transformation | — | ✓ Visuell before/after |
+| Interest | Én fase | Todelt: Benefits først, Features etter |
+| Desire | ✓ | ✓ |
+| Compare | — | ✓ Sammenligningstabell |
+| Objections | — | ✓ Strategisk FAQ |
+| Action | ✓ | ✓ |
+
+### Vanlige feil
+
+- **Svak Transformation** — Bare tekst, ingen visuell reise. Bruk ikoner, illustrasjoner eller screenshots.
+- **Compare uten ærlighet** — Sammenligninger som bare viser egne styrker. Vær fair — det bygger tillit.
+- **Objections i bunnen** — FAQ som «rydderom» i stedet for konverteringsverktøy. Plasser *før* siste CTA.
+- **For mange CTAs** — ATIDCOA har én primær CTA (above the fold) og én avsluttende. Ikke overdriv mellom seksjonene.
+
+### Bransjespesifikke tilpasninger
+
+| Element | B2B / SaaS | E-commerce / DTC |
+|---------|------------|-------------------|
+| **Transformation** | ROI-visualisering, prosess before/after, demo-screenshots | Livsstils-bilder, unboxing, bruksscenario |
+| **Desire** | Case studies med ROI-tall, navngitte kunder | Brukeranmeldelser, UGC-video, FOMO |
+| **Compare** | vs. manuell prosess, vs. markedsleder (tabell) | vs. konkurrentprodukter, vs. kategori-gjennomsnitt |
+| **Objections** | Implementeringstid, integrasjoner, support, sikkerhet | Frakt, retur, garantier, materialkvalitet |
+
+### Kilde
+
+Basert på Oliver Kenyon (CRO-ekspert, 10+ år erfaring) sin oppdatering av AIDA-modellen for landing pages.
+- **Originalpost:** [R.I.P the AIDA model — We rebuilt it into ATIDCOA](https://x.com/oliverkenyon/status/2024518832077840570) (2026)
+- **Kontekst:** Opprinnelig e-commerce-fokusert. Bransjespesifikke tilpasninger (over) lagt til av oss.
 
 ---
 
@@ -129,7 +188,8 @@ Fire tidtestede strukturer for overbevisende tekst.
 
 | Du har... | Bruk |
 |-----------|------|
-| Kald trafikk, ukjent produkt | **AIDA** |
+| Kort format: email, annonse, intro | **AIDA** |
+| Landing page / salgsside | **ATIDCOA** |
 | Kjent smerte, emosjonelt problem | **PAS** |
 | Før/etter-historie, testimonial | **BAB** |
 | Produktfunksjoner å forklare | **FAB** |
@@ -143,6 +203,8 @@ Frameworks kan kombineres:
 - **AIDA + FAB** - Hook med AIDA, forklar med FAB
 - **PAS + BAB** - Problem/Agitate, så Before/After
 - **BAB som Testimonial** i en AIDA-struktur
+- **ATIDCOA + FAB** — Bruk FAB-strukturen inne i Interest-fasen av ATIDCOA
+- **PAS → ATIDCOA** — PAS som hero-seksjon (Attention), deretter ATIDCOA-flyten videre
 
 ---
 
