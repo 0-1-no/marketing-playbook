@@ -261,6 +261,70 @@ AI: [lister verktøy]
 
 ---
 
+### Pilar 5: Tredjeparts tilstedeværelse
+
+Brands er **6,5x mer sannsynlig å bli sitert via tredjepartskilder** enn direkte. AI-systemer stoler på uavhengige kilder.
+
+#### Tredjeparts siteringsdata
+
+| Kilde | Andel av ChatGPT-sitater |
+|-------|--------------------------|
+| Wikipedia | 7,8% |
+| Reddit | 1,8% |
+| G2 / PeerSpot | ~1% |
+| LinkedIn-profiler | ~0,5% |
+
+#### Strategi for tredjeparts synlighet
+
+| Plattform | Tiltak | Prioritet |
+|-----------|--------|-----------|
+| **Wikipedia** | Opprett/oppdater artikkel med verifiserbare kilder | Høy |
+| **Reddit** | Genuint bidra i relevante subreddits | Høy |
+| **G2 / Capterra** | Oppfordre kunder til anmeldelser | Høy |
+| **LinkedIn** | Thought leadership, bli sitert som ekspert | Medium |
+| **YouTube** | Video med god description og CC | Medium |
+| **Bransjefora** | Ekspertbidrag i nisje-communities | Medium |
+
+**Kritisk:** Gated content (paywall, login-wall) kan **ikke siteres av AI**. Gjør viktigste sider offentlig tilgjengelige.
+
+---
+
+### Forskning: Hva som virker (Princeton GEO-studie)
+
+| Tiltak | Effekt på AI-siteringer |
+|--------|------------------------|
+| Sitater og kildehenvisninger | **+40%** |
+| Statistikk med navngitt kilde | **+37%** |
+| Fagspråk og teknisk terminologi | **+28%** |
+| Keyword stuffing | **-10%** (AI straffer dette) |
+
+#### Innholdstyper sortert etter siteringsfrekvens
+
+| Innholdstype | Andel av AI-sitater |
+|--------------|---------------------|
+| Sammenligninger / «X vs Y» | ~33% |
+| Guider og how-tos | ~15% |
+| Original forskning / data | ~12% |
+| Lister og oversikter | ~10% |
+| Definisjoner og forklaringer | ~8% |
+
+**Takeaway:** Sammenligningsinnhold siteres dobbelt så mye som alt annet. Prioriter «vs»-sider.
+
+---
+
+## Verktøy
+
+Oppdatert verktøyliste — legg til i eksisterende verktøy-tabell:
+
+| Verktøy | Bruk | Kostnad |
+|---------|------|---------|
+| Otterly AI | AI visibility monitoring | Betalt |
+| Peec AI | AI citation tracking | Betalt |
+| ZipTie | LLM brand monitoring | Betalt |
+| LLMrefs | Citation discovery | Betalt |
+
+---
+
 ## Skriv for sitater
 
 ### Sitérbar skriving
