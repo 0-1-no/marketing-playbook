@@ -297,7 +297,7 @@ DISTRIBUTION.md kartlegger hvor dere er til stede og SEO-strategi:
 
 ## Skills
 
-Pluginen inkluderer 30 skills som automatisk aktiveres når du jobber med relevant innhold.
+Pluginen inkluderer 39 skills som automatisk aktiveres når du jobber med relevant innhold.
 
 > **Viktig:** Skill-filene inneholder metodikk og prinsipper — ikke konkrete verdier.
 > Faktiske verdier leses alltid fra `./marketing/`-mappen i prosjektet.
@@ -318,10 +318,13 @@ Pluginen inkluderer 30 skills som automatisk aktiveres når du jobber med releva
 | Skill | Beskrivelse |
 |-------|-------------|
 | `content-writing` | Artikler, guider, landing pages, content pillars, searchable vs shareable |
+| `content-strategy` | Innholdsstrategi med pillar/cluster-arkitektur og 4-faktor topic scoring |
 | `storytelling-copywriting` | AIDA, PAS, headlines, CRO-copy, sidestruktur |
 | `social-content` | LinkedIn, X, Instagram, Facebook — hooks, repurposing |
 | `email-sequence` | Velkomst, nurture, re-engasjering, onboarding-sekvenser |
 | `ad-creative` | Annonseinnhold, bulk-generering, iterasjon |
+| `lead-magnets` | 13 lead magnet-formater med stage-matching og konverteringsbenchmarks |
+| `free-tool-strategy` | Engineering as marketing med 6 verktøytyper og 8-faktor scorecard |
 | `marketing-ideas` | Idébank etter kategori tilpasset norske forhold |
 
 ### SEO og Synlighet
@@ -329,7 +332,10 @@ Pluginen inkluderer 30 skills som automatisk aktiveres når du jobber med releva
 | Skill | Beskrivelse |
 |-------|-------------|
 | `seo-aeo` | SEO + Answer Engine Optimization for AI-søk (7 sub-guider) |
+| `ai-seo` | Dedikert AI-siteringsoptimalisering for ChatGPT, Perplexity, Claude, Gemini |
 | `programmatic-seo` | Skalerbar SEO med templates og data (10 playbooks) |
+| `site-architecture` | Nettstedsarkitektur med 3-click rule, hub-and-spoke, Mermaid sitemap |
+| `schema-markup` | JSON-LD strukturert data med 10+ schema-typer og CMS-patterns |
 | `competitor-alternatives` | Konkurrent-sammenligningssider for SEO og salg |
 
 ### Konvertering (CRO)
@@ -354,6 +360,14 @@ Pluginen inkluderer 30 skills som automatisk aktiveres når du jobber med releva
 | `churn-prevention` | Cancel flows, save offers, dunning, retensjon |
 | `ab-test-setup` | A/B-testing med hypotese-rammeverk |
 | `analytics-tracking` | Generell tracking (PostHog + GA4 referanser) |
+
+### B2B Salg
+
+| Skill | Beskrivelse |
+|-------|-------------|
+| `revops` | Revenue operations med MQL-modell, speed-to-lead SLA, pipeline hygiene |
+| `cold-email` | B2B cold outreach med 4 formler, deliverability-sjekkliste, norsk juridisk kontekst |
+| `sales-enablement` | Pitch deck arc, innvendingshåndtering, battle cards, demo-script |
 
 ### Design og Bilder
 
