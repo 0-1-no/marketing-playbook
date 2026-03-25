@@ -1,6 +1,7 @@
 ---
 name: marketing-psychology
 description: Psykologiske prinsipper for effektiv markedsføring. Bruk denne som referanse når du lager innhold, landingssider, e-poster eller annonser.
+user-invocable: false
 ---
 
 # Marketing Psychology

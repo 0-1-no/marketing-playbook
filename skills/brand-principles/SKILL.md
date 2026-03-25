@@ -1,6 +1,7 @@
 ---
 name: brand-principles
 description: 7 prinsipper for å bygge en sterk merkevare. Brukes av audit for Brand Health evaluering.
+user-invocable: false
 ---
 
 # 7 Brand Principles

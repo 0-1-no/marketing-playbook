@@ -5,6 +5,30 @@ All notable changes to Marketing Playbook will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.1] - 2026-03-25
+
+### Fixed — Skill structure compliance
+
+6 standalone `.md`-filer i `skills/` fulgte ikke Claude Code sin `dir/SKILL.md`-oppdagelse og ble aldri lastet:
+
+- `marketing-playbook.md` → `marketing-playbook/SKILL.md`
+- `marketing-psychology.md` → `marketing-psychology/SKILL.md`
+- `brand-principles.md` → `brand-principles/SKILL.md`
+- `customer-principles.md` → `customer-principles/SKILL.md`
+- `distribution-principles.md` → `distribution-principles/SKILL.md`
+- `marketing-mindset.md` → `marketing-mindset/SKILL.md`
+
+### Changed
+
+- Alle 6 referanse-skills markert `user-invocable: false` (bakgrunnsreferanse, ikke manuelt invokable)
+- 6 init-commands markert `disable-model-invocation: true` (brand-init, marketing-playbook-init, design-system-init, content-writer-init, journey-init, distribution-init) — forhindrer at Claude trigger dem automatisk
+- CLAUDE.md oppdatert med korrekt `dir/SKILL.md`-struktur
+
+### Technical
+- Version bump til 0.6.1
+
+---
+
 ## [0.6.0] - 2026-03-25
 
 ### Added — 9 nye skills

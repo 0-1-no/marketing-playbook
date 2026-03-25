@@ -1,6 +1,7 @@
 ---
 name: marketing-mindset
 description: Tidløse prinsipper for strategisk markedstenkning. Bruk denne når du diskuterer strategi, valg og prioriteringer med brukeren.
+user-invocable: false
 ---
 
 # Marketing Mindset

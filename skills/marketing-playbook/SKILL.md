@@ -1,6 +1,7 @@
 ---
 name: marketing-playbook
 description: Apply Marketing Playbook principles when creating marketing content, landing pages, copy, or brand materials. Reads files from marketing/ folder.
+user-invocable: false
 ---
 
 # Marketing Playbook Skill

@@ -1,6 +1,7 @@
 ---
 name: customer-principles
 description: Prinsipper for kundelojalitet, retention og community. Aktiveres ved design av post-purchase opplevelser, lojalitetsprogrammer, kundeservice-strategi, eller community-bygging.
+user-invocable: false
 ---
 
 # Customer Principles

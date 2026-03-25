@@ -1,5 +1,6 @@
 ---
 description: Opprett kun DISTRIBUTION.md for dette prosjektet. Kartlegger marketing stack og kanaler.
+disable-model-invocation: true
 allowed-tools: Read, Write, Glob, AskUserQuestion
 ---
 

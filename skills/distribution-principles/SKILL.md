@@ -1,6 +1,7 @@
 ---
 name: distribution-principles
 description: Tidløse prinsipper for markedsføringsdistribusjon. Aktiveres ved planlegging av mediestrategi, kanalvalg, budsjettallokering, eller evaluering av reach vs frekvens.
+user-invocable: false
 ---
 
 # Distribution Principles

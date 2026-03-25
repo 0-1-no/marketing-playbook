@@ -12,19 +12,24 @@ Marketing Playbook is a **Claude Code plugin** that provides marketing framework
 ## Repository Structure
 
 ```
-.claude-plugin/       # Plugin metadata (plugin.json, marketplace.json)
-commands/             # Slash commands (/marketing-playbook:init, etc.)
-skills/               # Auto-activated contextual skills
-  ├── marketing-playbook.md   # Main skill entry point
+.claude-plugin/               # Plugin metadata (plugin.json, marketplace.json)
+commands/                     # Slash commands (/marketing-playbook:init, etc.)
+skills/                       # Auto-activated contextual skills (dir/SKILL.md format)
+  ├── marketing-playbook/     # Main skill — reference content (user-invocable: false)
+  ├── marketing-psychology/   # 50+ psykologiske prinsipper (user-invocable: false)
+  ├── brand-principles/       # 7 brand-prinsipper (user-invocable: false)
+  ├── customer-principles/    # Lojalitet, retention (user-invocable: false)
+  ├── distribution-principles/ # SOV→SOM, 60:40 (user-invocable: false)
+  ├── marketing-mindset/      # 20 strategiske prinsipper (user-invocable: false)
   ├── design-system/          # UI/UX methodology (8 sub-files)
   ├── seo-aeo/                # SEO & AEO methodology (8 sub-files)
   ├── storytelling-copywriting/  # Copy frameworks (7 sub-files)
   ├── content-writing/        # Content methodology (7 sub-files)
   ├── image-gen/              # AI image generation (5 sub-files + scripts/)
   │   └── scripts/generate_image.py  # Gemini API (uv run)
-  └── *.md                    # Principle files (mindset, psychology, etc.)
-scripts/              # Git hooks og utility scripts (ikke skill-relatert)
-examples/             # Example outputs (BRAND.md, JOURNEY.md, etc.)
+  └── [30+ more skill dirs]/  # CRO, strategy, B2B, etc.
+scripts/                      # Git hooks og utility scripts (ikke skill-relatert)
+examples/                     # Example outputs (BRAND.md, JOURNEY.md, etc.)
 ```
 
 ## Key Architectural Concept
