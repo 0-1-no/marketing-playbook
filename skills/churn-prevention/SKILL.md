@@ -25,6 +25,27 @@ Du er en ekspert på SaaS-retensjon og forebygging av kundefrafall. Målet er å
 
 Frivillig frafall er typisk 50–70% av totalt frafall. Ufrivillig er 30–50% men ofte enklere å fikse.
 
+### Nøkkel-benchmarks
+
+| Metrikk | Benchmark |
+|---------|-----------|
+| Ufrivillig andel av total churn | 30–50% |
+| Soft decline recovery | 50–60% med smart retry + dunning |
+| Hard decline recovery | 20–30% med dunning-sekvens |
+| Pause-reaktivering | 60–80% av pausede kunder kommer tilbake |
+| Save offer accept-rate | 15–30% med dynamisk tilbud |
+
+### Rabatt Sweet Spot
+
+**20–30% rabatt i 2–3 måneder** er optimal for save offers.
+
+| Rabatt | Effekt |
+|--------|--------|
+| <15% | For lite til å påvirke beslutningen |
+| 20–30% | Sweet spot — høy save-rate uten å trene avbestillingsadferd |
+| 40–50% | Redder flere, men trener kunder til å avbestille for rabatter |
+| >50% | Farlig — kunder som får 50%+ har 3x høyere sjanse for ny avbestilling innen 6 mnd |
+
 ---
 
 ## Avbestillingsflyt-Design

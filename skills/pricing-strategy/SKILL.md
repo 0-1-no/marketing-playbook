@@ -112,6 +112,56 @@ Verdi-metrikken er hva du tar betalt for — den bør skalere med verdien kunden
 
 ---
 
+## Prisingsresearch-metoder
+
+### Van Westendorp Price Sensitivity Meter
+
+Fire spørsmål som kartlegger akseptabelt prisintervall:
+
+| Spørsmål | Måler |
+|----------|-------|
+| «Ved hvilken pris er dette **for billig** (du tviler på kvaliteten)?» | Nedre grense |
+| «Ved hvilken pris er dette en **bra deal**?» | Optimal pris |
+| «Ved hvilken pris begynner det å bli **dyrt** (men du vurderer det)?» | Øvre komfortgrense |
+| «Ved hvilken pris er det **for dyrt** (uaktuelt)?» | Absolutt tak |
+
+**Slik bruker du det:**
+1. Kjør undersøkelsen med 200+ respondenter i målgruppen
+2. Plot de fire kurvene — skjæringspunktene gir deg prisintervallet
+3. «Akseptabel prisrange» = mellom «for billig» og «for dyrt»-krysningene
+4. Optimal prispunkt = krysningen av «bra deal» og «dyrt»
+
+### MaxDiff-analyse (Feature-prioritering)
+
+Brukes for å bestemme hvilke funksjoner som hører i hvilken plan.
+
+**Prosess:**
+1. List alle potensielle funksjoner (10–20 stk)
+2. Vis respondenter sett à 4–5 funksjoner om gangen
+3. De velger «viktigst» og «minst viktig» i hvert sett
+4. Algoritmisk scoring gir relativ preferanse per funksjon
+
+**Resultat:** Tydelig rangering av funksjoner etter opplevd verdi → direkte input til tier-packaging.
+
+### Prisøkningstriggers
+
+Konkrete signaler på at du priser for lavt:
+
+| Signal | Terskelverdi | Tolkning |
+|--------|--------------|----------|
+| Konverteringsrate | >40% | For billig — rom for økning |
+| Månedlig churn | <3% | Stabil nok til prisøkning |
+| «Bra deal»-respons i surveys | >70% | Kunder opplever mye verdi for pengene |
+| Konkurrentpris | 2x+ over din | Du lar verdi ligge på bordet |
+| Enterprise-forespørsler | Stigende | Markedet tåler høyere priser |
+
+**Prisøkningsstrategi:**
+- Grandfathering av eksisterende kunder (12 mnd) reduserer churn
+- Ny pris kun for nye kunder først — test markedets respons
+- Kommuniser økt verdi, ikke bare økt pris
+
+---
+
 ## Norsk Kontekst
 
 - **MVA:** Husk 25% MVA for norske kunder. Vis pris inkl. MVA for B2C.

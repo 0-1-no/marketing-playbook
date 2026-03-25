@@ -5,6 +5,35 @@ All notable changes to Marketing Playbook will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.0] - 2026-03-25
+
+### Added — 9 nye skills
+
+**Content & SEO (Tier 1.5)**
+- `content-strategy` — Innholdsstrategi med pillar/cluster-arkitektur, searchable vs shareable rammeverk, 4-faktor topic scoring
+- `ai-seo` — Dedikert AI-siteringsoptimalisering for ChatGPT, Perplexity, Claude, Gemini. 3-pilar rammeverk (Structure, Authority, Presence), bot-blocking sjekkliste, citation-share data
+- `site-architecture` — Nettstedsarkitektur med 3-click rule, 6 navigasjonstyper, 12 URL-mønstre, hub-and-spoke intern lenking, Mermaid sitemap output
+- `schema-markup` — JSON-LD strukturert data med 10+ schema-typer, CMS-spesifikke patterns (Next.js, Nuxt, SvelteKit), valideringspipeline
+- `free-tool-strategy` — Engineering as marketing med 6 verktøytyper, 8-faktor scorecard (25+ = go), MVP scope-sjekkliste, norske eksempler
+- `lead-magnets` — 13 lead magnet-formater med stage-matching, gating-matrise, konverteringsbenchmarks
+
+**B2B Salg (Tier 4)**
+- `revops` — Revenue operations med dual-criteria MQL-modell, 4t/48t speed-to-lead SLA, 8-metrikk dashboard, pipeline hygiene, marketing→sales handoff
+- `cold-email` — B2B cold outreach med 4 formler, 3-tier voice, angle rotation, breakup email, deliverability-sjekkliste (SPF/DKIM/DMARC), norsk juridisk kontekst
+- `sales-enablement` — 11-slide pitch deck arc, 6 innvendingskategorier med svar-templates, persona value prop matrix, battle cards, demo-script rammeverk
+
+### Changed — Eksisterende skills oppdatert
+
+- **pricing-strategy** — Ny seksjon «Prisingsresearch-metoder» med Van Westendorp Price Sensitivity Meter (4-spørsmåls metode), MaxDiff-analyse for feature-prioritering, og konkrete prisøkningstriggers (>40% konvertering, <3% churn)
+- **churn-prevention** — Nye nøkkel-benchmarks (soft decline recovery 50-60%, hard decline 20-30%, pause-reaktivering 60-80%) og rabatt sweet spot-analyse (20-30% i 2-3 mnd er optimalt, høyere trener avbestillingsadferd)
+- **seo-aeo/AEO.md** — Ny Pilar 5: Tredjeparts tilstedeværelse (brands 6,5x mer sannsynlig å bli sitert via tredjepart). Princeton GEO-studie (+40% sitater, +37% statistikk, -10% keyword stuffing). Innholdstyper sortert etter siteringsfrekvens (sammenligninger ~33%). Nye verktøy: Otterly AI, Peec AI, ZipTie, LLMrefs
+- **marketing-playbook.md** — Oppdatert Relaterte Skills-tabell med alle 9 nye skills og ny B2B Salg-kategori
+
+### Technical
+- Version bump til 0.6.0
+
+---
+
 ## [0.5.1] - 2026-02-21
 
 ### Added

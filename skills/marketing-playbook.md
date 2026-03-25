@@ -296,6 +296,7 @@ Alle skills inneholder **metodikk og prinsipper** — ikke konkrete verdier:
 ### Innhold og Copy
 | Skill | Innhold |
 |-------|---------|
+| `content-strategy` | Pillar/cluster, searchable vs shareable, topic prioritering |
 | `content-writing` | Artikler, guider, landing pages, innholdsstrategi |
 | `storytelling-copywriting` | Rammeverk (AIDA, PAS), headlines, CRO-copy |
 | `social-content` | LinkedIn, X, Instagram, Facebook |
@@ -306,7 +307,10 @@ Alle skills inneholder **metodikk og prinsipper** — ikke konkrete verdier:
 | Skill | Innhold |
 |-------|---------|
 | `seo-aeo` | SEO, AEO, søkeord, AI-synlighet |
+| `ai-seo` | AI-siteringsoptimalisering — ChatGPT, Perplexity, Claude, Gemini |
 | `programmatic-seo` | Skalerbar SEO med templates og data |
+| `site-architecture` | URL-struktur, navigasjon, intern lenking |
+| `schema-markup` | JSON-LD strukturert data og rich results |
 | `competitor-alternatives` | Konkurrent-sammenligningssider |
 
 ### Konvertering (CRO)
@@ -323,12 +327,21 @@ Alle skills inneholder **metodikk og prinsipper** — ikke konkrete verdier:
 | Skill | Innhold |
 |-------|---------|
 | `launch-strategy` | Produktlanseringer |
-| `pricing-strategy` | Prisstrategi og packaging |
+| `pricing-strategy` | Prisstrategi, packaging, Van Westendorp |
 | `paid-ads` | Kampanjestrategi og annonsering |
 | `referral-program` | Referral og affiliate |
-| `churn-prevention` | Cancel flows, dunning, retensjon |
+| `churn-prevention` | Cancel flows, dunning, retensjon, benchmarks |
 | `ab-test-setup` | A/B-testing rammeverk |
+| `free-tool-strategy` | Engineering as marketing — gratis verktøy |
+| `lead-magnets` | Lead magnet-formater, gating, konvertering |
 | `marketing-ideas` | Idébank for norske forhold |
+
+### B2B Salg
+| Skill | Innhold |
+|-------|---------|
+| `revops` | Lead scoring, pipeline, CRM-automatisering |
+| `cold-email` | Cold outreach, formler, deliverability |
+| `sales-enablement` | Pitch decks, battle cards, innvendinger |
 
 ### Design og Bilder
 | Skill | Innhold |
