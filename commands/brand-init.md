@@ -1,6 +1,5 @@
 ---
 description: Opprett kun BRAND.md for dette prosjektet. Bruk denne hvis du bare vil sette opp merkevare-grunnlaget (ABC-rammeverket).
-disable-model-invocation: true
 allowed-tools: Read, Write, Glob, AskUserQuestion
 ---
 

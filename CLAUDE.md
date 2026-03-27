@@ -1,5 +1,7 @@
 # CLAUDE.md
 
+> **Version:** 0.6.2 | **Plugin name:** `marketing-playbook` | **Marketplace:** `0-1-plugins`
+
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
 ## What This Is
@@ -43,15 +45,21 @@ This separation enables:
 
 ## Commands
 
+All commands are namespaced under the plugin name `marketing-playbook`.
+Format: `/marketing-playbook:<command-name>` (matching filename in `commands/`).
+
 | Command | Purpose |
 |---------|---------|
-| `/marketing-playbook` | Show status and version |
-| `/marketing-playbook:init` | Create BRAND.md, JOURNEY.md, DISTRIBUTION.md, LEARNINGS.md |
-| `/marketing-playbook:check` | Verify content against marketing/ files |
-| `/marketing-playbook:audit` | Full project audit with Brand Health scoring |
-| `/design-system:init` | Create DESIGN-SYSTEM.md through iterative demos |
-| `/seo-aeo:audit` | SEO and AEO audit with scorecard |
-| `/content-writer:init` | Create CONTENT-RULES.md with voice rules |
+| `/marketing-playbook:marketing-playbook` | Show status and version |
+| `/marketing-playbook:marketing-playbook-init` | Create BRAND.md, JOURNEY.md, DISTRIBUTION.md, LEARNINGS.md |
+| `/marketing-playbook:marketing-playbook-check` | Verify content against marketing/ files |
+| `/marketing-playbook:marketing-playbook-audit` | Full project audit with Brand Health scoring |
+| `/marketing-playbook:brand-init` | Create BRAND.md with ABC framework |
+| `/marketing-playbook:design-system-init` | Create DESIGN-SYSTEM.md through iterative demos |
+| `/marketing-playbook:seo-aeo-audit` | SEO and AEO audit with scorecard |
+| `/marketing-playbook:content-writer-init` | Create CONTENT-RULES.md with voice rules |
+| `/marketing-playbook:journey-init` | Create JOURNEY.md customer journey |
+| `/marketing-playbook:distribution-init` | Create DISTRIBUTION.md channel strategy |
 
 ## Skills System
 

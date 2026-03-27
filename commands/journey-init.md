@@ -1,6 +1,5 @@
 ---
 description: Opprett kun JOURNEY.md for dette prosjektet. Kartlegger kundereisen fra awareness til loyalty.
-disable-model-invocation: true
 allowed-tools: Read, Write, Glob, AskUserQuestion
 ---
 

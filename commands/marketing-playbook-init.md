@@ -1,6 +1,5 @@
 ---
 description: Initialize Marketing Playbook for this project. Creates BRAND.md, JOURNEY.md, DISTRIBUTION.md, and LEARNINGS.md through interactive deep-dive setup.
-disable-model-invocation: true
 allowed-tools: Read, Write, Glob, AskUserQuestion
 ---
 

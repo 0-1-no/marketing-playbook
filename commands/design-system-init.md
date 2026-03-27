@@ -1,6 +1,5 @@
 ---
 description: Initialize Design System for this project. Creates DESIGN-SYSTEM.md through iterative demo-driven setup with landing page examples.
-disable-model-invocation: true
 allowed-tools: Read, Write, Glob, Bash, AskUserQuestion
 ---
 

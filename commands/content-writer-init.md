@@ -1,6 +1,5 @@
 ---
 description: Omfattende oppsett for content voice og regler. Oppretter CONTENT-RULES.md i marketing/-mappen med voice-dimensjoner, strukturregler og kvalitetsporter.
-disable-model-invocation: true
 allowed-tools: Read, Write, Glob, AskUserQuestion
 ---
 

@@ -5,6 +5,16 @@ All notable changes to Marketing Playbook will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.2] - 2026-03-27
+
+### Fixed — Skill routing and discoverability
+
+- **Command names**: CLAUDE.md dokumenterte feil command-format (`/design-system:init`). Claude Code bruker `plugin-name:command-filename`, altså `/marketing-playbook:design-system-init`. Alle 10 kommandoer korrekt dokumentert.
+- **Removed `disable-model-invocation: true`** fra 6 init-commands (brand-init, marketing-playbook-init, design-system-init, content-writer-init, journey-init, distribution-init). Init-kommandoer oppretter filer og er ikke destruktive — per Claude Code docs bør flagget kun brukes for irreversible operasjoner. Agenter kan nå kalle init-commands programmatisk via Skill tool.
+- **Version synlig i CLAUDE.md** — versjon vises nå øverst i filen for raskere agent-oppdagelse.
+
+---
+
 ## [0.6.1] - 2026-03-25
 
 ### Fixed — Skill structure compliance
