@@ -17,15 +17,17 @@ Use this skill when the user asks for a blog post or article for an owned brand.
    - `marketing/DESIGN-SYSTEM.md` when images or visual assets are needed
 2. Load the relevant references:
    - `references/editorial-workflow.md` for the end-to-end article process.
+   - `references/format-design.md` before outlining any article that should be engaging, visual, or distinctive.
    - `references/seo-aeo-reviewer.md` before writing any blog article.
    - `references/norwegian-humanizer.md` before the final edit pass.
    - `references/concept-explainers.md` when the article uses technical concepts or jargon.
    - `references/publishing-0-1.md` when publishing to 0-1.
    - `references/publishing-companybook.md` when publishing to Companybook.
 3. Spawn an SEO/AEO reviewer subagent before outline or drafting. Treat a blog-writing request as permission to delegate that specific SEO/AEO brief.
-4. Draft for the reader first, then optimize. Do not let SEO turn the article generic.
-5. Use `image-gen` for article/OG image planning or generation; do not invent image standards in this skill.
-6. Publish and verify through the target repo's normal pipeline.
+4. Create a format brief before drafting. Decide whether this should be an essay, briefing, magazine feature, field guide, comparison, case-led piece, interactive explainer, or another shape. Do not default to a plain article.
+5. Draft for the reader first, then optimize. Do not let SEO turn the article generic.
+6. Use `image-gen` for article/OG image planning or generation; do not invent image standards in this skill.
+7. Publish and verify through the target repo's normal pipeline.
 
 ## Autonomy
 
@@ -54,10 +56,22 @@ Still require explicit approval before:
   - a clear reader promise early;
   - one short answer block suitable for AEO;
   - concrete examples or scenarios;
+  - a format/visual plan that makes the article easy to skim and worth reading;
   - a "what this means for your company" section or equivalent;
   - FAQ/questions when useful;
   - internal links and a clear CTA;
   - an image/OG plan via `image-gen`.
+
+## Editorial standard
+
+- Speak to the reader, not about the reader. Avoid lazy audience labels such as "norske ledere" unless the geography or role is the point.
+- Use a Morning Brew/TLDR-style rhythm when the audience is busy: what happened, why it matters, what to do next, what to watch.
+- Every substantive section must have a claim, a concrete example, and a practical implication. If a section cannot pass that test, cut or redesign it.
+- No generic noun-list may stand alone. A list like "CRM, documents, email, support" must become a table, scenario, decision tree, graphic, checklist, or case box that adds meaning.
+- If the article discusses cost, time, risk, or value, include at least one simple calculation or operational example.
+- Do not overstate a feature. If a capability is not unique, say what is actually different. Example: 1M context is not a story by itself if other current models also have 1M context.
+- Treat visuals as part of the article, not decoration. Use generated images, diagrams, embedded videos, screenshots, tables, or interactive modules when they make the point faster than prose.
+- The final read-through must answer: would a busy professional keep reading after the first screen? If not, restructure before publishing.
 
 ## Quality gate
 
@@ -66,3 +80,4 @@ Before publishing, the article must pass three checks:
 1. **Concept clarity**: important jargon is explained through inline wording, callouts, or target-supported tooltips.
 2. **Business value**: the article connects the topic to time, cost, risk, quality, customer experience, or new workflows.
 3. **Distribution pack**: include SEO title, meta description, AEO questions, internal link suggestions, image prompt, and 2-3 social teaser drafts in the PR/context notes. Do not auto-publish social posts.
+4. **Readability/product gate**: check skimmability, visual breaks, concrete examples, and whether any section feels like filler. Rewrite before publishing if the article is merely correct.

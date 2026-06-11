@@ -25,6 +25,7 @@ Return:
 6. Internal link suggestions and anchor text.
 7. Source/claim risks to verify before publishing.
 8. What not to optimize for because it would weaken the reader value.
+9. Format risks: where SEO/AEO structure could make the article feel generic, and which sections should be visual or example-led instead.
 ```
 
 ## Review criteria
@@ -36,6 +37,7 @@ The reviewer optimizes for:
 - internal links that help the reader continue;
 - sourceable claims and precise dates;
 - metadata that is accurate, not clickbait.
+- useful answer blocks that do not flatten the article into a commodity SEO page.
 
 The reviewer must not:
 
@@ -43,6 +45,7 @@ The reviewer must not:
 - turn the article into a generic SEO page;
 - recommend claims that the writer has not verified;
 - optimize for benchmarks when the reader cares about business value.
+- recommend long FAQ sections that repeat what the article already explains.
 
 ## Expected output
 
