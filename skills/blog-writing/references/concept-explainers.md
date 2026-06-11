@@ -22,6 +22,7 @@ Choose the lightest format that works:
 2. **Callout**: best for a concept that several later sections depend on.
 3. **Tooltip**: only when the target site already supports a subtle tooltip/glossary component.
 4. **FAQ**: best when readers are likely to search the question directly.
+5. **Decision table**: best when the concept changes permissions, risk, cost, or workflow.
 
 ## Terms to watch
 
@@ -46,6 +47,7 @@ Choose the lightest format that works:
 - Use the reader's workflow, not the vendor's terminology.
 - Avoid definitions that introduce two new unexplained terms.
 - Do not over-explain common words.
+- Show what the term permits or prevents in practice.
 
 Example:
 
@@ -54,6 +56,14 @@ Example:
 Example:
 
 > Programmatisk tilgang betyr at systemet kan gjøre handlinger via kode eller API, uten at et menneske klikker rundt manuelt.
+
+Example:
+
+| System | Agenten får gjøre | Mennesket godkjenner |
+|---|---|---|
+| CRM | finne stoppede leads og foreslå neste steg | endring av status |
+| E-post | skrive oppfølgingsutkast | sending |
+| Support | finne mønstre i klager | produktprioritering |
 
 ## Final pass
 

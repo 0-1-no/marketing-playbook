@@ -23,7 +23,7 @@ Use this workflow for blog posts on owned brands.
 
 ## 4. Outline
 
-Use this default shape unless the brand or topic demands otherwise:
+Create a format brief before the outline. Read `format-design.md` and decide whether the post should be a briefing, magazine feature, field guide, case teardown, comparison, checklist, interactive explainer, or essay. Then use this default shape unless the brand or topic demands otherwise:
 
 1. Hook/problem: why this matters now.
 2. Answer block: 40-60 words that can stand alone.
@@ -38,6 +38,8 @@ Use this default shape unless the brand or topic demands otherwise:
 - Write short paragraphs and descriptive H2s.
 - Give the reader the answer before the nuance.
 - Use specific examples instead of generic claims.
+- Use the section rule: claim -> concrete example -> action.
+- Turn thin lists into tables, diagrams, checklists, scenario cards, or graphics.
 - Keep technical detail only where it changes the decision.
 - Add internal links naturally; never force irrelevant links.
 
@@ -45,6 +47,7 @@ Use this default shape unless the brand or topic demands otherwise:
 
 - Run the Norwegian humanizer pass.
 - Run the concept explainer pass.
+- Run the format QA pass from `format-design.md`.
 - Check frontmatter/metadata, image alt text, and CTA.
 - Confirm claims are sourced or framed as interpretation.
 

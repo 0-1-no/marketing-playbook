@@ -57,8 +57,23 @@ AI drafts often sound too symmetrical:
 - every paragraph with the same length;
 - repeated "ikke bare X, men Y";
 - tidy transitions that add no meaning.
+- audience labels repeated as if speaking about the reader instead of to them, such as "for norske ledere";
+- confident but empty sentences such as "X er nøkkelen", "X peker på noe større", or "X åpner nye muligheter" without a concrete follow-up.
 
 Fix by varying sentence length, merging obvious lists, and keeping only transitions that help the reader.
+
+## Cut filler sentences
+
+Delete sentences that only restate the heading or add a corporate pause:
+
+- "Det er her Fable 5 peker på noe større."
+- "Dette er relevant for flere enn teknologimiljøer."
+- "Det handler til syvende og sist om verdi."
+
+Replace them with proof, example, or action:
+
+- "Test den på en oppgave der mennesker i dag bruker timer på å samle, sjekke og skrive førsteutkast."
+- "Hvis agenten ikke kan lese kildene selv, blir den bare en dyr tekstgenerator."
 
 ## Keep Norwegian natural
 
@@ -75,3 +90,4 @@ Ask:
 - Does every technical word earn its place?
 - Does the article say something concrete enough that a competitor could disagree?
 - Is there at least one useful sentence the reader could repeat in a meeting?
+- Did the edit remove enough text that the article became faster to read?

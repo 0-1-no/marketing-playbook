@@ -36,6 +36,9 @@ image: "/images/blog/<slug>.<ext>"
 - Use everyday language. Explain technical words when they matter.
 - Prefer the StoryBrand pattern in local `marketing/CONTENT-RULES.md`: problem first, then guide, then plan/action.
 - Third person "0-1" is the default. Use "jeg" only when the article is explicitly Kenneth's viewpoint.
+- For high-value posts, upgrade the article from plain prose to a designed editorial page: MDX modules, tables, figures, embedded video, diagrams, and generated illustrations are allowed when they stay scoped to the post.
+- If a post needs a truly unique expression, add small post-specific classes or MDX markup rather than changing the entire blog system. Keep global changes reusable and low-risk.
+- Use the `format-design.md` QA before publishing. Lists of systems, tools, benefits, or steps should become tables, checklists, diagrams, or visual modules when they are central to the article.
 
 ## Concept explainers
 
@@ -55,6 +58,8 @@ Do not add a tooltip component unless the user asks for a code enhancement. For 
 - Use `image-gen` for article hero/OG image prompts.
 - Store final blog images under the repo's existing public image convention, typically `public/images/blog/`.
 - Keep alt text concrete and short.
+- For a visual article, include a small visual asset plan: hero/OG image, in-article graphics, video embeds, and any code-native diagrams.
+- Generated illustrations should clarify the article. Do not use generic AI-themed decoration.
 
 ## Verification
 
