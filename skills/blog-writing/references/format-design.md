@@ -45,7 +45,7 @@ Use one visual module roughly every 500-700 words, or sooner if the article beco
 - **Cost math box**: tokens, hours, salary, or opportunity cost.
 - **Scenario cards**: three realistic company situations.
 - **Decision tree**: when to use a powerful model vs a cheaper one.
-- **Embedded video**: when a launch demo or product video shows what prose cannot.
+- **Embedded video**: when a launch demo or product video shows what prose cannot. For YouTube, embed the video inline by default when the publishing target supports it. Do not collapse the main video behind a details element or make an external YouTube link the primary action.
 - **Illustration/infographic**: use `image-gen` or code-native SVG/HTML for diagrams when a list would be dull.
 
 Never leave a thin list as the only representation of an important idea.
