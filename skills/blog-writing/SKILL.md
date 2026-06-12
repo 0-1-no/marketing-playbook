@@ -71,6 +71,7 @@ Still require explicit approval before:
 - If the article discusses cost, time, risk, or value, include at least one simple calculation or operational example.
 - Do not overstate a feature. If a capability is not unique, say what is actually different. Example: 1M context is not a story by itself if other current models also have 1M context.
 - Treat visuals as part of the article, not decoration. Use generated images, diagrams, embedded videos, screenshots, tables, or interactive modules when they make the point faster than prose.
+- YouTube/product videos must be embedded inline when the publishing target supports embeds. Do not hide the primary video inside collapsed details or make the user leave the article to watch. Include a normal fallback link only as secondary support.
 - The final read-through must answer: would a busy professional keep reading after the first screen? If not, restructure before publishing.
 
 ## Quality gate
