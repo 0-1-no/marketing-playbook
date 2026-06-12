@@ -39,7 +39,7 @@ image: "/images/blog/<slug>.<ext>"
 - For high-value posts, upgrade the article from plain prose to a designed editorial page: MDX modules, tables, figures, embedded video, diagrams, and generated illustrations are allowed when they stay scoped to the post.
 - If a post needs a truly unique expression, add small post-specific classes or MDX markup rather than changing the entire blog system. Keep global changes reusable and low-risk.
 - Use the `format-design.md` QA before publishing. Lists of systems, tools, benefits, or steps should become tables, checklists, diagrams, or visual modules when they are central to the article.
-- YouTube videos should be embedded directly in the article with a visible iframe. A fallback YouTube link is useful, but it must not replace the inline embed or hide it in collapsed UI.
+- YouTube videos should be embedded directly in the article with a visible iframe. A fallback YouTube link is useful, but it must not replace the inline embed, hide it in collapsed UI, or add a custom overlay that obscures the native player.
 
 ## Concept explainers
 
