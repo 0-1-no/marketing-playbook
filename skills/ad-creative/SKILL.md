@@ -187,6 +187,22 @@ Beskrivelser skal utfylle overskrifter, ikke gjenta dem:
 
 ---
 
+## Ad Scent — Annonsen Må Matche Landingssiden
+
+En annonse selger et klikk; landingssiden må innfri det samme løftet i samme øyeblikk leseren ankommer. Når annonsens overskrift, visuelt og tilbud matcher hero-seksjonen på siden, bekrefter leseren ubevisst «ja, jeg er på rett sted» — det løfter både konvertering og plattformens relevans-/kvalitetspoeng (lavere CPC). Brytes «duften» — annonsen lovet X, siden snakker om Y — bouncer de, og CPA stiger uten at noe i annonsen ser galt ut. Dette er en av de mest oversette årsakene til at en god annonse likevel ikke konverterer.
+
+**Sjekkliste — match annonse mot LP-hero før levering:**
+
+- [ ] **Løfte:** Sier annonsen og hero-seksjonen det samme hovedløftet?
+- [ ] **Overskrift:** Går nøkkelordene fra annonseoverskriften igjen i hero-overskriften?
+- [ ] **Visuelt:** Kjenner leseren igjen annonsebildet/-fargen/-stilen på siden?
+- [ ] **Tilbud:** Er tilbudet identisk? (En «50% rabatt»-annonse må lande på en side som viser 50%, ikke en generisk forside.)
+- [ ] **Tone:** Samme stemme og formalitetsnivå i annonse og side?
+
+Lever aldri en annonse uten å vite hvilken side den peker til og at budskapet stemmer. For sideoptimaliseringen, se `page-cro`; for kampanjeoppsettet, se `paid-ads`.
+
+---
+
 ## Utdataformat
 
 ### Standard
@@ -246,3 +262,5 @@ overskrift_1,overskrift_2,beskrivelse_1,plattform
 - `storytelling-copywriting` — Landingsside-tekst
 - `ab-test-setup` — Strukturert kreativtesting
 - `marketing-psychology` — Psykologiske prinsipper bak kreativ
+
+> **Kvalitetsnotat:** For høyverdi annonsetekst (overskrifter, primærtekst som skal kjøre med budsjett), vurder kvalitetsmodus — se [`marketing-playbook/COPY-QUALITY-MODE.md`](../marketing-playbook/COPY-QUALITY-MODE.md).

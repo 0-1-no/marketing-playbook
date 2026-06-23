@@ -256,6 +256,8 @@ Innhold som høres ut som en ekspert som forklarer til en kollega slår polert b
 - `marketing-psychology` - Psykologi per journey stage
 - `brand-principles` - Merkevare-fundament
 
+> **Kvalitetsnotat:** For høyverdi tekst (headlines, hero-copy), vurder kvalitetsmodus — se [`marketing-playbook/COPY-QUALITY-MODE.md`](../marketing-playbook/COPY-QUALITY-MODE.md).
+
 ---
 
 ## Commands

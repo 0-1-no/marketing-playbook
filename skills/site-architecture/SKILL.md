@@ -156,7 +156,7 @@ Implementer alltid breadcrumbs med BreadcrumbList schema:
 - [ ] Breadcrumbs med BreadcrumbList schema
 - [ ] Ingen orphan pages (sjekk med crawl)
 - [ ] Intern lenking følger hub-and-spoke
-- [ ] XML sitemap oppdatert og submittert
+- [ ] XML sitemap oppdatert og submittert (se `seo-aeo/TECHNICAL-SEO.md` for segmentering, ekte `lastmod` og vedlikehold)
 - [ ] Mobilnavigasjon testet
 - [ ] 301 redirects for endrede URLer
 
@@ -164,7 +164,8 @@ Implementer alltid breadcrumbs med BreadcrumbList schema:
 
 ## Relaterte Skills
 
-- `seo-aeo` — Søkemotoroptimalisering
+- `seo-aeo` — Søkemotoroptimalisering (+ `TECHNICAL-SEO.md` for sitemap/crawl)
 - `programmatic-seo` — Skalerbar sidestruktur
 - `schema-markup` — Strukturert data for navigasjon
 - `page-cro` — Optimalisering av enkeltsider
+- `/marketing-playbook:seo-aeo-audit` — Audit av arkitektur, crawlability og intern lenking

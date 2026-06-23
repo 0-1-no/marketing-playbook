@@ -65,7 +65,7 @@ Analyser siden i rekkefølge etter påvirkning:
 **Vurder:**
 - Kommuniserer den kjerneverdien?
 - Er den spesifikk nok til å bety noe?
-- Matcher den trafikkildens budskap? (Annonse → Landing page konsistens)
+- **Ad scent:** Matcher hero-overskrift, visuelt og tilbud annonsen som sendte dem hit? (samme løfte, samme nøkkelord, samme bilde). Brudd på «duften» = høy bounce og stigende CPA. Se `ad-creative` og `paid-ads` for annonsesiden.
 
 **Sterke mønster:**
 - Resultatfokusert: «Oppnå [ønsket resultat] uten [smertepunkt]»
@@ -123,6 +123,38 @@ Analyser siden i rekkefølge etter påvirkning:
 - Påkrevd informasjon som ikke burde være påkrevd
 - Dårlig mobilopplevelse
 - Treg lastetid
+
+---
+
+## Awareness-stadier og landingsside-format
+
+En landingsside konverterer best når den møter den besøkende der de er. Eugene Schwartz' innsikt: hvor mye den besøkende allerede vet om problemet og løsningen — deres **awareness-nivå** — avgjør hvilket argument som trengs. Sender du kald trafikk til en ren produktside, hopper de av: de skjønner ikke engang hvorfor de skulle bry seg ennå. Sender du brand-søk-trafikk til en lang historie-side, irriterer du dem som var klare til å kjøpe.
+
+> **Ikke det samme som funnel-stadiet.** Marketing Playbook bruker en kundereise (Awareness → Consideration → ... → Loyalty, se `JOURNEY.md`) som beskriver *hvor i kjøpsreisen* noen er. Schwartz' awareness-stige er en **separat, ortogonal akse**: *hvor klar over problemet/løsningen* de er akkurat nå. De utfyller hverandre — en person kan være «Solution Aware» i Schwartz-forstand mens de fortsatt er i Consideration-fasen i reisen. Bruk reisen til å forstå intensjon; bruk awareness-stigen til å velge sideformat.
+
+Stigen, fra minst til mest aware, med anbefalt sideformat og typisk trafikk-kilde:
+
+- **Unaware** (kjenner ikke problemet) → **story-drevet advertorial**. Du må først vekke problembevisstheten via en historie eller observasjon før du nevner produktet. Trafikk: kald social/discovery (folk som ikke leter).
+- **Problem Aware** (kjenner problemet, ikke løsningen) → **listicle/edukativ side**. Lær dem hva som finnes; posisjoner kategorien din som svaret. Trafikk: Google-søk på problemet eller kategorien.
+- **Solution Aware** (vurderer alternativer) → **proof-drevet side**: sammenligning, testimonials, verifisering, demo. De vet løsningstypen finnes — de trenger bevis på at *din* er best. Trafikk: comparison-research.
+- **Most/Product Aware** (klar til å kjøpe) → **ren produktside**, minimal chrome, tydelig CTA. Ikke selg på nytt — gjør det enkelt å handle. Trafikk: direkte, retur-besøk, brand-søk.
+
+| Awareness | Trafikk-kilde | Hva de trenger | Sideformat |
+|-----------|---------------|----------------|------------|
+| Unaware | Kald social/discovery | Vekke problemet | Story-drevet advertorial |
+| Problem Aware | Google-søk (problem/kategori) | Forstå løsningskategorien | Listicle/edukativ side |
+| Solution Aware | Comparison-research | Bevis på at du er best | Proof-drevet (sammenligning, demo, testimonials) |
+| Most/Product Aware | Direkte, retur, brand-søk | Lav friksjon til kjøp | Ren produktside, tydelig CTA |
+
+**Copy-vinkel per stadie:**
+- Unaware: «Visste du at [skjult problem]?» — start i leserens verden, ikke i produktet.
+- Problem Aware: «[Antall] måter å løse [problem] på» — kategoriser og posisjoner.
+- Solution Aware: «[Ditt produkt] vs. [alternativ]: her er forskjellen» — direkte, bevisbasert.
+- Most/Product Aware: «Kom i gang med [produkt]» — pris, CTA, ferdig.
+
+**Rut etter awareness.** Du kan vise riktig format basert på `referrer` eller `UTM`-parametere: kald social-annonse → advertorial-variant, brand-søk → produktside. Samme tilbud, ulik inngang. Awareness-nivået forteller deg *hvilket argument*; trafikk-kilden er ofte proxyen som lar deg gjette det automatisk.
+
+For overskrift- og vinkel-skifte per awareness-nivå (copy-siden av dette), se `storytelling-copywriting`.
 
 ---
 

@@ -240,3 +240,5 @@ Segment/Betingelser: [Om aktuelt]
 - `storytelling-copywriting` — Tekst og rammeverk
 - `ab-test-setup` — Test e-postelementer
 - `popup-cro` — E-post-innsamling via popups
+
+> **Kvalitetsnotat:** For høyverdi tekst (emnelinjer på store utsendelser), vurder kvalitetsmodus — se [`marketing-playbook/COPY-QUALITY-MODE.md`](../marketing-playbook/COPY-QUALITY-MODE.md).

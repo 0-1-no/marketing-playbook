@@ -303,7 +303,7 @@ curl https://example.com/robots.txt
 
 ## XML Sitemap
 
-Plassering: `/sitemap.xml` på root (eller referert i robots.txt).
+Plassering: `/sitemap.xml` på root (eller referert i robots.txt). En sitemap er et *hint* til søkemotorer om hvilke sider som finnes og når de sist endret seg — ikke en garanti for indeksering, og ikke et rangeringssignal i seg selv. De fleste sender inn én statisk fil og rører den aldri igjen, og lar Google gjette. Det er bortkastet.
 
 ### Struktur
 
@@ -316,24 +316,43 @@ Plassering: `/sitemap.xml` på root (eller referert i robots.txt).
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://example.com/produkter/</loc>
-    <lastmod>2025-01-02</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.8</priority>
-  </url>
 </urlset>
 ```
 
-### Best practices
+### Segmenter etter sidetype (ikke én gigantisk fil)
+
+Del opp etter sidetype/intensjon og samle i en `sitemap-index.xml`. Da kan du overvåke hver gruppe for seg i Search Console:
+
+| Sitemap | Innhold | Notat |
+|---------|---------|-------|
+| `sitemap-pages.xml` | Forside, kjernesider | |
+| `sitemap-[revenue].xml` | Inntektssider (produkt/profil/tjeneste) | **Egen fil** — de viktigste sidene |
+| `sitemap-categories.xml` | Kategori-/landingssider | |
+| `sitemap-blog.xml` | Artikler/innhold | |
+| `sitemap-legal.xml` | Vilkår, personvern | Lav verdi |
+
+Egen sitemap for inntektssider gjør det lett å følge nettopp de sidene som betyr mest.
+
+### `priority` og `changefreq`: bruk med måte
+
+**Google ignorerer `<priority>` og `<changefreq>`** — de er hint, ikke rangeringssignaler. Ikke tro at `priority: 1.0` løfter ranking. Verdien ligger i *segmenteringen og strukturen*, som hjelper søkemotoren forstå hva som er viktig og hvor ofte den bør komme tilbake. Sett dem gjerne for din egen klarhet, men ikke optimaliser for dem.
+
+### Ta IKKE med søppel
+
+Det vanligste problemet er ikke selve sitemap-filen — det er at folk sender inn 10 000 sider hvor 8 000 er tynne, og lurer på hvorfor Google ignorerer dem. Inkluder kun unike, verdifulle, kanoniske URL-er:
+
+- ❌ Paginering, filterkombinasjoner (`?farge=rod&str=m`), duplikater, redirects, noindex-sider, tynne auto-genererte sider
+- ✅ Kun sider du faktisk vil ranke
+
+### Øvrige regler
 
 | Regel | Beskrivelse |
 |-------|-------------|
-| Kun kanoniske URLs | Ikke inkluder redirects, duplicates |
-| Oppdatert lastmod | Faktisk endringsdato, ikke generert |
-| Maks 50,000 URLs | Bruk sitemap index for større sider |
-| Submit til Search Console | Og Bing Webmaster Tools |
-| Dynamisk generering | Oppdater automatisk ved nye sider |
+| `lastmod` = ekte endring | Faktisk endringsdato, ikke `now()` ved hver generering |
+| Maks 50 000 URLs per fil | Bruk sitemap index for større sider |
+| Dynamisk generering | Generér fra data (Next.js `app/sitemap.ts`, Astro sitemap) så den alltid speiler innhold. Statiske filer råtner. |
+| Image-/video-sitemap | Egen `image-sitemap.xml` / `video-sitemap.xml` hvis bilde-/videoinnhold skal i Google Images/Video |
+| Submit | Search Console + Bing Webmaster Tools |
 
 ### Sitemap Index (for store sider)
 
@@ -350,6 +369,14 @@ Plassering: `/sitemap.xml` på root (eller referert i robots.txt).
   </sitemap>
 </sitemapindex>
 ```
+
+### Vedlikehold (månedlig)
+
+- Audit for 404/redirects i sitemap — automatiser med en enkel cron-sjekk.
+- Følg «Sider sendt inn vs. indeksert»-ratio i Search Console — sikt mot 95 %+ for sider du faktisk vil ha indeksert.
+- Faller indekseringsraten, er årsaken som regel innholdskvalitet (tynne sider), ikke sitemap-en.
+
+> For programmatisk SEO i skala (tusenvis av sider) er segmenterte sitemaps per sidetype spesielt viktig — se `programmatic-seo`.
 
 ---
 

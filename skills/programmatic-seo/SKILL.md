@@ -75,6 +75,35 @@ Bedre å ha 100 gode sider enn 10 000 tynne.
 
 ---
 
+## Guardrails: Unngå AI-slop og tynne sider
+
+Programmatisk SEO i 2026 er fristende å misbruke: en LLM kan generere 10 000 sider på en ettermiddag. Det er nettopp derfor Google's Helpful Content-systemer og «scaled content abuse»-policy slår hardt ned på masseprodusert innhold uten egenverdi. **Skillet ligger ikke i om sidene er auto-genererte — det ligger i om de er bygget på ekte, unik data som faktisk hjelper brukeren.**
+
+En selskapskatalog med reelle regnskapstall, eierskap og bransjedata per selskap er legitim programmatisk SEO — dataene ER verdien. Den samme katalogen fylt med LLM-genererte «Acme AS er et spennende selskap i sin bransje»-avsnitt er slop, og blir straffet.
+
+### Regelen: data-først, ikke prosa-først
+
+| Grønt (bygg) | Rødt (ikke bygg) |
+|--------------|------------------|
+| Hver side har unik, verifiserbar data (tall, fakta, oppføringer) | Hver side er samme tekst med ett ord byttet ut |
+| LLM brukes til å *formulere* rundt ekte data, med review | LLM brukes til å *finne på* innhold for å fylle plass |
+| Sider finnes fordi folk faktisk søker etter dem | Sider finnes fordi mønsteret var lett å generere |
+| Du kan svare «hva er unikt her?» på hver side | Sidene finnes for crawleren, ikke brukeren |
+
+### Sjekk før du skalerer
+
+1. **Min. unik verdi/side:** Hver side må ha substansielt unikt innhold (ekte data eller original innsikt) — ikke bare innsatte variabler. Hvis du fjerner variabelen og sidene er identiske, er de tynne.
+2. **Ekte etterspørsel:** Ikke generér sider for søk uten volum. «Lett å lage» er ikke en grunn.
+3. **Menneske-test 5–10 maler først:** Ville en bruker vært fornøyd med denne ene siden alene? Er dataene korrekte og ferske? Slår den det som allerede rangerer? Først når svaret er ja, skalér.
+4. **Aldri publiser ureviewet LLM-prosa i skala:** Generer gjerne tekst, men ha en kvalitetsport. Faktafeil ganget med 10 000 sider er en omdømme- og rankingrisiko.
+5. **Bygg topical authority, ikke spre den tynt:** Klyng sider i hub-and-spoke, ikke som isolerte øyer.
+
+### Overvåk for skade
+
+Spor de øverste 20 % av sidene på trafikk. Faller indekseringsraten eller rangeringene >20 % uke-over-uke etter en utrulling, er det et tegn på at malen er for tynn — pause og hev kvaliteten før du lager flere.
+
+---
+
 ## 10 Playbooks
 
 | Playbook | Mønster | Norsk eksempel |
@@ -161,7 +190,7 @@ Bedre å ha 100 gode sider enn 10 000 tynne.
 - Prioriter høyvolum-mønstre
 - Noindex veldig tynne varianter
 - Håndter crawl budget bevisst
-- Separate sitemaps etter sidetype
+- **Segmenter sitemaps etter sidetype** — kritisk i skala. Se sitemap-strategien i `seo-aeo/TECHNICAL-SEO.md` (segmentering, ekte `lastmod`, fjern tynne URL-er, månedlig 404-audit).
 
 ---
 
@@ -221,7 +250,10 @@ Se etter: Tynt innhold-advarsler, Rangeringsfall, Manuelle tiltak, Crawl-feil
 
 ## Relaterte Skills
 
-- `seo-aeo` — Optimalisering av enkelt-sider
+- `seo-aeo` — Optimalisering av enkelt-sider (+ `TECHNICAL-SEO.md` for sitemap/crawl)
+- `site-architecture` — Hub-and-spoke og intern lenking i skala
+- `schema-markup` — Strukturert data per side-type
 - `content-writing` — Innholdsstrategi
 - `competitor-alternatives` — Sammenligningssider
 - `analytics-tracking` — Mål resultater
+- `/marketing-playbook:seo-aeo-audit` — Kjør audit etter utrulling for å fange tynne sider tidlig

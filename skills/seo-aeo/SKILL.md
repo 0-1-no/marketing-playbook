@@ -243,6 +243,8 @@ Når du gjør en SEO-audit, prioriter i denne rekkefølgen:
 
 ## Relaterte Skills
 
+- `ai-seo` - Spisset AI-siteringsoptimalisering (citability, E-E-A-T-scoring, llms.txt, brand-mentions) — bygger på AEO-fundamentet her
+- `schema-markup` - Kanonisk JSON-LD-implementering (`STRUCTURED-DATA.md` peker hit for kode)
 - `storytelling-copywriting` - Copy som konverterer og ranker
 - `content-writing` - Lengre innholdsformater
 - `programmatic-seo` - Skalerbar SEO med templates og data

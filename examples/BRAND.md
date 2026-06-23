@@ -25,6 +25,26 @@
 - Koble sammen alle verktøy sømløst
 - Fokusere på å vokse bedriften, ikke administrasjon
 
+### Personas (B2B)
+
+Kjøpsrollene involvert i en beslutning. (B2C: behold kun «Bruker».)
+
+| Rolle | Bryr seg om | Utfordring | Verdi vi lover |
+|-------|-------------|------------|----------------|
+| **Bruker** (driftsansvarlig) | Mindre manuelt rot i hverdagen | Kopierer data mellom 4 systemer daglig | «Det går av seg selv» |
+| **Champion** (gründeren) | Vise rask gevinst til teamet | Må overbevise resten om nytt verktøy | Synlig tidsbesparelse på uke 1 |
+| **Beslutningstaker** (daglig leder) | Vekst uten å ansette mer | Knappe ressurser, mange prioriteringer | Skalér uten flere hoder |
+| **Økonomisk kjøper** (daglig leder/CFO) | ROI og forutsigbar kostnad | Rettferdiggjøre nok et abonnement | Betal-etter-bruk, ingen overraskelser |
+| **Teknisk påvirker** (evt. IT/konsulent) | Sikkerhet og enkel integrasjon | Vil ikke eie nok et skjørt oppsett | No-code, 5 min oppsett, 100+ ferdige koblinger |
+
+### Jobs-to-be-done
+
+«Jobbene» kunden ansetter produktet for å få gjort.
+
+- **Når** uka er for kort, **vil jeg** slippe å kopiere data mellom systemer manuelt, **slik at jeg** kan bruke tiden på kunder i stedet for regneark.
+- **Når** vi vokser, **vil jeg** at verktøyene snakker sammen automatisk, **slik at jeg** kan skalere uten å ansette flere til administrasjon.
+- **Når** jeg vurderer et nytt verktøy, **vil jeg** komme i gang uten utvikler, **slik at jeg** ikke blir avhengig av teknisk hjelp jeg ikke har.
+
 ---
 
 ## Brand
@@ -104,6 +124,26 @@ Disse prinsippene styrer all kommunikasjon:
 - Respekter leserens tid
 - Vis, ikke fortell
 
+### Kundespråk (verbatim)
+
+Hvordan kundene faktisk beskriver problemet og løsningen — med EGNE ord. Speil dette i copy. (Utfyller «Words We Use/Avoid» over; ikke dupliser ordlistene.)
+
+**Slik beskriver de problemet:**
+- «Jeg bruker søndagene på å oppdatere regneark»
+- «Alt må punches inn på nytt i hvert system»
+- «Vi rekker ikke alt»
+
+**Slik beskriver de løsningen / gevinsten:**
+- «Systemene snakker sammen av seg selv»
+- «Jeg slipper å tenke på det lenger»
+
+**Ordliste / glossar** (kundens ord → vårt begrep)
+| Kunden sier | Vi mener |
+|-------------|----------|
+| «Koble sammen» | Integrasjon |
+| «Det går av seg selv» | Automatisering |
+| «Punche inn på nytt» | Manuell dataregistrering |
+
 ---
 
 ## Design
@@ -130,13 +170,71 @@ Disse prinsippene styrer all kommunikasjon:
 
 ---
 
-## Konkurrenter
+## Konkurranselandskap
 
-| Konkurrent | Deres styrke | Vår fordel |
-|------------|--------------|------------|
-| Zapier | Markedsleder, stort bibliotek | Enklere prising, bedre support |
-| Make | Kraftige funksjoner | Lettere læringskurve |
-| n8n | Open source, self-hosted | Ingen teknisk oppsett nødvendig |
+Tre tiers etter hvor likt de løser samme problem. «Hvor de kommer til kort» er åpningen vår.
+
+### Direkte (samme løsning, samme problem)
+*Andre no-code automatiseringsplattformer.*
+
+| Konkurrent | Deres styrke | Hvor de kommer til kort |
+|------------|--------------|--------------------------|
+| Zapier | Markedsleder, stort bibliotek | Uforutsigbar oppgavebasert prising, treg support |
+| Make | Kraftige funksjoner | Bratt læringskurve for ikke-tekniske |
+| n8n | Open source, self-hosted | Krever teknisk oppsett og drift |
+
+### Sekundær (annen løsning, samme problem)
+*Løser «for mye manuelt arbeid» på en annen måte.*
+
+| Alternativ | Deres styrke | Hvor de kommer til kort |
+|------------|--------------|--------------------------|
+| Innleid utvikler / konsulent | Skreddersydd | Dyrt, treg, skaper avhengighet |
+| Manuelle regneark + makroer | Gratis, kjent | Skjør, faller fra hverandre når noen slutter |
+
+### Indirekte (motstridende tilnærming)
+*De som velger en helt annen retning.*
+
+| Alternativ | Deres tilnærming | Hvor de kommer til kort |
+|------------|------------------|--------------------------|
+| «Gjør ingenting» / status quo | Lever med smerten | Skjult kostnad i tapt tid vokser med bedriften |
+| Ansette en til | Mer folk på problemet | Lønnskostnad i stedet for å fjerne arbeidet |
+
+---
+
+## Proof Points
+
+Bevis som støtter løftene. Hold det konkret — tall slår adjektiver.
+
+**Nøkkeltall / resultater**
+- Kunder sparer i snitt 10+ timer/uke på manuelt arbeid
+- 5 minutter fra registrering til første aktive automatisering
+- 99,9 % oppetid siste 12 mnd
+
+**Kunder / logoer**
+- [Logo 1] · [Logo 2] · [Logo 3] (konsulentbyråer og nettbutikker 1–20 ansatte)
+
+**Testimonial-snutter**
+- «Jeg fikk søndagene mine tilbake.» — Anna, regnskapskonsulent
+- «Satte opp tre automatiseringer på lunsjpausen.» — Markus, nettbutikkeier
+
+**Verditemaer (løfte → bevis)**
+| Verditema | Bevis |
+|-----------|-------|
+| Sparer tid | 10+ timer/uke i snitt (kundedata) |
+| Enkelt å komme i gang | 5 min median time-to-first-automation |
+| Pålitelig | 99,9 % oppetid, ingen kundedata tapt |
+
+---
+
+## Innvendinger
+
+De vanligste grunnene til å ikke kjøpe — og hvordan vi møter dem i copy og salg.
+
+| Topp innvending | Hvordan vi møter den |
+|-----------------|----------------------|
+| «Vi er ikke tekniske nok» | Vis no-code-byggeren + 5-min-oppsettet; led med en bruker uten teknisk bakgrunn |
+| «Enda et abonnement vi må rettferdiggjøre» | Betal-etter-bruk + regnestykke på spart tid vs. pris |
+| «Vil det faktisk fungere med våre verktøy?» | 100+ ferdige integrasjoner + gratis prøve uten kort |
 
 ---
 

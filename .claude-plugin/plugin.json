@@ -1,7 +1,7 @@
 {
   "name": "marketing-playbook",
   "description": "Komplett marketing-rammeverk for Claude Code — fra merkevare og innhold til konvertering, distribusjon og vekst.",
-  "version": "0.6.6",
+  "version": "0.7.0",
   "license": "MIT",
   "author": {
     "name": "0-1.no",
@@ -37,6 +37,16 @@
     "schema-markup",
     "site-architecture",
     "ai-seo",
-    "revops"
+    "geo",
+    "revops",
+    "community",
+    "kunderesearch",
+    "prospektering",
+    "konkurrentanalyse",
+    "tilbud",
+    "markedsplan",
+    "pr",
+    "co-marketing",
+    "sms"
   ]
 }

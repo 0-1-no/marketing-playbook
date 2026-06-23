@@ -5,6 +5,30 @@ All notable changes to Marketing Playbook will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.7.0] - 2026-06-23
+
+Stor innholdsoppgradering: 10 nye skills, GEO-løft, awareness-baserte landingssider, kvalitetsmodus for copy, og opprydding i SEO/AEO-overlap. ICP-fokus: CMO / markedssjef / e-handelsansvarlig, digital bias.
+
+### Added
+- **10 nye skills** (40 → 50): `community-marketing`, `customer-research`, `copy-editing`, `prospecting`, `competitor-profiling`, `offers`, `marketing-plan`, `public-relations`, `co-marketing`, `sms`. `prospecting` og `competitor-profiling` er koblet tett mot **Companybook** som nordisk datakilde (API/MCP).
+- **Awareness-baserte landingssider** (Eugene Schwartz' awareness-stadier) vevd inn i `page-cro` og `storytelling-copywriting`, med ruting på trafikk-kilde. Egen akse fra journey-stadiene — komplementært.
+- **Ad scent / message match** i `ad-creative`, `paid-ads` og `page-cro` — annonsen må matche landingssidens budskap.
+- **`marketing-playbook/COPY-QUALITY-MODE.md`** — opt-in kvalitetsmodus (multi-agent debatt-loop med fresh context) for høyverdi tekst (headlines, paid copy, key messaging), referert fra copy-skillene.
+- **GEO-løft av `ai-seo`** — citability-rubrikk, E-E-A-T-scoring (4×25), brand-mentions-som-sitering, llms.txt-vinkling.
+- **PMM-dybde i BRAND.md** — personas-matrise, jobs-to-be-done, konkurranse-tiers, proof points, kundespråk verbatim, innvendinger.
+
+### Changed
+- **`schema-markup` er nå kanonisk for JSON-LD** (lagt til VideoObject + `@graph`-kombinering); `seo-aeo/STRUCTURED-DATA.md` er slanket til AEO-fokus + peker hit (fjernet ~70 % duplisering).
+- **Sitemap-strategi styrket** i `seo-aeo/TECHNICAL-SEO.md` (segmentering per sidetype, ekte `lastmod`, fjern tynne URL-er, månedlig vedlikehold; nyanse: Google ignorerer `priority`/`changefreq`).
+- **`programmatic-seo` har nå guardrails** mot AI-slop og tynne sider (data-først, menneske-test før skalering, overvåking).
+- **Idempotent init** — `marketing-playbook-init` og `brand-init` fyller nå kun manglende BRAND.md-seksjoner additivt, så re-kjøring etter en mal-oppgradering er trygt.
+- Tettere kryss-linking på tvers av SEO-skills (`ai-seo` ↔ `seo-aeo`, `seo-aeo-audit` referert fra flere).
+
+### Technical
+- Version bump til 0.7.0. Skill-katalog: 50 skills.
+
+---
+
 ## [0.6.6] - 2026-06-12
 
 ### Changed

@@ -297,7 +297,7 @@ DISTRIBUTION.md kartlegger hvor dere er til stede og SEO-strategi:
 
 ## Skills
 
-Pluginen inkluderer 40 skills som automatisk aktiveres når du jobber med relevant innhold.
+Pluginen inkluderer 50 skills som automatisk aktiveres når du jobber med relevant innhold.
 
 > **Viktig:** Skill-filene inneholder metodikk og prinsipper — ikke konkrete verdier.
 > Faktiske verdier leses alltid fra `./marketing/`-mappen i prosjektet.
@@ -312,6 +312,8 @@ Pluginen inkluderer 40 skills som automatisk aktiveres når du jobber med releva
 | `distribution-principles` | SOV→SOM, 60:40, Reach>Frequency |
 | `customer-principles` | Lojalitet, retention, community |
 | `marketing-psychology` | 50+ psykologiske prinsipper, prispsykologi, vekstmodeller |
+| `customer-research` | Intervjuer, surveys, JTBD, the Mom Test, syntese → mater BRAND.md |
+| `marketing-plan` | Komplett markedsplan-leveranse (situasjon, OKR, kanal-mix, budsjett, roadmap) |
 
 ### Innhold og Copy
 
@@ -321,8 +323,10 @@ Pluginen inkluderer 40 skills som automatisk aktiveres når du jobber med releva
 | `content-writing` | Artikler, guider, landing pages, content pillars, searchable vs shareable |
 | `content-strategy` | Innholdsstrategi med pillar/cluster-arkitektur og 4-faktor topic scoring |
 | `storytelling-copywriting` | AIDA, PAS, headlines, CRO-copy, sidestruktur |
+| `copy-editing` | Redigerer/forbedrer/refresher eksisterende tekst (motstykke til storytelling-copywriting) |
 | `social-content` | LinkedIn, X, Instagram, Facebook — hooks, repurposing |
 | `email-sequence` | Velkomst, nurture, re-engasjering, onboarding-sekvenser |
+| `sms` | SMS/MMS for nordisk e-handel (samtykke, flyt-typer, korte meldinger) |
 | `ad-creative` | Annonseinnhold, bulk-generering, iterasjon |
 | `lead-magnets` | 13 lead magnet-formater med stage-matching og konverteringsbenchmarks |
 | `free-tool-strategy` | Engineering as marketing med 6 verktøytyper og 8-faktor scorecard |
@@ -361,6 +365,11 @@ Pluginen inkluderer 40 skills som automatisk aktiveres når du jobber med releva
 | `churn-prevention` | Cancel flows, save offers, dunning, retensjon |
 | `ab-test-setup` | A/B-testing med hypotese-rammeverk |
 | `analytics-tracking` | Generell tracking (PostHog + GA4 referanser) |
+| `offers` | Tilbudsdesign — verdistabel, bundling, garanti, urgency (mellom pris og presentasjon) |
+| `community-marketing` | Community-led growth, ambassadør-/superfan-programmer |
+| `co-marketing` | Partnervalg, felles kampanjer, delt lead-attribusjon |
+| `public-relations` | Earned media, presse, journalist-outreach (nordisk presse) |
+| `competitor-profiling` | Research/profilering av konkurrenter (firmografi via Companybook) |
 
 ### B2B Salg
 
@@ -369,6 +378,7 @@ Pluginen inkluderer 40 skills som automatisk aktiveres når du jobber med releva
 | `revops` | Revenue operations med MQL-modell, speed-to-lead SLA, pipeline hygiene |
 | `cold-email` | B2B cold outreach med 4 formler, deliverability-sjekkliste, norsk juridisk kontekst |
 | `sales-enablement` | Pitch deck arc, innvendingshåndtering, battle cards, demo-script |
+| `prospecting` | Finn/kvalifiser/bygg prospekt-lister (Companybook, Brønnøysund, GDPR) |
 
 ### Design og Bilder
 

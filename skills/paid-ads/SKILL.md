@@ -190,11 +190,20 @@ For kreativ produksjon og varianter, se `ad-creative`.
 
 ---
 
+## Ad Scent — Budskapsamsvar Annonse → Side
+
+Hvert annonsesett må peke til en landingsside hvis **budskap matcher annonsen** — samme løfte, samme nøkkelord, samme visuelle inntrykk i hero-seksjonen. Mismatch i budskap er den mest oversette, stille drepe-faktoren for betalt konvertering: trafikken klikker, men bouncer fordi siden ikke innfrir det annonsen lovet, og CPA stiger uten at noe i kampanjeoppsettet ser galt ut. Matchet «scent» løfter i tillegg kvalitetspoeng/relevans, som senker CPC.
+
+Verifiser samsvaret per annonsesett før lansering. For selve sjekklisten (løfte/overskrift/visuelt/tilbud), se `ad-creative` → «Ad Scent»; for sideoptimalisering, se `page-cro`.
+
+---
+
 ## Sjekkliste Før Lansering
 
 - [ ] Konverteringssporing testet med reell konvertering
 - [ ] Landingsside laster raskt (<3 sek)
 - [ ] Landingsside er mobilvennlig
+- [ ] **Budskap matcher: annonsens løfte/overskrift/visuelt = LP-hero (ad scent)**
 - [ ] UTM-parametere fungerer
 - [ ] Budsjett satt korrekt
 - [ ] Targeting matcher tiltenkt målgruppe

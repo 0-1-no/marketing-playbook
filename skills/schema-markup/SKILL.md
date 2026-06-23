@@ -178,6 +178,24 @@ Se `site-architecture` for implementering.
 }
 ```
 
+### 11. VideoObject (sider med video)
+
+```json
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Tittel på video",
+  "description": "Kort beskrivelse av videoen.",
+  "thumbnailUrl": ["https://example.com/thumb-16x9.jpg"],
+  "uploadDate": "2025-01-03T08:00:00+01:00",
+  "duration": "PT5M30S",
+  "contentUrl": "https://example.com/video.mp4",
+  "embedUrl": "https://www.youtube.com/embed/xyz123"
+}
+```
+
+For kapittel-markører i Google: legg til `hasPart` med `Clip`-objekter (hver med `name`, `startOffset`, `endOffset`, `url`).
+
 ---
 
 ## CMS-spesifikke Patterns
@@ -236,6 +254,25 @@ useHead({
   </script>
 </svelte:head>
 ```
+
+---
+
+## Kombinere flere schemas (@graph)
+
+En side har ofte flere entiteter samtidig (organisasjon + side + artikkel + breadcrumb). I stedet for flere løse `<script>`-tags, samle dem i én `@graph` og bind dem sammen med `@id`-referanser. Det gjør relasjonene eksplisitte for både Google og AI:
+
+```json
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "Organization", "@id": "https://example.com/#org", "name": "Firmanavn", "url": "https://example.com" },
+    { "@type": "WebPage", "@id": "https://example.com/guide/#webpage", "url": "https://example.com/guide/", "isPartOf": { "@id": "https://example.com/#org" } },
+    { "@type": "Article", "mainEntityOfPage": { "@id": "https://example.com/guide/#webpage" }, "headline": "Tittel", "author": { "@id": "https://example.com/#org" } }
+  ]
+}
+```
+
+Bruk `@id` konsekvent (samme URL-fragment) så entiteter ikke dupliseres på tvers av sider.
 
 ---
 

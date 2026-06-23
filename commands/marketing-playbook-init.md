@@ -31,7 +31,9 @@ Opprett `BRAND.md`, `JOURNEY.md`, `DISTRIBUTION.md` og `LEARNINGS.md` for dette 
 
 ---
 
-## Steg 1: Sjekk eksisterende
+## Steg 1: Sjekk eksisterende (seksjons-bevisst, additiv)
+
+**Hvorfor dette steget er additivt:** Init kan kjøres flere ganger — typisk når malen har fått nye seksjoner (f.eks. PMM-dybden: Personas, JTBD, Konkurranse-tiers, Proof points, Kundespråk, Innvendinger). Da skal en bruker som allerede fylte ut BRAND.md trygt kunne kjøre init på nytt og **kun fylle hullene**, uten å miste eller overskrive det de har skrevet. Vi jobber derfor på seksjons-nivå, ikke fil-nivå.
 
 Sjekk om `marketing/`-mappen finnes med `BRAND.md`, `JOURNEY.md`, `DISTRIBUTION.md` eller `LEARNINGS.md`.
 
@@ -39,24 +41,9 @@ Akseptable plasseringer (i prioritert rekkefølge):
 1. `marketing/` (anbefalt)
 2. Prosjekt-rot (legacy - migrer til marketing/)
 
-Hvis filer finnes, spør:
-```
-Eksisterende filer funnet:
-- marketing/BRAND.md: [Ja/Nei]
-- marketing/JOURNEY.md: [Ja/Nei]
-- marketing/DISTRIBUTION.md: [Ja/Nei]
-- marketing/LEARNINGS.md: [Ja/Nei]
+### 1a. Legacy-migrering (uendret)
 
-Vil du:
-1. Overskrive alt (starter på nytt)
-2. Kun oppdatere BRAND.md
-3. Kun oppdatere JOURNEY.md
-4. Kun oppdatere DISTRIBUTION.md
-5. Kun oppdatere LEARNINGS.md
-6. Avbryt
-```
-
-Hvis filer finnes i rot (legacy), tilby migrering:
+Hvis filer finnes i rot (legacy), tilby migrering FØRST:
 ```
 Fant filer i prosjekt-rot (legacy plassering):
 - BRAND.md
@@ -64,6 +51,45 @@ Fant filer i prosjekt-rot (legacy plassering):
 
 Vil du migrere til marketing/-mappen? (anbefalt)
 ```
+
+### 1b. Seksjons-diff per fil
+
+For hver fil som finnes: **les den**, og sammenlign mot dagens mal (`examples/`-strukturen). Avgjør hvilke seksjoner som er PRESENT vs MISSING.
+
+For BRAND.md er forventede seksjoner (overskrift = present-signal):
+- **ABC-kjerne:** Audience, Brand, Communication
+- **PMM-dybde:** Personas (B2B), Jobs-to-be-done, Konkurranselandskap (tiers), Proof Points, Kundespråk (verbatim), Innvendinger
+
+> En seksjon teller som PRESENT hvis overskriften finnes OG har reelt innhold (ikke bare `[placeholder]`/`[Under utvikling]`). Tom/placeholder = MISSING (kan fylles).
+
+Vis brukeren en sjekkliste, f.eks.:
+```
+marketing/BRAND.md finnes. Seksjons-status:
+
+✅ Du har:   Audience · Brand · Communication
+⬜ Mangler:  Personas · Jobs-to-be-done · Konkurranse-tiers · Proof points · Kundespråk · Innvendinger
+
+Hva vil du gjøre?
+1. Fyll kun de manglende seksjonene (anbefalt — bevarer alt du har)
+2. Velg spesifikke seksjoner å oppdatere
+3. Oppdater hele BRAND.md på nytt (intervju alt — eksisterende innhold beholdes om du svarer "behold")
+4. Hopp over BRAND.md
+```
+
+Gjør tilsvarende kort sjekkliste for JOURNEY.md, DISTRIBUTION.md og LEARNINGS.md (present/missing på fil-nivå holder for disse — seksjons-diff er viktigst for BRAND.md).
+
+### 1c. Intervju kun det som mangler/velges
+
+- Still **kun** spørsmålene som hører til de manglende/valgte seksjonene. Hopp over alt brukeren allerede har fylt ut.
+- For BRAND.md: spørsmål 1-15 dekker ABC-kjernen, 15a-15f dekker PMM-dybden. Kjør bare de relevante.
+
+### 1d. Skriv additivt (aldri stille overskriving)
+
+- **Bevar alt eksisterende innhold.** Append nye seksjoner / fyll tomme felt — overskriv ALDRI en utfylt seksjon uten at brukeren eksplisitt valgte den.
+- Behold brukerens egen rekkefølge og formuleringer; sett nye seksjoner inn på riktig plass (se plasserings-listen i CHECKPOINT under).
+- Hvis en valgt seksjon allerede har innhold: vis det gamle, foreslå det nye, og spør "behold / erstatt / slå sammen" før du skriver.
+
+**For en helt fersk fil (ingen `marketing/`-filer finnes):** hopp over diffen og kjør hele intervjuet (DEL 1-4) som normalt.
 
 ## Steg 2: Introduksjon
 
@@ -176,6 +202,38 @@ Velg 3-4 som beskriver hvordan dere kommuniserer:
 - Eksempel: "Beste, revolusjonerende, gratis, billig"
 - Og hvorfor?
 
+### PMM-dybde (produkt-markedsføring)
+
+Disse seksjonene gir copy, salg og posisjonering mer å jobbe med. For B2C eller tidlig-fase: svar "ikke relevant ennå" der det ikke passer — feltene markeres `[Under utvikling]`.
+
+**Spørsmål 15a — Personas (B2B):** Hvilke kjøpsroller er involvert i en beslutning?
+- Roller: Bruker, Champion (intern forkjemper), Beslutningstaker, Økonomisk kjøper, Teknisk påvirker
+- For hver relevant rolle: Hva bryr de seg om? Hva er deres utfordring? Hvilken verdi lover vi dem?
+- B2C: ofte holder det med "Bruker"
+
+**Spørsmål 15b — Jobs-to-be-done:** Hvilke 2-3 "jobber" ansetter kunden produktet for å få gjort?
+- Format: "Når [situasjon], vil jeg [motivasjon], slik at jeg [utfall]"
+- Tenk funksjonell + emosjonell + sosial jobb
+
+**Spørsmål 15c — Konkurranselandskap i tiers:** Sorter konkurrentene i tre nivåer (utvider svar 9):
+- **Direkte** (samme løsning, samme problem)
+- **Sekundær** (annen løsning, samme problem)
+- **Indirekte** (motstridende tilnærming, f.eks. "gjøre ingenting")
+- For hver: hvor kommer de til kort?
+
+**Spørsmål 15d — Proof points:** Hvilke bevis støtter løftene deres?
+- Nøkkeltall/resultater, kunder/logoer, testimonial-snutter
+- Koble gjerne verditema → bevis ("sparer tid" → konkret tall)
+- Svar "ikke ennå" hvis dere er pre-launch
+
+**Spørsmål 15e — Kundespråk (verbatim):** Hvordan beskriver kundene problemet og løsningen med EGNE ord?
+- Sitater er gull — bruk dem ordrett der du har dem
+- Bygg gjerne en liten ordliste: kundens ord → vårt begrep
+- Dette utfyller "ord vi bruker" (svar 14), ikke dupliser
+
+**Spørsmål 15f — Innvendinger:** Hva er de topp 3 grunnene til å IKKE kjøpe, og hvordan møter dere dem?
+- Eksempel: "For dyrt" → regnestykke på ROI; "for komplisert" → 5-min oppsett
+
 ---
 
 ## ✅ CHECKPOINT: Opprett BRAND.md
@@ -201,7 +259,14 @@ Basert på svarene i DEL 1, oppretter jeg nå marketing/BRAND.md...
    - Audience: primary, secondary, use cases, pain points, goals
    - Brand: positioning, values, differentiators, competitors
    - Communication: tone, signature story, principles, words we use/avoid
-5. Bekreft for brukeren:
+5. Inkluder PMM-seksjonene (svar 15a-15f), plassert slik:
+   - **Personas (B2B)** og **Jobs-to-be-done** under Audience
+   - **Konkurranselandskap** (tiers) i Brand-delen
+   - **Proof Points** etter Brand
+   - **Kundespråk (verbatim)** i Communication (utfyller Words We Use/Avoid)
+   - **Innvendinger** etter Konkurranselandskap eller Communication
+   - Marker `[Under utvikling]` for seksjoner brukeren ikke kunne svare på
+6. Bekreft for brukeren:
 
 ```
 ✅ BRAND.md opprettet!

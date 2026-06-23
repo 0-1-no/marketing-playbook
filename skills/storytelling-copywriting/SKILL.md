@@ -115,6 +115,21 @@ Hva skriver du?
 
 ---
 
+## Awareness-stige som copy-lens (Schwartz)
+
+Samme produkt trenger ulik overskrift avhengig av hvor mye leseren allerede vet. Eugene Schwartz' awareness-stige er et nyttig filter *før* du velger vinkel: en leser som ikke kjenner problemet sitt avvises av en kjøps-CTA, mens en som er klar til å kjøpe kjeder seg av en lang oppvarming.
+
+| Awareness | Overskrift-vinkel |
+|-----------|-------------------|
+| Unaware | Vekk problemet: «Visste du at [skjult problem]?» |
+| Problem Aware | Posisjoner kategorien: «[Antall] måter å løse [problem]» |
+| Solution Aware | Differensier med bevis: «[Produkt] vs. [alternativ]» |
+| Most/Product Aware | Lav friksjon: «Kom i gang med [produkt]» |
+
+Match alltid overskriften til awareness-nivået (ofte avslørt av trafikk-kilden — kald annonse vs. brand-søk). For hvordan dette styrer hele **landingsside-formatet** (advertorial vs. listicle vs. produktside), se `page-cro` → «Awareness-stadier og landingsside-format».
+
+---
+
 ## Kobling til BRAND.md
 
 Copy MÅ reflektere merkevaren:
@@ -157,6 +172,8 @@ Copy MÅ reflektere merkevaren:
 - `design-system` - Visuell stil som matcher copy
 - `marketing-psychology` - Psykologi bak overbevisende tekst
 - `brand-principles` - Merkevare-fundament
+
+> **Kvalitetsnotat:** For høyverdi tekst (headlines, hero, kjernebudskap), vurder kvalitetsmodus — se [`marketing-playbook/COPY-QUALITY-MODE.md`](../marketing-playbook/COPY-QUALITY-MODE.md).
 
 ---
 

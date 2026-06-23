@@ -146,6 +146,8 @@ Når du skriver copy:
 3. Unngå "Words We Avoid" strengt
 4. Hold det konsist - respekter brukerens tid
 
+For høyverdi tekst (headlines, hero, key messaging): vurder **kvalitetsmodus** (multi-agent debatt-loop med fresh context) — se [COPY-QUALITY-MODE.md](COPY-QUALITY-MODE.md).
+
 ### SEO/Meta
 
 Når du lager meta-innhold:
@@ -293,6 +295,8 @@ Alle skills inneholder **metodikk og prinsipper** — ikke konkrete verdier:
 | `brand-principles` | 7 prinsipper for merkevarebygging |
 | `distribution-principles` | SOV→SOM, 60:40, Reach>Frequency |
 | `customer-principles` | Lojalitet, retention, community |
+| `customer-research` | Intervjuer, surveys, JTBD, syntese → innsikt til BRAND.md |
+| `marketing-plan` | Komplett markedsplan-leveranse (syntese av alle marketing/-filer) |
 
 ### Innhold og Copy
 | Skill | Innhold |
@@ -304,6 +308,8 @@ Alle skills inneholder **metodikk og prinsipper** — ikke konkrete verdier:
 | `social-content` | LinkedIn, X, Instagram, Facebook |
 | `email-sequence` | E-postsekvenser og automatisering |
 | `ad-creative` | Annonseinnhold og kreativ produksjon |
+| `copy-editing` | Redigerer/refresher eksisterende tekst (motstykke til storytelling-copywriting) |
+| `sms` | SMS/MMS-flyt for nordisk e-handel |
 
 ### SEO og Synlighet
 | Skill | Innhold |
@@ -337,6 +343,11 @@ Alle skills inneholder **metodikk og prinsipper** — ikke konkrete verdier:
 | `free-tool-strategy` | Engineering as marketing — gratis verktøy |
 | `lead-magnets` | Lead magnet-formater, gating, konvertering |
 | `marketing-ideas` | Idébank for norske forhold |
+| `offers` | Tilbudsdesign — verdistabel, garanti, urgency (mellom pris og presentasjon) |
+| `community-marketing` | Community-led growth, ambassadør/superfan |
+| `co-marketing` | Partnerskap og felles kampanjer |
+| `public-relations` | Earned media, presse, journalist-outreach |
+| `competitor-profiling` | Konkurrent-research/dossier (firmografi via Companybook) |
 
 ### B2B Salg
 | Skill | Innhold |
@@ -344,6 +355,7 @@ Alle skills inneholder **metodikk og prinsipper** — ikke konkrete verdier:
 | `revops` | Lead scoring, pipeline, CRM-automatisering |
 | `cold-email` | Cold outreach, formler, deliverability |
 | `sales-enablement` | Pitch decks, battle cards, innvendinger |
+| `prospecting` | Finn/kvalifiser prospekt-lister (Companybook, GDPR) |
 
 ### Design og Bilder
 | Skill | Innhold |

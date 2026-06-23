@@ -12,19 +12,38 @@ Opprett `BRAND.md` for dette prosjektet gjennom fokusert intervju om ABC-rammeve
 
 ---
 
-## Steg 1: Sjekk eksisterende
+## Steg 1: Sjekk eksisterende (seksjons-bevisst, additiv)
 
-Sjekk om `marketing/BRAND.md` finnes.
+**Hvorfor dette steget er additivt:** Brand-init kan kjøres flere ganger — typisk når malen har fått nye seksjoner (f.eks. PMM-dybden: Personas, JTBD, Konkurranse-tiers, Proof points, Kundespråk, Innvendinger). Da skal en bruker som allerede fylte ut BRAND.md trygt kunne kjøre init på nytt og **kun fylle hullene**, uten å miste det de har skrevet. Vi jobber derfor på seksjons-nivå, ikke fil-nivå.
 
-Hvis filen finnes:
+Sjekk om `marketing/BRAND.md` finnes (sjekk også prosjekt-rot for legacy — tilby migrering til `marketing/` hvis funnet der).
+
+**Hvis filen ikke finnes:** hopp rett til Steg 2 og kjør hele intervjuet.
+
+**Hvis filen finnes:** les den, og sammenlign mot dagens mal (`examples/BRAND.md`). Avgjør hvilke seksjoner som er PRESENT vs MISSING.
+
+Forventede seksjoner (overskrift med reelt innhold = PRESENT; tom/`[placeholder]`/`[Under utvikling]` = MISSING):
+- **ABC-kjerne:** Audience, Brand, Communication
+- **PMM-dybde:** Personas (B2B), Jobs-to-be-done, Konkurranselandskap (tiers), Proof Points, Kundespråk (verbatim), Innvendinger
+
+Vis en sjekkliste og la brukeren velge:
 ```
-Eksisterende BRAND.md funnet.
+marketing/BRAND.md finnes. Seksjons-status:
 
-Vil du:
-1. Overskrive (start på nytt)
-2. Oppdatere basert på eksisterende
-3. Avbryt
+✅ Du har:   Audience · Brand · Communication
+⬜ Mangler:  Personas · Jobs-to-be-done · Konkurranse-tiers · Proof points · Kundespråk · Innvendinger
+
+Hva vil du gjøre?
+1. Fyll kun de manglende seksjonene (anbefalt — bevarer alt du har)
+2. Velg spesifikke seksjoner å oppdatere
+3. Oppdater hele BRAND.md på nytt (intervju alt — eksisterende beholdes om du svarer "behold")
+4. Avbryt
 ```
+
+**Regler for skriving (gjelder hele kommandoen):**
+- Intervju **kun** de manglende/valgte seksjonene (spørsmål 1-15 = ABC-kjernen, 16-21 = PMM-dybden). Hopp over det som allerede er fylt.
+- **Skriv additivt:** bevar alt eksisterende innhold, fyll kun hull / append manglende seksjoner. Overskriv ALDRI en utfylt seksjon uten at brukeren eksplisitt valgte den.
+- Hvis en valgt seksjon allerede har innhold: vis gammelt, foreslå nytt, spør "behold / erstatt / slå sammen" før du skriver.
 
 ---
 
@@ -122,6 +141,38 @@ Velg 3-4:
 - Eksempel: "Beste, revolusjonerende, gratis, billig"
 - Og hvorfor?
 
+### PMM-dybde (produkt-markedsføring)
+
+Disse seksjonene gir copy, salg og posisjonering mer å jobbe med. For B2C eller tidlig-fase: svar "ikke relevant ennå" der det ikke passer — feltene markeres `[Under utvikling]`.
+
+**Spørsmål 16 — Personas (B2B):** Hvilke kjøpsroller er involvert i en beslutning?
+- Roller: Bruker, Champion (intern forkjemper), Beslutningstaker, Økonomisk kjøper, Teknisk påvirker
+- For hver relevant rolle: Hva bryr de seg om? Hva er deres utfordring? Hvilken verdi lover vi dem?
+- B2C: ofte holder det med "Bruker"
+
+**Spørsmål 17 — Jobs-to-be-done:** Hvilke 2-3 "jobber" ansetter kunden produktet for å få gjort?
+- Format: "Når [situasjon], vil jeg [motivasjon], slik at jeg [utfall]"
+- Tenk funksjonell + emosjonell + sosial jobb
+
+**Spørsmål 18 — Konkurranselandskap i tiers:** Sorter konkurrentene i tre nivåer (utvider svar 9):
+- **Direkte** (samme løsning, samme problem)
+- **Sekundær** (annen løsning, samme problem)
+- **Indirekte** (motstridende tilnærming, f.eks. "gjøre ingenting")
+- For hver: hvor kommer de til kort?
+
+**Spørsmål 19 — Proof points:** Hvilke bevis støtter løftene deres?
+- Nøkkeltall/resultater, kunder/logoer, testimonial-snutter
+- Koble gjerne verditema → bevis ("sparer tid" → konkret tall)
+- Svar "ikke ennå" hvis dere er pre-launch
+
+**Spørsmål 20 — Kundespråk (verbatim):** Hvordan beskriver kundene problemet og løsningen med EGNE ord?
+- Sitater er gull — bruk dem ordrett der du har dem
+- Bygg gjerne en liten ordliste: kundens ord → vårt begrep
+- Dette utfyller "ord vi bruker" (svar 14), ikke dupliser
+
+**Spørsmål 21 — Innvendinger:** Hva er de topp 3 grunnene til å IKKE kjøpe, og hvordan møter dere dem?
+- Eksempel: "For dyrt" → regnestykke på ROI; "for komplisert" → 5-min oppsett
+
 ---
 
 ## Steg 4: Opprett BRAND.md
@@ -130,6 +181,13 @@ Velg 3-4:
 2. Opprett `marketing/BRAND.md` basert på svarene
 3. Se `examples/BRAND.md` for struktur
 4. Inkluder alle ABC-elementer
+5. Inkluder PMM-seksjonene (svar 16-21), plassert slik:
+   - **Personas (B2B)** og **Jobs-to-be-done** under Audience
+   - **Konkurranselandskap** (tiers) i Brand-delen
+   - **Proof Points** etter Brand
+   - **Kundespråk (verbatim)** i Communication (utfyller Words We Use/Avoid)
+   - **Innvendinger** etter Konkurranselandskap eller Communication
+6. Marker `[Under utvikling]` for seksjoner brukeren ikke kunne svare på
 
 ---
 
