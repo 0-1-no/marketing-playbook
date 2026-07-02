@@ -241,3 +241,37 @@ Gemini returnerer **JPEG** som default. Scriptet håndterer dette automatisk.
 | "No image generated" | Prompt blokkert av safety | Reformuler prompten |
 | Feil dimensjoner | Aspect ratio ikke støttet | Bruk en av: 1:1, 2:3, 3:2, 3:4, 4:3, 4:5, 5:4, 9:16, 16:9, 21:9 |
 | Bilde ser generisk ut | Mangler stil-beskrivelse | Les PROMPT-GUIDE.md, legg til vibe-ord |
+
+---
+
+## Velg motor: `--provider` (Gemini vs OpenAI)
+
+To bilde-motorer, valgt med `--provider`:
+
+| Provider | Modell | Best til |
+|----------|--------|----------|
+| `gemini` (default) | `gemini-3-pro-image-preview` (Nano Banana Pro) | Masseprodusere **varianter/scener** — opptil 5 referansebilder, rask iterasjon |
+| `openai` | `gpt-image-2` | **Låse en identitet** fra ett referansebilde (initial karakter / reset) — reproduserer trekk pikselnært |
+
+```bash
+# Lås en karakter fra et ankerbilde (identitets-lås)
+uv run scripts/generate_image.py "clean app icon of this exact character, solid magenta bg" \
+    --provider openai --ref ./portrait.jpg --aspect 1:1 --resolution 2K
+
+# Standard (Gemini) — varianter/scener
+uv run scripts/generate_image.py "abstract tech background" --type og
+```
+
+**Referansebilde = «seed».** Ingen bilde-modell har en brukbar numerisk seed (verifisert:
+Gemini autoregressiv, OpenAI ingen). Reproduserbarhet får du ved å mate inn det lagrede
+ankerbildet med `--ref`/`--input` — for OpenAI bevares det på høy fidelity automatisk.
+
+**Nøkler:** Gemini → `GEMINI_API_KEY`. OpenAI → `OPENAI_API_KEY`, ellers 1Password-item
+`"OpenAI API Key"` (Albert-vault), lastet on-demand.
+
+**Størrelse/kvalitet (OpenAI):** `--aspect` mappes til nærmeste gpt-image-størrelse
+(1:1→1024x1024, landskap→1536x1024, portrett→1024x1536); `--resolution` 1K/2K/4K → quality
+low/medium/high. gpt-image-2 støtter ikke transparent bakgrunn.
+
+**Kostnad:** OpenAI-edits med referanse legger til ~4160 (kvadrat) / 6240 (ikke-kvadrat)
+input-tokens = metered spend. Gemini er billigere for volum.
