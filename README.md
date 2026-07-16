@@ -297,7 +297,7 @@ DISTRIBUTION.md kartlegger hvor dere er til stede og SEO-strategi:
 
 ## Skills
 
-Pluginen inkluderer 40 skills som automatisk aktiveres når du jobber med relevant innhold.
+Pluginen inkluderer 39 skills som automatisk aktiveres når du jobber med relevant innhold.
 
 > **Viktig:** Skill-filene inneholder metodikk og prinsipper — ikke konkrete verdier.
 > Faktiske verdier leses alltid fra `./marketing/`-mappen i prosjektet.
@@ -317,7 +317,6 @@ Pluginen inkluderer 40 skills som automatisk aktiveres når du jobber med releva
 
 | Skill | Beskrivelse |
 |-------|-------------|
-| `blog-writing` | Norske blogginnlegg med SEO/AEO-subagent, konseptforklaringer, image-gen og publiseringspipeline |
 | `content-writing` | Artikler, guider, landing pages, content pillars, searchable vs shareable |
 | `content-strategy` | Innholdsstrategi med pillar/cluster-arkitektur og 4-faktor topic scoring |
 | `storytelling-copywriting` | AIDA, PAS, headlines, CRO-copy, sidestruktur |

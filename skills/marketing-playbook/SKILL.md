@@ -297,7 +297,6 @@ Alle skills inneholder **metodikk og prinsipper** — ikke konkrete verdier:
 ### Innhold og Copy
 | Skill | Innhold |
 |-------|---------|
-| `blog-writing` | Norske blogginnlegg, SEO/AEO-subagent, konseptforklaringer og publiseringspipeline |
 | `content-strategy` | Pillar/cluster, searchable vs shareable, topic prioritering |
 | `content-writing` | Artikler, guider, landing pages, innholdsstrategi |
 | `storytelling-copywriting` | Rammeverk (AIDA, PAS), headlines, CRO-copy |

@@ -5,6 +5,17 @@ All notable changes to Marketing Playbook will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.6.7] - 2026-06-12
+
+### Changed
+- Flyttet `blog-writing` ut av Marketing Playbook. Den er nå en selvstendig Albert/global skill under `~/.claude/skills/blog-writing`.
+- Skills-katalogen er tilbake til 39 Marketing Playbook-skills.
+
+### Technical
+- Version bump til 0.6.7
+
+---
+
 ## [0.6.6] - 2026-06-12
 
 ### Changed
